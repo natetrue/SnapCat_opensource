@@ -1,0 +1,9 @@
+Initial Goals:
+
+1. Create Training Dataset of Cats, Dogs, Rats, Birds, and nothing
+2. Set aside images for testing
+3. Train CNNs on dataset and test to see accuracy
+4. Port to Raspberry Pi w/ webcam attached
+5. Create demo/report findings to show to various organizations
+6. ???
+7. Save endangered species on islands
