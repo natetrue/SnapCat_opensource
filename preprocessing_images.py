@@ -42,6 +42,7 @@ if __name__ == '__main__':
 	image_files = []
 	path = "./images/"
 	output_path = "./processed_images"
+	allowed_extensions = ['jpg', 'jpeg', 'JPG', 'JPEG']
 
 	if not os.path.exists(output_path):
 		os.makedirs(output_path)
@@ -49,11 +50,17 @@ if __name__ == '__main__':
 	for (dirpath, dirnames, filenames) in walk(path):
 		new_dirpath = dirpath.replace('./images/','./processed_images/')
 
-		for filename in filenames:
-			if ".jpg" not in filename:
-				continue
+		if not os.path.exists(new_dirpath):
+			os.makedirs(new_dirpath)
 
-			process_image(dirpath, new_dirpath, filename)
+		for filename in filenames:
+			illegal_file = True
+			for ext in allowed_extensions:
+				if ext in filename:
+					illegal_file = False
+
+			if not illegal_file:
+				process_image(dirpath, new_dirpath, filename)
 
 			
 			
