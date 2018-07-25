@@ -109,6 +109,8 @@ import numpy as np
 import tensorflow as tf
 import tensorflow_hub as hub
 
+import os
+
 FLAGS = None
 
 MAX_NUM_IMAGES_PER_CLASS = 2 ** 27 - 1  # ~134M
@@ -1085,6 +1087,8 @@ def main(_):
     if FLAGS.saved_model_dir:
       export_model(module_spec, class_count, FLAGS.saved_model_dir)
 
+def pathify (path):
+  return os.path.abspath(path)
 
 if __name__ == '__main__':
   parser = argparse.ArgumentParser()
@@ -1260,4 +1264,9 @@ if __name__ == '__main__':
       default='',
       help='Where to save the exported graph.')
   FLAGS, unparsed = parser.parse_known_args()
+
+  FLAGS.image_dir = pathify(FLAGS.image_dir)
+  FLAGS.output_graph = pathify(FLAGS.output_graph)
+  FLAGS.intermediate_output_graphs_dir = pathify(FLAGS.intermediate_output_graphs_dir)
+
   tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)

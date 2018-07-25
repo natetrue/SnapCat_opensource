@@ -7,3 +7,14 @@ Initial Goals:
 5. Create demo/report findings to show to various organizations
 6. ???
 7. Save endangered species on islands
+
+
+Commands:
+
+python retrain.py --image_dir=./images/ --output_graph=./output_graph/ --intermediate_output_graphs_dir=./intermediate_outputs/ --intermediate_store_frequency=100 --learning_rate=0.0001 --testing_percentage=20 --validation_percentage=20 --train_batch_size=32 --validation_batch_size=-1 --random_scale=30 --random_brightness=30 --random_crop=30 --eval_step_interval=100 --how_many_training_steps=500 --tfhub_module="https://tfhub.dev/google/imagenet/mobilenet_v2_140_224/feature_vector/1"
+
+TODO:
+resize images to 244
+convert to grayscale
+more images
+equal number of images
