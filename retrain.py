@@ -143,8 +143,19 @@ def create_image_lists(image_dir, testing_percentage, validation_percentage):
     return None
   result = collections.OrderedDict()
   sub_dirs = sorted(x[0] for x in tf.gfile.Walk(image_dir))
+
+  # remove nested directories from sub_dirs list
+  del_lst = []
+  for sub_dir in sub_dirs:
+    if sub_dir.count('/') > (sub_dirs[0].count('/') + 1):
+      del_lst.append(sub_dir)
+
+  for sub_dir in del_lst:
+    sub_dirs.remove(sub_dir)
+
   # The root directory comes first, so skip it.
   is_root_dir = True
+  has_subdir = False
   for sub_dir in sub_dirs:
     if is_root_dir:
       is_root_dir = False
@@ -152,6 +163,7 @@ def create_image_lists(image_dir, testing_percentage, validation_percentage):
     extensions = ['jpg', 'jpeg', 'JPG', 'JPEG']
     file_list = []
     dir_name = os.path.basename(sub_dir)
+    print (dir_name)
     if dir_name == image_dir:
       continue
     tf.logging.info("Looking for images in '" + dir_name + "'")
@@ -159,8 +171,20 @@ def create_image_lists(image_dir, testing_percentage, validation_percentage):
       file_glob = os.path.join(image_dir, dir_name, '*.' + extension)
       file_list.extend(tf.gfile.Glob(file_glob))
     if not file_list:
-      tf.logging.warning('No files found')
-      continue
+      tf.logging.warning('No files found, looking for subdirectories')
+      nested_dirs = os.listdir(os.path.join(image_dir, dir_name))
+
+      if len(nested_dirs) == 0:
+        tf.logging.warning('No files found')
+        continue
+      else:
+        has_subdir = True
+
+      for nested_dir in nested_dirs:
+        for extension in extensions:
+          file_glob = os.path.join(image_dir, dir_name, nested_dir, '*.' + extension)
+          file_list.extend(tf.gfile.Glob(file_glob))
+
     if len(file_list) < 20:
       tf.logging.warning(
           'WARNING: Folder has less than 20 images, which may cause issues.')
@@ -168,12 +192,18 @@ def create_image_lists(image_dir, testing_percentage, validation_percentage):
       tf.logging.warning(
           'WARNING: Folder {} has more than {} images. Some images will '
           'never be selected.'.format(dir_name, MAX_NUM_IMAGES_PER_CLASS))
+
+
     label_name = re.sub(r'[^a-z0-9]+', ' ', dir_name.lower())
     training_images = []
     testing_images = []
     validation_images = []
     for file_name in file_list:
-      base_name = os.path.basename(file_name)
+      if has_subdir:
+        base_name = file_name.replace(image_dir + '/' + dir_name + '/' ,'')
+      else:
+        base_name = os.path.basename(file_name)
+      #print (base_name)
       # We want to ignore anything after '_nohash_' in the file name when
       # deciding which set to put an image in, the data set creator has a way of
       # grouping photos that are close variations of each other. For example
@@ -197,6 +227,10 @@ def create_image_lists(image_dir, testing_percentage, validation_percentage):
         testing_images.append(base_name)
       else:
         training_images.append(base_name)
+
+    has_subdir = False
+    #print(len(file_list))
+
     result[label_name] = {
         'dir': dir_name,
         'training': training_images,
