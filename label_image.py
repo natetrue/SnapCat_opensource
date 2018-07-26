@@ -19,6 +19,7 @@ from __future__ import print_function
 
 from os import listdir
 from os.path import isfile, join
+from os import walk
 
 import argparse
 
@@ -92,9 +93,9 @@ def load_labels(label_file):
 
 if __name__ == "__main__":
   predicted_cat_actual_cat = 0
-  predicted_cat_actual_dog = 0
-  predicted_dog_actual_cat = 0
-  predicted_dog_actual_dog = 0
+  predicted_cat_actual_NC = 0
+  predicted_NC_actual_cat = 0
+  predicted_NC_actual_NC = 0
 
   file_name = "tensorflow/examples/label_image/data/grace_hopper.jpg"
   model_file = \
@@ -109,7 +110,7 @@ if __name__ == "__main__":
 
   parser = argparse.ArgumentParser()
   parser.add_argument("--cat_directory", help="directory of cat images to be processed")
-  parser.add_argument("--dog_directory", help="directory of dog images to be processed")
+  parser.add_argument("--NC_directory", help="directory of NC images to be processed")
   parser.add_argument("--graph", help="graph/model to be executed")
   parser.add_argument("--labels", help="name of file containing labels")
   parser.add_argument("--input_height", type=int, help="input height")
@@ -124,8 +125,8 @@ if __name__ == "__main__":
     model_file = args.graph
   if args.cat_directory:
     dir_cat = args.cat_directory
-  if args.dog_directory:
-    dir_dog = args.dog_directory
+  if args.NC_directory:
+    dir_NC = args.NC_directory
   if args.labels:
     label_file = args.labels
   if args.input_height:
@@ -144,10 +145,15 @@ if __name__ == "__main__":
   graph = load_graph(model_file)
 
   cat_files = [f for f in listdir(dir_cat) if isfile(join(dir_cat, f))]
-  dog_files = [f for f in listdir(dir_dog) if isfile(join(dir_dog, f))]
+  NC_files = []
+
+  for (dirpath, dirnames, filenames) in walk(dir_NC):
+    for file in filenames:
+      if not "DS_Store" in file:
+        tmp_path = dirpath + '/' + file
+        NC_files.append(tmp_path.replace(dir_NC, ""))
 
   for cat_file_name in cat_files:
-
     cat_file_name = dir_cat + cat_file_name
 
     t = read_tensor_from_image_file(
@@ -174,15 +180,15 @@ if __name__ == "__main__":
       if labels[i] == 'cat':
         predicted_cat_actual_cat += 1
       else:
-        predicted_dog_actual_cat += 1
+        predicted_NC_actual_cat += 1
       break
 
-  for dog_file_name in dog_files:
+  for NC_file_name in NC_files:
 
-    dog_file_name = dir_dog + dog_file_name
+    NC_file_name = dir_NC + NC_file_name
 
     t = read_tensor_from_image_file(
-        dog_file_name,
+        NC_file_name,
         input_height=input_height,
         input_width=input_width,
         input_mean=input_mean,
@@ -202,13 +208,13 @@ if __name__ == "__main__":
     top_k = results.argsort()[-5:][::-1]
     labels = load_labels(label_file)
     for i in top_k:
-      if labels[i] == 'dog':
-        predicted_dog_actual_dog += 1
+      if labels[i] == 'NC':
+        predicted_NC_actual_NC += 1
       else:
-        predicted_cat_actual_dog += 1
+        predicted_cat_actual_NC += 1
       break
 
-  print("Predicted dog actual dog:%d" % predicted_dog_actual_dog)
-  print("Predicted dog actual cat:%d" % predicted_dog_actual_cat)
+  print("Predicted NC actual NC:%d" % predicted_NC_actual_NC)
+  print("Predicted NC actual cat:%d" % predicted_NC_actual_cat)
   print("Predicted cat actual cat:%d" % predicted_cat_actual_cat)
-  print("Predicted cat actual dog:%d" % predicted_cat_actual_dog)
+  print("Predicted cat actual NC:%d" % predicted_cat_actual_NC)

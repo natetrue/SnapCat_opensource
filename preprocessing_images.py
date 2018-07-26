@@ -4,6 +4,7 @@ import os
 import cv2
 from imgaug import augmenters as iaa
 import random
+import argparse
 
 def random_coords(img):
 	height, width = img.shape[:2]
@@ -39,16 +40,41 @@ def process_image(dirpath, new_dirpath, filenames):
 
 if __name__ == '__main__':
 
+	parser = argparse.ArgumentParser()
+	parser.add_argument(
+		'--input_dir',
+		type=str,
+		default='',
+		help='Path to folders of input images.'
+	)
+
+	parser.add_argument(
+		'--output_dir',
+		type=str,
+		default='',
+		help='Path to folders of input images.'
+	)
+
+	FLAGS, unparsed = parser.parse_known_args()
+
+	if FLAGS.input_dir == None:
+		print("Please provide an input directory\n")
+		exit()
+
+	if FLAGS.output_dir == None:
+		print("Please provide an output directory\n")
+		exit()
+
 	image_files = []
-	path = "./images/"
-	output_path = "./processed_images"
+	input_path = FLAGS.input_dir
+	output_path = FLAGS.output_dir
 	allowed_extensions = ['jpg', 'jpeg', 'JPG', 'JPEG']
 
 	if not os.path.exists(output_path):
 		os.makedirs(output_path)
 
-	for (dirpath, dirnames, filenames) in walk(path):
-		new_dirpath = dirpath.replace('./images/','./processed_images/')
+	for (dirpath, dirnames, filenames) in walk(input_path):
+		new_dirpath = dirpath.replace(input_path, output_path)
 
 		if not os.path.exists(new_dirpath):
 			os.makedirs(new_dirpath)
