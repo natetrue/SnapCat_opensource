@@ -142,30 +142,16 @@ def create_image_lists(image_dir, testing_percentage, validation_percentage):
     tf.logging.error("Image directory '" + image_dir + "' not found.")
     return None
   result = collections.OrderedDict()
-  sub_dirs = sorted(x[0] for x in tf.gfile.Walk(image_dir))
-
-  # remove nested directories from sub_dirs list
-  del_lst = []
-  for sub_dir in sub_dirs:
-    if sub_dir.count('/') > (sub_dirs[0].count('/') + 1):
-      del_lst.append(sub_dir)
-
-  for sub_dir in del_lst:
-    sub_dirs.remove(sub_dir)
+  
+  sub_dirs = [os.path.join(image_dir, name) for name in os.listdir(image_dir)
+            if os.path.isdir(os.path.join(image_dir, name))]
 
   # The root directory comes first, so skip it.
-  is_root_dir = True
   has_subdir = False
   for sub_dir in sub_dirs:
-    if is_root_dir:
-      is_root_dir = False
-      continue
     extensions = ['jpg', 'jpeg', 'JPG', 'JPEG']
     file_list = []
     dir_name = os.path.basename(sub_dir)
-    print (dir_name)
-    if dir_name == image_dir:
-      continue
 
     search_dir = os.path.abspath(os.path.join(image_dir, dir_name ))
 
@@ -182,7 +168,7 @@ def create_image_lists(image_dir, testing_percentage, validation_percentage):
       file_list.extend(tf.gfile.Glob(file_glob))
     if not file_list:
       tf.logging.warning('No files found, looking for subdirectories')
-      nested_dirs = os.listdir(search_dir)
+      nested_dirs = [f for f in os.listdir(search_dir) if not f.startswith('.')]
 
       if len(nested_dirs) == 0:
         tf.logging.warning('No files found')
@@ -210,7 +196,7 @@ def create_image_lists(image_dir, testing_percentage, validation_percentage):
     validation_images = []
     for file_name in file_list:
       if has_subdir:
-        base_name = file_name.replace(image_dir + '/' + dir_name + '/' ,'')
+        base_name = os.path.join(os.path.split(os.path.split(file_name)[0])[1], os.path.split(os.path.split(file_name)[1])[1])
       else:
         base_name = os.path.basename(file_name)
       #print (base_name)

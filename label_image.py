@@ -143,6 +143,7 @@ if __name__ == "__main__":
     output_layer = args.output_layer
 
   graph = load_graph(model_file)
+  labels = load_labels(label_file)
 
   cat_files = [f for f in listdir(dir_cat) if isfile(join(dir_cat, f))]
   NC_files = []
@@ -175,9 +176,8 @@ if __name__ == "__main__":
     results = np.squeeze(results)
 
     top_k = results.argsort()[-5:][::-1]
-    labels = load_labels(label_file)
     for i in top_k:
-      if labels[i] == 'cat':
+      if labels[i] == 'cats':
         predicted_cat_actual_cat += 1
       else:
         predicted_NC_actual_cat += 1
@@ -206,9 +206,8 @@ if __name__ == "__main__":
     results = np.squeeze(results)
 
     top_k = results.argsort()[-5:][::-1]
-    labels = load_labels(label_file)
     for i in top_k:
-      if labels[i] == 'NC':
+      if labels[i] == 'not_cats':
         predicted_NC_actual_NC += 1
       else:
         predicted_cat_actual_NC += 1
