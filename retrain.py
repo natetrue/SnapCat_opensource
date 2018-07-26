@@ -146,7 +146,6 @@ def create_image_lists(image_dir, testing_percentage, validation_percentage):
   sub_dirs = [os.path.join(image_dir, name) for name in os.listdir(image_dir)
             if os.path.isdir(os.path.join(image_dir, name))]
 
-  # The root directory comes first, so skip it.
   has_subdir = False
   for sub_dir in sub_dirs:
     extensions = ['jpg', 'jpeg', 'JPG', 'JPEG']
@@ -233,6 +232,7 @@ def create_image_lists(image_dir, testing_percentage, validation_percentage):
         'testing': testing_images,
         'validation': validation_images,
     }
+
   return result
 
 
@@ -348,6 +348,10 @@ def create_bottleneck_file(bottleneck_path, image_lists, label_name, index,
                            bottleneck_tensor):
   """Create a single bottleneck file."""
   tf.logging.info('Creating bottleneck at ' + bottleneck_path)
+
+  bottleneck_dir = os.path.split(bottleneck_path)[0]
+  if not os.path.exists(bottleneck_dir):
+    os.makedirs(bottleneck_dir)
   image_path = get_image_path(image_lists, label_name, index,
                               image_dir, category)
   if not tf.gfile.Exists(image_path):
@@ -960,6 +964,7 @@ def main(_):
   # Look at the folder structure, and create lists of all the images.
   image_lists = create_image_lists(FLAGS.image_dir, FLAGS.testing_percentage,
                                    FLAGS.validation_percentage)
+
   class_count = len(image_lists.keys())
   if class_count == 0:
     tf.logging.error('No valid folders of images found at ' + FLAGS.image_dir)
