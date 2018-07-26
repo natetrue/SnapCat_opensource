@@ -16,7 +16,7 @@
 # and modified to use TensorFlow Hub modules.
 
 # pylint: disable=line-too-long
-r"""Simple transfer learning with image modules from TensorFlow Hub.
+"""Simple transfer learning with image modules from TensorFlow Hub.
 This example shows how to train an image classifier based on any
 TensorFlow Hub module that computes image feature vectors. By default,
 it uses the feature vectors computed by Inception V3 trained on ImageNet.
@@ -166,13 +166,23 @@ def create_image_lists(image_dir, testing_percentage, validation_percentage):
     print (dir_name)
     if dir_name == image_dir:
       continue
-    tf.logging.info("Looking for images in '" + dir_name + "'")
+
+    search_dir = os.path.abspath(os.path.join(image_dir, dir_name ))
+
+    # TODO: there is an error here where the script searches for a
+    # subdirectory that doesn't exist. In this case the correct directory is 
+    # ./image_dir/not_cats/birds/, but the script searches for 
+    # ./image_dir/birds/ as well as the correct directory
+    if not os.path.isdir(search_dir):
+      continue
+
+    tf.logging.info("Looking for images in '" + search_dir + "'")
     for extension in extensions:
-      file_glob = os.path.join(image_dir, dir_name, '*.' + extension)
+      file_glob = os.path.join(search_dir, '*.' + extension)
       file_list.extend(tf.gfile.Glob(file_glob))
     if not file_list:
       tf.logging.warning('No files found, looking for subdirectories')
-      nested_dirs = os.listdir(os.path.join(image_dir, dir_name))
+      nested_dirs = os.listdir(search_dir)
 
       if len(nested_dirs) == 0:
         tf.logging.warning('No files found')
@@ -182,7 +192,7 @@ def create_image_lists(image_dir, testing_percentage, validation_percentage):
 
       for nested_dir in nested_dirs:
         for extension in extensions:
-          file_glob = os.path.join(image_dir, dir_name, nested_dir, '*.' + extension)
+          file_glob = os.path.join(search_dir, nested_dir, '*.' + extension)
           file_list.extend(tf.gfile.Glob(file_glob))
 
     if len(file_list) < 20:
