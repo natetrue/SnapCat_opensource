@@ -18,8 +18,9 @@ from __future__ import division
 from __future__ import print_function
 
 from os import listdir
-from os.path import isfile, join
+from os.path import isfile, join, split
 from os import walk
+import os
 
 import argparse
 
@@ -151,8 +152,7 @@ if __name__ == "__main__":
   for (dirpath, dirnames, filenames) in walk(dir_NC):
     for file in filenames:
       if not "DS_Store" in file:
-        tmp_path = dirpath + '/' + file
-        NC_files.append(tmp_path.replace(dir_NC, ""))
+        NC_files.append(os.path.join(os.path.split(dirpath)[1], file))
 
   for cat_file_name in cat_files:
     cat_file_name = dir_cat + cat_file_name
