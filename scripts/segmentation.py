@@ -41,7 +41,7 @@ def main():
 	for i in imgs:
 		diffimg = np.abs(np.mean(i,-1) - avg_img)
 		diffimg = cv2.blur(diffimg, (25,25))
-		thresimg = diffimg > np.max(diffimg) * 0.7
+		thresimg = diffimg > np.max(diffimg) * 0.8
 		x1, x2 = np.where(np.any(thresimg, 0))[0][[0,-1]]
 		y1, y2 = np.where(np.any(thresimg, 1))[0][[0,-1]]
 		w=x2-x1
