@@ -96,10 +96,11 @@ def main():
     unsorted_files = []
     dir_sorted_cats = dir_sorted + '/cats/'
     dir_sorted_not_cats = dir_sorted + '/not_cats/'
+    dir_unsure = dir_sorted + '/unsure/'
 
     for (dirpath, dirnames, filenames) in walk(dir_unsorted):
       for file in filenames:
-        if not "DS_Store" in file:
+        if file.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
           unsorted_files.append(os.path.join(os.path.split(dirpath)[1], file))
 
     for file_name in unsorted_files:
@@ -111,6 +112,8 @@ def main():
         os.makedirs(dir_sorted_cats)
       if not os.path.exists(dir_sorted_not_cats):
         os.makedirs(dir_sorted_not_cats)
+      if not os.path.exists(dir_unsure):
+        os.makedirs(dir_unsure)
 
       t = read_tensor_from_image_file(
           unsorted_file_name,
@@ -132,13 +135,27 @@ def main():
 
       top_k = results.argsort()[-5:][::-1]
       for i in top_k:
-        if labels[i] == 'cats':
-          sorted_file_destination = dir_sorted + '/cats/' + file_name
-          os.rename(unsorted_file_name, sorted_file_destination)
-        else:
-          sorted_file_destination = dir_sorted + '/not_cats/' + file_name
-          os.rename(unsorted_file_name, sorted_file_destination)
-        break
+          if results[i] < .70:
+            unsure_file_destination = dir_unsure + file_name
+            nested_directory, tail = os.path.split(unsure_file_destination)
+
+            if not os.path.exists(nested_directory):
+              os.makedirs(nested_directory)
+            os.rename(unsorted_file_name, unsure_file_destination)
+
+          else:
+            if labels[i] == 'cats':
+              sorted_file_destination = dir_sorted + '/cats/' + file_name
+            else:
+              sorted_file_destination = dir_sorted + '/not_cats/' + file_name
+
+            nested_directory, tail = os.path.split(sorted_file_destination)
+
+            if not os.path.exists(nested_directory):
+              os.makedirs(nested_directory)
+            os.rename(unsorted_file_name, sorted_file_destination)
+
+          break
 
   else:
     cat_files = [f for f in listdir(dir_cat) if isfile(join(dir_cat, f))]
@@ -199,6 +216,8 @@ def main():
             input_operation.outputs[0]: t
         })
       results = np.squeeze(results)
+      print (NC_file_name)
+      print (results)
 
       top_k = results.argsort()[-5:][::-1]
       for i in top_k:
