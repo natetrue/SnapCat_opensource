@@ -98,14 +98,17 @@ def main():
     dir_sorted_not_cats = dir_sorted + '/not_cats/'
     dir_unsure = dir_sorted + '/unsure/'
 
+    # Find all JPG files 
     for (dirpath, dirnames, filenames) in walk(dir_unsorted):
       for file in filenames:
         if file.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
           unsorted_files.append(os.path.join(os.path.split(dirpath)[1], file))
 
+    # Create Full path
     for file_name in unsorted_files:
       unsorted_file_name = dir_unsorted + file_name
 
+      # create directories that don't exist
       if not os.path.exists(dir_sorted):
         os.makedirs(dir_sorted)
       if not os.path.exists(dir_sorted_cats):
@@ -133,8 +136,11 @@ def main():
         })
       results = np.squeeze(results)
 
+      # get classification
       top_k = results.argsort()[-5:][::-1]
       for i in top_k:
+          
+          # if confidence level is below certain value, put in "unsure" folder
           if results[i] < .70:
             unsure_file_destination = dir_unsure + file_name
             nested_directory, tail = os.path.split(unsure_file_destination)
@@ -143,6 +149,7 @@ def main():
               os.makedirs(nested_directory)
             os.rename(unsorted_file_name, unsure_file_destination)
 
+          # else, place it in the proper sorted folder
           else:
             if labels[i] == 'cats':
               sorted_file_destination = dir_sorted + '/cats/' + file_name
@@ -157,13 +164,14 @@ def main():
 
           break
 
+  # Same logic as above but no sorting. Produces classification accuracy metrics
   else:
     cat_files = [f for f in listdir(dir_cat) if isfile(join(dir_cat, f))]
     NC_files = []
 
     for (dirpath, dirnames, filenames) in walk(dir_NC):
       for file in filenames:
-        if not "DS_Store" in file:
+        if file.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
           NC_files.append(os.path.join(os.path.split(dirpath)[1], file))
 
     for cat_file_name in cat_files:
