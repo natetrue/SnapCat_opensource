@@ -16,11 +16,11 @@ python ./scripts/preprocessing_images.py --input_dir ./training/raw_images/ --ou
 
 Run this to retrain the MobilenetV2 graph to train for "cat" vs "not cat":
 
-python ./scripts/retrain.py --image_dir=./training/processed_images/ --output_graph=./output_graphs/output_graph.pb --output_labels=./scripts/labels.txt --intermediate_output_graphs_dir=./output_graphs/intermediate_outputs/ --intermediate_store_frequency=100 --learning_rate=0.0001 --testing_percentage=20 --validation_percentage=20 --train_batch_size=32 --validation_batch_size=-1 --random_scale=30 --random_brightness=30 --random_crop=30 --eval_step_interval=100 --how_many_training_steps=500 --tfhub_module="https://tfhub.dev/google/imagenet/mobilenet_v2_140_224/feature_vector/1"
+python ./scripts/retrain.py ( settings are found in settings.py )
 
 If you're running into issues with the above script, please check the following link:
 
-https://github.com/tensorflow/hub/issues/61
+https://github.com/tensorflow/hub/issues/61 ( Just delete the tfhub_modules folder )
 
 Run this to convert to grayscale and randomly crop to 224 x 224 pixels for (testing images from Imagenet):
 

@@ -30,18 +30,25 @@ def main():
 
 	print("%d images" % len(images_list))
 
+	counter = 0
 	for image_path in images_list:
+		if counter > 100:
+			break
 		img = cv2.imread(image_path)
 		img = img.astype(np.float32)/255.0
 		img = img[50:-50,:]
 		imgs.append(img)
+		counter += 1
 
+	# Take the average of the images
 	avg_img = np.mean(np.median(imgs, axis=0), axis=-1)
+
+	print (avg_img)
 
 	for i in imgs:
 		diffimg = np.abs(np.mean(i,-1) - avg_img)
 		diffimg = cv2.blur(diffimg, (25,25))
-		thresimg = diffimg > np.max(diffimg) * 0.8
+		thresimg = diffimg > np.max(diffimg) * 0.6
 		x1, x2 = np.where(np.any(thresimg, 0))[0][[0,-1]]
 		y1, y2 = np.where(np.any(thresimg, 1))[0][[0,-1]]
 		w=x2-x1
