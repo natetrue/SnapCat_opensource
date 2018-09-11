@@ -25,3 +25,17 @@ retrain = dict(
     tfhub_module = "https://tfhub.dev/google/imagenet/mobilenet_v2_140_224/feature_vector/1",
     saved_model_dir = ''
 )
+
+# settings for label_image script
+label_image = dict(
+	cat_directory = './testing/processed_images/cats/',
+	NC_directory = './testing/processed_images/not_cats/',
+	graph = './output_graphs/output_graph.pb',
+	labels = './scripts/labels.txt',
+	input_height = 224,
+	input_width = 224,
+	input_mean = 0,
+	input_std = 255,
+	input_layer = 'module_apply_default/MobilenetV2/input',
+	output_layer = 'final_result'
+	)

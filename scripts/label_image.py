@@ -27,6 +27,8 @@ import argparse
 import numpy as np
 import tensorflow as tf
 
+import settings
+
 def main():
   predicted_cat_actual_cat = 0
   predicted_cat_actual_NC = 0
@@ -35,59 +37,30 @@ def main():
 
   sort = False
 
-  file_name = "tensorflow/examples/label_image/data/grace_hopper.jpg"
-  model_file = \
-    "tensorflow/examples/label_image/data/inception_v3_2016_08_28_frozen.pb"
-  label_file = "tensorflow/examples/label_image/data/imagenet_slim_labels.txt"
-  input_height = 299
-  input_width = 299
-  input_mean = 0
-  input_std = 255
-  input_layer = "input"
-  output_layer = "InceptionV3/Predictions/Reshape_1"
 
   parser = argparse.ArgumentParser()
-  parser.add_argument("--cat_directory", help="directory of cat images to be processed")
-  parser.add_argument("--NC_directory", help="directory of NC images to be processed")
   parser.add_argument("--sorted_directory", help="directory to place sorted images")
   parser.add_argument("--unsorted_directory", help="directory of images to be sorted")  
   parser.add_argument('--sort', default=False, type=lambda x: (str(x).lower() == 'true'))
-  parser.add_argument("--graph", help="graph/model to be executed")
-  parser.add_argument("--labels", help="name of file containing labels")
-  parser.add_argument("--input_height", type=int, help="input height")
-  parser.add_argument("--input_width", type=int, help="input width")
-  parser.add_argument("--input_mean", type=int, help="input mean")
-  parser.add_argument("--input_std", type=int, help="input std")
-  parser.add_argument("--input_layer", help="name of input layer")
-  parser.add_argument("--output_layer", help="name of output layer")
   args = parser.parse_args()
 
-  if args.graph:
-    model_file = args.graph
-  if args.cat_directory:
-    dir_cat = args.cat_directory
-  if args.NC_directory:
-    dir_NC = args.NC_directory
+  model_file = settings.label_image['graph']
+  dir_cat = settings.label_image['cat_directory']
+  dir_NC = settings.label_image['NC_directory']
+  label_file = settings.label_image['labels']
+  input_height = settings.label_image['input_height']
+  input_width = settings.label_image['input_width']
+  input_mean = settings.label_image['input_mean']
+  input_std = settings.label_image['input_std']
+  input_layer = settings.label_image['input_layer']
+  output_layer = settings.label_image['output_layer']
+
   if args.sorted_directory:
     dir_sorted = args.sorted_directory
   if args.unsorted_directory:
     dir_unsorted = args.unsorted_directory
   if args.sort:
     sort = True
-  if args.labels:
-    label_file = args.labels
-  if args.input_height:
-    input_height = args.input_height
-  if args.input_width:
-    input_width = args.input_width
-  if args.input_mean:
-    input_mean = args.input_mean
-  if args.input_std:
-    input_std = args.input_std
-  if args.input_layer:
-    input_layer = args.input_layer
-  if args.output_layer:
-    output_layer = args.output_layer
 
   graph = load_graph(model_file)
   labels = load_labels(label_file)
@@ -194,6 +167,8 @@ def main():
             input_operation.outputs[0]: t
         })
       results = np.squeeze(results)
+      print (cat_file_name)
+      print (results)
 
       top_k = results.argsort()[-5:][::-1]
       for i in top_k:
