@@ -114,7 +114,7 @@ def main():
       for i in top_k:
           
           # if confidence level is below certain value, put in "unsure" folder
-          if results[i] < .70:
+          if results[i] < settings.label_image['confidence_threshold']:
             unsure_file_destination = dir_unsure + file_name
             nested_directory, tail = os.path.split(unsure_file_destination)
 

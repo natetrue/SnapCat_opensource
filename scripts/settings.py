@@ -37,5 +37,6 @@ label_image = dict(
 	input_mean = 0,
 	input_std = 255,
 	input_layer = 'module_apply_default/MobilenetV2/input',
-	output_layer = 'final_result'
+	output_layer = 'final_result',
+	confidence_threshold = .7
 	)

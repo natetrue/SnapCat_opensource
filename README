@@ -8,6 +8,8 @@ Initial Goals:
 6. ???
 7. Save endangered species on islands
 
+
+
 Steps:
 
 Run this to convert to grayscale and randomly crop to 224 x 224 pixels (training images from Imagenet):
@@ -29,6 +31,8 @@ python ./scripts/preprocessing_images.py --input_dir ./testing/raw_images/ --out
 Run this to label the testing images and output a confusion matrix:
 
 python ./scripts/label_image.py 
+
+
 
 SORTING:
 
