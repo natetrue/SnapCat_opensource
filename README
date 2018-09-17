@@ -9,6 +9,11 @@ Initial Goals:
 7. Save endangered species on islands
 
 
+SnapCat Workbench Setup:
+
+PIN for computer is SnapCat64
+
+Open Command Prompt (or Git Bash), navigate to C:\Users\aadit\projects\SnapCat_opensource, and run 'activate tensorflow-gpu' ( to activate the Conda environment that uses CUDA)
 
 Steps:
 
