@@ -38,7 +38,6 @@ Run this to label the testing images and output a confusion matrix:
 python ./scripts/label_image.py 
 
 
-
 SORTING:
 
 Do some of the dirty work of segmenting the photos to be fed into the sorting script (Thanks Nate)

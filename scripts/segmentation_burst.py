@@ -90,7 +90,11 @@ def main():
 		if not os.path.exists(dir_camera_trap):
 			os.makedirs(dir_camera_trap)
 
-		for name in files:
+		pbar = ProgressBar()
+		pbar.maxval = len(files)
+		pbar.start()
+
+		for name in pbar(files):
 			# only work with JPG 
 			if name.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
 				timestamp, same_burst = convert_timestamp(os.path.join(path, name))
@@ -108,12 +112,7 @@ def main():
 
 					avg_burst_img = np.mean(np.median(list(dict(burst_imgs).values()), axis=0), axis=-1)
 
-					print ("Num Burst Images: %d\n" % len(burst_imgs))
-					pbar = ProgressBar()
-					pbar.maxval = len(burst_imgs)
-					pbar.start()
-
-					for i_path, i in pbar(burst_imgs):
+					for i_path, i in burst_imgs:
 						diffimg = np.abs(np.mean(i,-1) - avg_burst_img)
 						diffimg = cv2.blur(diffimg, (25,25))
 						thresimg = diffimg > np.max(diffimg) * 0.4
