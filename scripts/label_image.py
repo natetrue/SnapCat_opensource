@@ -75,9 +75,11 @@ def main():
     for (dirpath, dirnames, filenames) in walk(dir_unsorted):
       for file in filenames:
         if file.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
-          head_1, tail_1 = os.path.split(dirpath)
-          head_2, tail_2 = os.path.split(head_1)
-          complete = os.path.join(tail_2, tail_1, file)
+
+          # ASSUMPTION: Blobs will be placed in cameratrap/burst/blob.jpg format
+          head_1, burst_num = os.path.split(dirpath)
+          head_2, trap_name = os.path.split(head_1)
+          complete = os.path.join(trap_name, burst_num, file)
           #print(complete)
           unsorted_files.append(complete)
 
