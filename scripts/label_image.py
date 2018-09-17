@@ -75,12 +75,13 @@ def main():
     for (dirpath, dirnames, filenames) in walk(dir_unsorted):
       for file in filenames:
         if file.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
-          unsorted_files.append(os.path.join(os.path.split(dirpath)[1], file))
+          unsorted_files.append(dirpath + '/'+ file)
 
     # Create Full path
-    for file_name in unsorted_files:
-      unsorted_file_name = dir_unsorted + file_name
+    for unsorted_file_name in unsorted_files:
 
+      file_name = os.path.join(os.path.split(dirpath)[1], file)
+      
       # create directories that don't exist
       if not os.path.exists(dir_sorted):
         os.makedirs(dir_sorted)
