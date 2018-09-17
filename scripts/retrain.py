@@ -108,6 +108,7 @@ import sys
 import numpy as np
 import tensorflow as tf
 import tensorflow_hub as hub
+import glob
 
 import os
 import settings
@@ -147,6 +148,7 @@ def create_image_lists(image_dir, testing_percentage, validation_percentage):
 
   has_subdir = False
   for sub_dir in sub_dirs:
+    print (sub_dir)
     extensions = ['jpg', 'jpeg', 'JPG', 'JPEG']
     file_list = []
     dir_name = os.path.basename(sub_dir)
@@ -163,7 +165,8 @@ def create_image_lists(image_dir, testing_percentage, validation_percentage):
     tf.logging.info("Looking for images in '" + search_dir + "'")
     for extension in extensions:
       file_glob = os.path.join(search_dir, '*.' + extension)
-      file_list.extend(tf.gfile.Glob(file_glob))
+      file_list.extend(glob.glob(file_glob))
+
     if not file_list:
       tf.logging.warning('No files found, looking for subdirectories')
       nested_dirs = [f for f in os.listdir(search_dir) if not f.startswith('.')]
@@ -177,7 +180,7 @@ def create_image_lists(image_dir, testing_percentage, validation_percentage):
       for nested_dir in nested_dirs:
         for extension in extensions:
           file_glob = os.path.join(search_dir, nested_dir, '*.' + extension)
-          file_list.extend(tf.gfile.Glob(file_glob))
+          file_list.extend(glob.glob(file_glob))
 
     if len(file_list) < 20:
       tf.logging.warning(
@@ -197,7 +200,6 @@ def create_image_lists(image_dir, testing_percentage, validation_percentage):
         base_name = os.path.join(os.path.split(os.path.split(file_name)[0])[1], os.path.split(os.path.split(file_name)[1])[1])
       else:
         base_name = os.path.basename(file_name)
-      print (base_name)
       # We want to ignore anything after '_nohash_' in the file name when
       # deciding which set to put an image in, the data set creator has a way of
       # grouping photos that are close variations of each other. For example
