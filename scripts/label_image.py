@@ -29,6 +29,14 @@ import tensorflow as tf
 
 import settings
 
+def get_segmented_image_info(imagepath):
+  head_1, filename = os.path.split(imagepath)
+  head_2, burst_num = os.path.split(head_1)
+  head_3, trap_name = os.path.split(head_2)
+  head_4, segmentation_datetime = os.path.split(head_3)
+
+  return (segmentation_datetime, trap_name, burst_num, filename)
+
 def main():
   predicted_cat_actual_cat = 0
   predicted_cat_actual_NC = 0
@@ -67,36 +75,26 @@ def main():
 
   if sort:
     unsorted_files = []
-    dir_sorted_cats = dir_sorted + '/cats/'
-    dir_sorted_not_cats = dir_sorted + '/not_cats/'
-    dir_unsure = dir_sorted + '/unsure/'
 
     # Find all JPG files 
     for (dirpath, dirnames, filenames) in walk(dir_unsorted):
       for file in filenames:
         if file.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
 
-          # ASSUMPTION: Blobs will be placed in cameratrap/burst/blob.jpg format
+          # ASSUMPTION: Blobs will be placed in segmentation_datetime/cameratrap/burst/blob.jpg format
           head_1, burst_num = os.path.split(dirpath)
           head_2, trap_name = os.path.split(head_1)
-          complete = os.path.join(trap_name, burst_num, file)
+          head_3, segmentation_datetime = os.path.split(head_2)
+          complete = os.path.join(segmentation_datetime, trap_name, burst_num, file)
           #print(complete)
           unsorted_files.append(complete)
 
     # Create Full path
-    for file_name in unsorted_files:
+    for file in unsorted_files:
 
-      unsorted_file_name = os.path.join(dir_unsorted, file_name)
-      
-      # create directories that don't exist
-      if not os.path.exists(dir_sorted):
-        os.makedirs(dir_sorted)
-      if not os.path.exists(dir_sorted_cats):
-        os.makedirs(dir_sorted_cats)
-      if not os.path.exists(dir_sorted_not_cats):
-        os.makedirs(dir_sorted_not_cats)
-      if not os.path.exists(dir_unsure):
-        os.makedirs(dir_unsure)
+      segmentation_datetime, trap_name, burst_num, file_name =  get_segmented_image_info(file)
+
+      unsorted_file_name = os.path.join(dir_unsorted, file)
 
       t = read_tensor_from_image_file(
           unsorted_file_name,
@@ -112,7 +110,7 @@ def main():
 
       with tf.Session(graph=graph) as sess:
         results = sess.run(output_operation.outputs[0], {
-            input_operation.outputs[0]: t
+            input_operation.outputs[0]:
         })
       results = np.squeeze(results)
 
@@ -122,7 +120,7 @@ def main():
           
           # if confidence level is below certain value, put in "unsure" folder
           if results[i] < settings.label_image['confidence_threshold']:
-            unsure_file_destination = dir_unsure + file_name
+            unsure_file_destination = os.path.join(dir_sorted, segmentation_datetime, trap_name, 'unsure', burst_num, file_name ) 
             nested_directory, tail = os.path.split(unsure_file_destination)
 
             if not os.path.exists(nested_directory):
@@ -132,9 +130,9 @@ def main():
           # else, place it in the proper sorted folder
           else:
             if labels[i] == 'cats':
-              sorted_file_destination = dir_sorted + '/cats/' + file_name
+              sorted_file_destination = os.path.join(dir_sorted, segmentation_datetime, trap_name, 'cats', burst_num, file_name )
             else:
-              sorted_file_destination = dir_sorted + '/not_cats/' + file_name
+              sorted_file_destination = os.path.join(dir_sorted, segmentation_datetime, trap_name, 'not_cats', burst_num, file_name )
 
             nested_directory, tail = os.path.split(sorted_file_destination)
 

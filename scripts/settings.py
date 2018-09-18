@@ -38,5 +38,10 @@ label_image = dict(
 	input_std = 255,
 	input_layer = 'module_apply_default/MobilenetV2/input',
 	output_layer = 'final_result',
-	confidence_threshold = .7
-	)
+	confidence_threshold = .65
+)
+
+#settings for segmentation_burst script
+segmentation_burst = dict(
+    diff_threshold = .4
+)

@@ -7,6 +7,8 @@ import uuid
 import time
 import datetime
 
+import settings
+
 from progressbar import ProgressBar
 
 # Some images have the Reconyx logo at top and bottom of image
@@ -81,11 +83,17 @@ def main():
 	if not os.path.exists(dir_out):
 		os.makedirs(dir_out)
 
+
+	# Create a new folder for each segmentation based on the current date and time 
+	# (This will allow segmentation of images from the same camera traps in the future to be placed in
+	#  a different location, thereby preventing overwrites)
+	analysis_datetime = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M") 
+
 	for path, subdirs, files in os.walk(dir_unsorted):
 
 		images_list = []
 		burst_imgs = []
-		camera_trap = os.path.basename(path)
+		camera_trap = os.path.join(analysis_datetime, os.path.basename(path))
 		dir_camera_trap = '%s/%s' % (dir_out, camera_trap)
 
 		if not os.path.exists(dir_camera_trap) and len(files) > 0:
@@ -120,7 +128,7 @@ def main():
 					for i_path, i in burst_imgs:
 						diffimg = np.abs(np.mean(i,-1) - avg_burst_img)
 						diffimg = cv2.blur(diffimg, (25,25))
-						thresimg = diffimg > np.max(diffimg) * 0.4
+						thresimg = diffimg > np.max(diffimg) * settings.segmentation_burst['diff_threshold']
 						x1, x2 = np.where(np.any(thresimg, 0))[0][[0,-1]]
 						y1, y2 = np.where(np.any(thresimg, 1))[0][[0,-1]]
 						w=x2-x1
