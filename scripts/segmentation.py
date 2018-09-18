@@ -19,7 +19,6 @@ def convert_to_ms(timestamp_string):
 	# 01-05-2013 9-58-15
 
 	timestamp = time.mktime(datetime.datetime.strptime(timestamp_string, "%d-%m-%Y %H-%M-%S").timetuple())
-	print timestamp
 
 
 # determine if image was taken at night or day

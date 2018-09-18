@@ -62,6 +62,7 @@ def is_grayscale(img_path):
 	return True
 
 def main():
+	global latest_timestamp
 	pbar = ProgressBar()
 
 	img_count = 0
@@ -87,12 +88,16 @@ def main():
 		camera_trap = os.path.basename(path)
 		dir_camera_trap = '%s/%s' % (dir_out, camera_trap)
 
-		if not os.path.exists(dir_camera_trap):
+		if not os.path.exists(dir_camera_trap) and len(files) > 0:
 			os.makedirs(dir_camera_trap)
 
 		pbar = ProgressBar()
 		pbar.maxval = len(files)
 		pbar.start()
+
+		# Reset for each trap
+		latest_timestamp = 0
+		burst_count = 0
 
 		for name in pbar(files):
 			# only work with JPG 

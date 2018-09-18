@@ -42,7 +42,7 @@ SORTING:
 
 Do some of the dirty work of segmenting the photos to be fed into the sorting script (Thanks Nate)
 
-python ./scripts/segmentation.py --unsorted_directory ./sorting/unsorted/ --output_directory  ./sorting/blobs/
+python ./scripts/segmentation_burst.py --unsorted_directory ./sorting/unsorted/ --output_directory  ./sorting/blobs/
 
 TODO: Images are still pretty big... do we need to convert to 224 x 224?
 
