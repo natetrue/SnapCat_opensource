@@ -59,5 +59,6 @@ SORTING:
 	Run this to label and sort uncategorized images into the appropriate folders:
 			python ./scripts/label_image.py --sort true --unsorted_directory ./sorting/blobs/ --sorted_directory ./sorting/sorted/ 
 
-	Review images with:	
-		python C:\Users\aadit\projects\SnapCat_opensource\scripts\user_label_image.py --image_dir=C:\Users\aadit\projects\SnapCat_opensource\training\processed_images\cats
+	Review images with:
+		python .\scripts\user_label_image.py --image_dir=<images_to_sort> --outdir=<output_directory>
+    note: the output_directory will create two folders. "cat/" and "not_cat/" if they don't exist and move the original files to the correct directory
