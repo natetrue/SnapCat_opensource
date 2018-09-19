@@ -1,0 +1,3 @@
+Press the right arrow on the keyboard to indicate the image contains a cat
+Press the left arrow on the keyboard to indicate the image does not contain a cat
+Press the escape key to abort the program (progress will be saved)
