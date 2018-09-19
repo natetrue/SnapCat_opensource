@@ -28,14 +28,7 @@ import numpy as np
 import tensorflow as tf
 
 import settings
-
-def get_segmented_image_info(imagepath):
-  head_1, filename = os.path.split(imagepath)
-  head_2, burst_num = os.path.split(head_1)
-  head_3, trap_name = os.path.split(head_2)
-  head_4, segmentation_datetime = os.path.split(head_3)
-
-  return (segmentation_datetime, trap_name, burst_num, filename)
+import tools
 
 def main():
   predicted_cat_actual_cat = 0
@@ -49,19 +42,18 @@ def main():
   parser = argparse.ArgumentParser()
   parser.add_argument("--sorted_directory", help="directory to place sorted images")
   parser.add_argument("--unsorted_directory", help="directory of images to be sorted")  
-  parser.add_argument('--sort', default=False, type=lambda x: (str(x).lower() == 'true'))
   args = parser.parse_args()
 
-  model_file = settings.label_image['graph']
+  model_file = settings.graph['graph']
   dir_cat = settings.label_image['cat_directory']
   dir_NC = settings.label_image['NC_directory']
-  label_file = settings.label_image['labels']
-  input_height = settings.label_image['input_height']
-  input_width = settings.label_image['input_width']
-  input_mean = settings.label_image['input_mean']
-  input_std = settings.label_image['input_std']
-  input_layer = settings.label_image['input_layer']
-  output_layer = settings.label_image['output_layer']
+  label_file = settings.graph['labels']
+  input_height = settings.graph['input_height']
+  input_width = settings.graph['input_width']
+  input_mean = settings.graph['input_mean']
+  input_std = settings.graph['input_std']
+  input_layer = settings.graph['input_layer']
+  output_layer = settings.graph['output_layer']
 
   if args.sorted_directory:
     dir_sorted = args.sorted_directory
@@ -70,181 +62,84 @@ def main():
   if args.sort:
     sort = True
 
-  graph = load_graph(model_file)
-  labels = load_labels(label_file)
+  graph = tools.load_graph(model_file)
+  labels = tools.load_labels(label_file)
 
-  if sort:
-    unsorted_files = []
+  cat_files = [f for f in listdir(dir_cat) if isfile(join(dir_cat, f))]
+  NC_files = []
 
-    # Find all JPG files 
-    for (dirpath, dirnames, filenames) in walk(dir_unsorted):
-      for file in filenames:
-        if file.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
+  for (dirpath, dirnames, filenames) in walk(dir_NC):
+    for file in filenames:
+      if file.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
+        NC_files.append(os.path.join(os.path.split(dirpath)[1], file))
 
-          # ASSUMPTION: Blobs will be placed in segmentation_datetime/cameratrap/burst/blob.jpg format
-          head_1, burst_num = os.path.split(dirpath)
-          head_2, trap_name = os.path.split(head_1)
-          head_3, segmentation_datetime = os.path.split(head_2)
-          complete = os.path.join(segmentation_datetime, trap_name, burst_num, file)
-          #print(complete)
-          unsorted_files.append(complete)
+  for cat_file_name in cat_files:
+    cat_file_name = dir_cat + cat_file_name
 
-    # Create Full path
-    for file in unsorted_files:
+    t = tools.read_tensor_from_image_file(
+        cat_file_name,
+        input_height=input_height,
+        input_width=input_width,
+        input_mean=input_mean,
+        input_std=input_std)
 
-      segmentation_datetime, trap_name, burst_num, file_name =  get_segmented_image_info(file)
+    input_name = "import/" + input_layer
+    output_name = "import/" + output_layer
+    input_operation = graph.get_operation_by_name(input_name)
+    output_operation = graph.get_operation_by_name(output_name)
 
-      unsorted_file_name = os.path.join(dir_unsorted, file)
+    with tf.Session(graph=graph) as sess:
+      results = sess.run(output_operation.outputs[0], {
+          input_operation.outputs[0]: t
+      })
+    results = np.squeeze(results)
+    print (cat_file_name)
+    print (results)
 
-      t = read_tensor_from_image_file(
-          unsorted_file_name,
-          input_height=input_height,
-          input_width=input_width,
-          input_mean=input_mean,
-          input_std=input_std)
+    top_k = results.argsort()[-5:][::-1]
+    for i in top_k:
+      if labels[i] == 'cats':
+        predicted_cat_actual_cat += 1
+      else:
+        predicted_NC_actual_cat += 1
+      break
 
-      input_name = "import/" + input_layer
-      output_name = "import/" + output_layer
-      input_operation = graph.get_operation_by_name(input_name)
-      output_operation = graph.get_operation_by_name(output_name)
+  for NC_file_name in NC_files:
 
-      with tf.Session(graph=graph) as sess:
-        results = sess.run(output_operation.outputs[0], {
-            input_operation.outputs[0]:
-        })
-      results = np.squeeze(results)
+    NC_file_name = dir_NC + NC_file_name
 
-      # get classification
-      top_k = results.argsort()[-5:][::-1]
-      for i in top_k:
-          
-          # if confidence level is below certain value, put in "unsure" folder
-          if results[i] < settings.label_image['confidence_threshold']:
-            unsure_file_destination = os.path.join(dir_sorted, segmentation_datetime, trap_name, 'unsure', burst_num, file_name ) 
-            nested_directory, tail = os.path.split(unsure_file_destination)
+    t = tools.read_tensor_from_image_file(
+        NC_file_name,
+        input_height=input_height,
+        input_width=input_width,
+        input_mean=input_mean,
+        input_std=input_std)
 
-            if not os.path.exists(nested_directory):
-              os.makedirs(nested_directory)
-            os.rename(unsorted_file_name, unsure_file_destination)
+    input_name = "import/" + input_layer
+    output_name = "import/" + output_layer
+    input_operation = graph.get_operation_by_name(input_name)
+    output_operation = graph.get_operation_by_name(output_name)
 
-          # else, place it in the proper sorted folder
-          else:
-            if labels[i] == 'cats':
-              sorted_file_destination = os.path.join(dir_sorted, segmentation_datetime, trap_name, 'cats', burst_num, file_name )
-            else:
-              sorted_file_destination = os.path.join(dir_sorted, segmentation_datetime, trap_name, 'not_cats', burst_num, file_name )
+    with tf.Session(graph=graph) as sess:
+      results = sess.run(output_operation.outputs[0], {
+          input_operation.outputs[0]: t
+      })
+    results = np.squeeze(results)
+    print (NC_file_name)
+    print (results)
 
-            nested_directory, tail = os.path.split(sorted_file_destination)
+    top_k = results.argsort()[-5:][::-1]
+    for i in top_k:
+      if labels[i] == 'not_cats':
+        predicted_NC_actual_NC += 1
+      else:
+        predicted_cat_actual_NC += 1
+      break
 
-            if not os.path.exists(nested_directory):
-              os.makedirs(nested_directory)
-            os.rename(unsorted_file_name, sorted_file_destination)
-
-          break
-
-  # Same logic as above but no sorting. Produces classification accuracy metrics
-  else:
-    cat_files = [f for f in listdir(dir_cat) if isfile(join(dir_cat, f))]
-    NC_files = []
-
-    for (dirpath, dirnames, filenames) in walk(dir_NC):
-      for file in filenames:
-        if file.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
-          NC_files.append(os.path.join(os.path.split(dirpath)[1], file))
-
-    for cat_file_name in cat_files:
-      cat_file_name = dir_cat + cat_file_name
-
-      t = read_tensor_from_image_file(
-          cat_file_name,
-          input_height=input_height,
-          input_width=input_width,
-          input_mean=input_mean,
-          input_std=input_std)
-
-      input_name = "import/" + input_layer
-      output_name = "import/" + output_layer
-      input_operation = graph.get_operation_by_name(input_name)
-      output_operation = graph.get_operation_by_name(output_name)
-
-      with tf.Session(graph=graph) as sess:
-        results = sess.run(output_operation.outputs[0], {
-            input_operation.outputs[0]: t
-        })
-      results = np.squeeze(results)
-      print (cat_file_name)
-      print (results)
-
-      top_k = results.argsort()[-5:][::-1]
-      for i in top_k:
-        if labels[i] == 'cats':
-          predicted_cat_actual_cat += 1
-        else:
-          predicted_NC_actual_cat += 1
-        break
-
-    for NC_file_name in NC_files:
-
-      NC_file_name = dir_NC + NC_file_name
-
-      t = read_tensor_from_image_file(
-          NC_file_name,
-          input_height=input_height,
-          input_width=input_width,
-          input_mean=input_mean,
-          input_std=input_std)
-
-      input_name = "import/" + input_layer
-      output_name = "import/" + output_layer
-      input_operation = graph.get_operation_by_name(input_name)
-      output_operation = graph.get_operation_by_name(output_name)
-
-      with tf.Session(graph=graph) as sess:
-        results = sess.run(output_operation.outputs[0], {
-            input_operation.outputs[0]: t
-        })
-      results = np.squeeze(results)
-      print (NC_file_name)
-      print (results)
-
-      top_k = results.argsort()[-5:][::-1]
-      for i in top_k:
-        if labels[i] == 'not_cats':
-          predicted_NC_actual_NC += 1
-        else:
-          predicted_cat_actual_NC += 1
-        break
-
-    print("Predicted NC actual NC:%d" % predicted_NC_actual_NC)
-    print("Predicted NC actual cat:%d" % predicted_NC_actual_cat)
-    print("Predicted cat actual cat:%d" % predicted_cat_actual_cat)
-    print("Predicted cat actual NC:%d" % predicted_cat_actual_NC)
-
-def load_graph(model_file):
-  graph = tf.Graph()
-  graph_def = tf.GraphDef()
-
-  with open(model_file, "rb") as f:
-    graph_def.ParseFromString(f.read())
-  with graph.as_default():
-    tf.import_graph_def(graph_def)
-
-  return graph
-
-def printTensors(pb_file):
-
-    # read pb into graph_def
-    with tf.gfile.GFile(pb_file, "rb") as f:
-        graph_def = tf.GraphDef()
-        graph_def.ParseFromString(f.read())
-
-    # import graph_def
-    with tf.Graph().as_default() as graph:
-        tf.import_graph_def(graph_def)
-
-    # print operations
-    for op in graph.get_operations():
-        print(op.name)
+  print("Predicted NC actual NC:%d" % predicted_NC_actual_NC)
+  print("Predicted NC actual cat:%d" % predicted_NC_actual_cat)
+  print("Predicted cat actual cat:%d" % predicted_cat_actual_cat)
+  print("Predicted cat actual NC:%d" % predicted_cat_actual_NC)
 
 
 def read_tensor_from_image_file(file_name,
@@ -274,15 +169,6 @@ def read_tensor_from_image_file(file_name,
   result = sess.run(normalized)
 
   return result
-
-
-def load_labels(label_file):
-  label = []
-  proto_as_ascii_lines = tf.gfile.GFile(label_file).readlines()
-  for l in proto_as_ascii_lines:
-    label.append(l.rstrip())
-  return label
-
 
 if __name__ == "__main__":
   main()

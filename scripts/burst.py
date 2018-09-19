@@ -10,6 +10,7 @@ import settings
 latest_timestamp = 0
 #minimum_burst_length = 10
 #current_burst_length = 0
+current_burst_grayscale = False
 
 # Convert string to seconds
 def convert_timestamp(img_path):
@@ -18,7 +19,7 @@ def convert_timestamp(img_path):
 	same_burst = True
 	#global current_burst_length
 	global latest_timestamp
-	current_burst_grayscale = False
+	global current_burst_grayscale
 
 	timestamp_string = os.path.basename(img_path).rsplit( ".", 1 )[ 0 ]
 
@@ -89,7 +90,7 @@ def main():
 		camera_trap = os.path.join(analysis_datetime, os.path.basename(path))
 		dir_camera_trap = '%s/%s' % (dir_out, camera_trap)
 
-		if not os.path.exists(dir_camera_trap) and len(files) > 0:
+		if len(files) > 1 and not os.path.exists(dir_camera_trap):
 			os.makedirs(dir_camera_trap)
 
 		pbar = ProgressBar()
@@ -124,6 +125,19 @@ def main():
 					burst_count += 1
 					images_list.append(os.path.join(path, name))
 
+		# Don't forget the last 
+		for i_path in images_list:
+			dir_burst = '%s/%d' % (dir_camera_trap, burst_count)
+
+			if not os.path.exists(dir_burst):
+				os.makedirs(dir_burst)
+
+			outfile = '%s/%s' % (dir_burst, os.path.basename(i_path))
+			os.rename(i_path, outfile)
+
+		images_list = []
+		burst_imgs = []
+		burst_count += 1
 
 if __name__ == "__main__":
   main()

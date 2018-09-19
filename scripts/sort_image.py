@@ -28,132 +28,95 @@ import numpy as np
 import tensorflow as tf
 
 import settings
-
-def get_segmented_image_info(imagepath):
-  head_1, filename = os.path.split(imagepath)
-  head_2, burst_num = os.path.split(head_1)
-  head_3, trap_name = os.path.split(head_2)
-  head_4, segmentation_datetime = os.path.split(head_3)
-
-  return (segmentation_datetime, trap_name, burst_num, filename)
-
-def load_graph(model_file):
-  graph = tf.Graph()
-  graph_def = tf.GraphDef()
-
-  with open(model_file, "rb") as f:
-    graph_def.ParseFromString(f.read())
-  with graph.as_default():
-    tf.import_graph_def(graph_def)
-
-  return graph
-
-def printTensors(pb_file):
-
-    # read pb into graph_def
-    with tf.gfile.GFile(pb_file, "rb") as f:
-        graph_def = tf.GraphDef()
-        graph_def.ParseFromString(f.read())
-
-    # import graph_def
-    with tf.Graph().as_default() as graph:
-        tf.import_graph_def(graph_def)
-
-    # print operations
-    for op in graph.get_operations():
-        print(op.name)
-
-def read_tensor_from_image_file(file_name,
-                                input_height=299,
-                                input_width=299,
-                                input_mean=0,
-                                input_std=255):
-  input_name = "file_reader"
-  output_name = "normalized"
-  file_reader = tf.read_file(file_name, input_name)
-  if file_name.endswith(".png"):
-    image_reader = tf.image.decode_png(
-        file_reader, channels=3, name="png_reader")
-  elif file_name.endswith(".gif"):
-    image_reader = tf.squeeze(
-        tf.image.decode_gif(file_reader, name="gif_reader"))
-  elif file_name.endswith(".bmp"):
-    image_reader = tf.image.decode_bmp(file_reader, name="bmp_reader")
-  else:
-    image_reader = tf.image.decode_jpeg(
-        file_reader, channels=3, name="jpeg_reader")
-  float_caster = tf.cast(image_reader, tf.float32)
-  dims_expander = tf.expand_dims(float_caster, 0)
-  resized = tf.image.resize_bilinear(dims_expander, [input_height, input_width])
-  normalized = tf.divide(tf.subtract(resized, [input_mean]), [input_std])
-  sess = tf.Session()
-  result = sess.run(normalized)
-
-  return result
-
-def load_labels(label_file):
-  label = []
-  proto_as_ascii_lines = tf.gfile.GFile(label_file).readlines()
-  for l in proto_as_ascii_lines:
-    label.append(l.rstrip())
-  return label
+import tools
+import shutil
 
 def main():
-  predicted_cat_actual_cat = 0
-  predicted_cat_actual_NC = 0
-  predicted_NC_actual_cat = 0
-  predicted_NC_actual_NC = 0
+
+  current_burst = 0
+  first_burst = True
+  cat_classification = False
+  not_cat_classification = False
+  unsure_classification = False
 
   parser = argparse.ArgumentParser()
   parser.add_argument("--sorted_directory", help="directory to place sorted images")
-  parser.add_argument("--unsorted_directory", help="directory of images to be sorted")  
-  parser.add_argument('--sort', default=False, type=lambda x: (str(x).lower() == 'true'))
+  parser.add_argument("--blob_directory", help="directory of blobs")  
+  parser.add_argument("--burst_directory", help="directory of bursts") 
   args = parser.parse_args()
 
-  model_file = settings.label_image['graph']
-  label_file = settings.label_image['labels']
-  input_height = settings.label_image['input_height']
-  input_width = settings.label_image['input_width']
-  input_mean = settings.label_image['input_mean']
-  input_std = settings.label_image['input_std']
-  input_layer = settings.label_image['input_layer']
-  output_layer = settings.label_image['output_layer']
+  model_file = settings.graph['graph']
+  label_file = settings.graph['labels']
+  input_height = settings.graph['input_height']
+  input_width = settings.graph['input_width']
+  input_mean = settings.graph['input_mean']
+  input_std = settings.graph['input_std']
+  input_layer = settings.graph['input_layer']
+  output_layer = settings.graph['output_layer']
 
   if args.sorted_directory:
     dir_sorted = args.sorted_directory
-  if args.unsorted_directory:
-    dir_unsorted = args.unsorted_directory
+  if args.blob_directory:
+    dir_blob = args.blob_directory
+  if args.burst_directory:
+    dir_burst = args.burst_directory
 
-  graph = load_graph(model_file)
-  labels = load_labels(label_file)
+  graph = tools.load_graph(model_file)
+  labels = tools.load_labels(label_file)
 
   unsorted_files = []
+  move_to_directory = ''
+  move_from_directory = ''
+  previous_file = ''
 
   # Find all JPG files 
-  for (dirpath, dirnames, filenames) in walk(dir_unsorted):
+  for (dirpath, dirnames, filenames) in walk(dir_blob):
     for file in filenames:
       if file.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
-
-        # ASSUMPTION: Blobs will be placed in segmentation_datetime/cameratrap/burst/blob.jpg format
-        head_1, burst_num = os.path.split(dirpath)
-        head_2, trap_name = os.path.split(head_1)
-        head_3, segmentation_datetime = os.path.split(head_2)
         complete = os.path.join(dirpath, file)
-        #print(complete)
         unsorted_files.append(complete)
-
-  print (unsorted_files)
-  return
 
   # Create Full path
   for file in unsorted_files:
+    segmentation_datetime, trap_name, burst_num, file_name =  tools.get_image_info(file)
 
-    segmentation_datetime, trap_name, burst_num, file_name =  get_segmented_image_info(file)
+    if first_burst:
+      current_burst = int(burst_num)
+      print(current_burst)
+      first_burst = False
 
-    unsorted_file_name = os.path.join(dir_unsorted, file)
+    if not current_burst == int(burst_num):
 
-    t = read_tensor_from_image_file(
-        unsorted_file_name,
+      # If one image contains cat, move whole burst to Cat folder
+      if cat_classification:
+        move_to_directory = os.path.join(dir_sorted, 'cats', segmentation_datetime, trap_name)
+
+      # If any image is unsure, then move to Unsure folder
+      elif unsure_classification:
+        move_to_directory = os.path.join(dir_sorted, 'not_cats', segmentation_datetime, trap_name)
+
+      # If all images have been labeled as not_cat, move to not_cat folder
+      else:
+        move_to_directory = os.path.join(dir_sorted, 'unsure', segmentation_datetime, trap_name)
+
+      if not os.path.exists(move_to_directory):
+        os.makedirs(move_to_directory)
+
+      move_from_directory = os.path.join(dir_burst, segmentation_datetime, trap_name, str(current_burst))
+
+      shutil.move(move_from_directory, move_to_directory)
+
+      cat_classification = False
+      not_cat_classification = False
+      unsure_classification = False
+      move_to_directory = ''
+      move_from_directory = ''
+      current_burst = int(burst_num)
+
+    previous_file = file
+
+    t = tools.read_tensor_from_image_file(
+        file,
         input_height=input_height,
         input_width=input_width,
         input_mean=input_mean,
@@ -175,26 +138,14 @@ def main():
     for i in top_k:
         
         # if confidence level is below certain value, put in "unsure" folder
-        if results[i] < settings.label_image['confidence_threshold']:
-          unsure_file_destination = os.path.join(dir_sorted, segmentation_datetime, trap_name, 'unsure', burst_num, file_name ) 
-          nested_directory, tail = os.path.split(unsure_file_destination)
-
-          if not os.path.exists(nested_directory):
-            os.makedirs(nested_directory)
-          os.rename(unsorted_file_name, unsure_file_destination)
-
+        if results[i] < settings.sort_image['confidence_threshold']:
+          unsure_classification = True
         # else, place it in the proper sorted folder
         else:
           if labels[i] == 'cats':
-            sorted_file_destination = os.path.join(dir_sorted, segmentation_datetime, trap_name, 'cats', burst_num, file_name )
+            cat_classification = True
           else:
-            sorted_file_destination = os.path.join(dir_sorted, segmentation_datetime, trap_name, 'not_cats', burst_num, file_name )
-
-          nested_directory, tail = os.path.split(sorted_file_destination)
-
-          if not os.path.exists(nested_directory):
-            os.makedirs(nested_directory)
-          os.rename(unsorted_file_name, sorted_file_destination)
+            not_cat_classification = True
 
         break
 

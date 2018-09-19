@@ -6,16 +6,9 @@ import time
 import datetime
 import matplotlib.pyplot as plt
 import settings
+import tools
 
 from progressbar import ProgressBar
-
-def get_burst_image_info(imagepath):
-  head_1, filename = os.path.split(imagepath)
-  head_2, burst_num = os.path.split(head_1)
-  head_3, trap_name = os.path.split(head_2)
-  head_4, segmentation_datetime = os.path.split(head_3)
-
-  return (segmentation_datetime, trap_name, burst_num, filename)
 
 def main():
 	global latest_timestamp
@@ -79,7 +72,7 @@ def main():
 			y2 = min(i.shape[0]-1, y2 + h*0.8)
 			subimg = i[int(y1):int(y2),int(x1):int(x2),:]
 
-			segmentation_datetime, trap_name, burst_num, filename = get_burst_image_info(i_path)
+			segmentation_datetime, trap_name, burst_num, filename = tools.get_image_info(i_path)
 			dir_blob = os.path.join(dir_out, segmentation_datetime, trap_name, burst_num)
 
 			if not os.path.exists(dir_blob):
