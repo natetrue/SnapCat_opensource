@@ -31,7 +31,53 @@ import settings
 import tools
 import shutil
 
+def move_image_folder(segmentation_datetime, trap_name, burst_num, current_burst,
+                      cat_classification, unsure_classification, not_cat_classification):
+  global dir_burst_sorted
+  global dir_blob_sorted
+  global dir_burst
+  global dir_blob
+
+  dir_burst_new = ''
+  dir_burst_old = ''
+  dir_blob_new = ''
+  dir_blob_old = ''
+
+  # If one image contains cat, move whole burst to Cat folder
+  if cat_classification:
+    dir_burst_new = os.path.join(dir_burst_sorted, 'cats', segmentation_datetime, trap_name)
+    dir_blob_new = os.path.join(dir_blob_sorted, 'cats', segmentation_datetime, trap_name)
+
+  # If any image is unsure, then move to Unsure folder
+  elif unsure_classification:
+    dir_burst_new = os.path.join(dir_burst_sorted, 'not_cats', segmentation_datetime, trap_name)
+    dir_blob_new = os.path.join(dir_blob_sorted, 'not_cats', segmentation_datetime, trap_name)
+
+  # If all images have been labeled as not_cat, move to not_cat folder
+  else:
+    dir_burst_new = os.path.join(dir_burst_sorted, 'unsure', segmentation_datetime, trap_name)
+    dir_blob_new = os.path.join(dir_blob_sorted, 'unsure', segmentation_datetime, trap_name)
+
+  if not os.path.exists(dir_burst_new):
+    os.makedirs(dir_burst_new)
+
+  if not os.path.exists(dir_blob_new):
+    os.makedirs(dir_blob_new)
+
+  dir_burst_old = os.path.join(dir_burst, segmentation_datetime, trap_name, str(current_burst))
+  dir_blob_old = os.path.join(dir_blob, segmentation_datetime, trap_name, str(current_burst))
+
+  shutil.move(dir_burst_old, dir_burst_new)
+  shutil.move(dir_blob_old, dir_blob_new)
+
+
+
+
 def main():
+  global dir_burst_sorted
+  global dir_blob_sorted
+  global dir_burst
+  global dir_blob
 
   current_burst = 0
   first_burst = True
@@ -40,7 +86,8 @@ def main():
   unsure_classification = False
 
   parser = argparse.ArgumentParser()
-  parser.add_argument("--sorted_directory", help="directory to place sorted images")
+  parser.add_argument("--sorted_blob_directory", help="directory to place sorted blobs")
+  parser.add_argument("--sorted_burst_directory", help="directory to place sorted bursts")
   parser.add_argument("--blob_directory", help="directory of blobs")  
   parser.add_argument("--burst_directory", help="directory of bursts") 
   args = parser.parse_args()
@@ -54,8 +101,10 @@ def main():
   input_layer = settings.graph['input_layer']
   output_layer = settings.graph['output_layer']
 
-  if args.sorted_directory:
-    dir_sorted = args.sorted_directory
+  if args.sorted_blob_directory:
+    dir_blob_sorted = args.sorted_blob_directory
+  if args.sorted_burst_directory:
+    dir_burst_sorted = args.sorted_burst_directory
   if args.blob_directory:
     dir_blob = args.blob_directory
   if args.burst_directory:
@@ -65,8 +114,6 @@ def main():
   labels = tools.load_labels(label_file)
 
   unsorted_files = []
-  move_to_directory = ''
-  move_from_directory = ''
   previous_file = ''
 
   # Find all JPG files 
@@ -87,30 +134,12 @@ def main():
 
     if not current_burst == int(burst_num):
 
-      # If one image contains cat, move whole burst to Cat folder
-      if cat_classification:
-        move_to_directory = os.path.join(dir_sorted, 'cats', segmentation_datetime, trap_name)
-
-      # If any image is unsure, then move to Unsure folder
-      elif unsure_classification:
-        move_to_directory = os.path.join(dir_sorted, 'not_cats', segmentation_datetime, trap_name)
-
-      # If all images have been labeled as not_cat, move to not_cat folder
-      else:
-        move_to_directory = os.path.join(dir_sorted, 'unsure', segmentation_datetime, trap_name)
-
-      if not os.path.exists(move_to_directory):
-        os.makedirs(move_to_directory)
-
-      move_from_directory = os.path.join(dir_burst, segmentation_datetime, trap_name, str(current_burst))
-
-      shutil.move(move_from_directory, move_to_directory)
+      move_image_folder(segmentation_datetime, trap_name, burst_num, current_burst,
+                      cat_classification, unsure_classification, not_cat_classification)
 
       cat_classification = False
       not_cat_classification = False
       unsure_classification = False
-      move_to_directory = ''
-      move_from_directory = ''
       current_burst = int(burst_num)
 
     previous_file = file
@@ -148,6 +177,11 @@ def main():
             not_cat_classification = True
 
         break
+
+  # Final Burst needs to be sorted
+  segmentation_datetime, trap_name, burst_num, file_name =  tools.get_image_info(file)
+  move_image_folder(segmentation_datetime, trap_name, burst_num, current_burst,
+                      cat_classification, unsure_classification, not_cat_classification)
 
 if __name__ == "__main__":
   main()

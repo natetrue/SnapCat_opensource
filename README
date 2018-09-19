@@ -54,7 +54,7 @@ TODO: Images are still pretty big... do we need to convert to 224 x 224?
 
 Run this to label and sort uncategorized images into the appropriate folders:
 
-python ./scripts/sort_image.py --blob_directory ./sorting/blobs/ --sorted_directory ./sorting/sorted/ 
+python ./scripts/sort_image.py --blob_directory ./sorting/blobs/ --burst_directory ./sorting/bursts/ --sorted_burst_directory ./sorting/sorted/ --sorted_blob_directory ./sorting/sorted_blobs
 
 TODO: blobbing directory should be removed after use
 
