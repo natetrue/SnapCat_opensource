@@ -59,8 +59,6 @@ def main():
     dir_sorted = args.sorted_directory
   if args.unsorted_directory:
     dir_unsorted = args.unsorted_directory
-  if args.sort:
-    sort = True
 
   graph = tools.load_graph(model_file)
   labels = tools.load_labels(label_file)
