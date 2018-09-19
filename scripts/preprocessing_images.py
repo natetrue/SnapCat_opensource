@@ -5,6 +5,7 @@ import cv2
 from imgaug import augmenters as iaa
 import random
 import argparse
+from progressbar import ProgressBar
 
 def random_coords(img):
 	height, width = img.shape[:2]
@@ -69,9 +70,17 @@ if __name__ == '__main__':
 	input_path = FLAGS.input_dir
 	output_path = FLAGS.output_dir
 	allowed_extensions = ['jpg', 'jpeg', 'JPG', 'JPEG']
+	pbar = ProgressBar()
+	pbar.start()
+	file_counter = 0
 
 	if not os.path.exists(output_path):
 		os.makedirs(output_path)
+
+	# Get number of files for Progress Bar
+	file_count = sum([len(files) for r, d, files in os.walk(input_path)])
+	print (file_count)
+	pbar.maxval = file_count
 
 	for (dirpath, dirnames, filenames) in walk(input_path):
 		new_dirpath = dirpath.replace(input_path, output_path)
@@ -80,6 +89,8 @@ if __name__ == '__main__':
 			os.makedirs(new_dirpath)
 
 		for filename in filenames:
+			file_counter += 1
+			pbar.update(file_counter)
 			illegal_file = True
 			for ext in allowed_extensions:
 				if ext in filename:

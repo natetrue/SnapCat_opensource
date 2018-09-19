@@ -1,2 +1,2 @@
 cats
-not_cats
+not cats
