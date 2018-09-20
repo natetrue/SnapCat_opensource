@@ -63,24 +63,37 @@ def concatenate_images( image1, image2 ):
   return np.concatenate( ( image1, resized ), axis=0)
 
 
-def sort_images( image_classifications, outdir ):
+def sort_images( image_dir, image_classifications, outdir ):
+  
+  cat_dir = os.path.join( outdir, "cats" )
+  not_cat_dir = os.path.join( outdir, "not_cats" )
+
+  if not os.path.isdir( cat_dir ):
+    os.mkdir( cat_dir )  
+  
+  if not os.path.isdir( not_cat_dir ):
+    os.mkdir( not_cat_dir )  
+
   # iterate over all the labeled images and put them within a foler
   for file in image_classifications:
 
-    cat_dir = os.path.join( outdir, "cats" )
-    if not os.path.isdir( cat_dir ):
-      os.mkdir( cat_dir )  
-
-    not_cat_dir = os.path.join( outdir, "not_cats" )
-    if not os.path.isdir( not_cat_dir ):
-      os.mkdir( not_cat_dir )  
+    file_dir = file.split(image_dir)[1] # split path to find any sub directories
+    if file_dir[0] == '\\':
+      file_dir = file_dir[1:] # get rid of the first slash on the filename
 
     if image_classifications[file] == "cat":
-      os.rename(file, os.path.join( cat_dir, os.path.basename(file) ) )
+      new_file = os.path.join( cat_dir, file_dir )
 
     if image_classifications[file] == "not_cat":
-      os.rename(file, os.path.join( not_cat_dir, os.path.basename(file) ) )
+      new_file = os.path.join( not_cat_dir, file_dir )
 
+    # make sure the new sub directory exists
+    new_file_dir = os.path.dirname(new_file)
+    if not os.path.isdir( new_file_dir ):
+      os.mkdir( new_file_dir )
+
+    print( file, new_file )
+    os.rename(file, new_file )
 
 def get_labels( files ):
 
@@ -145,7 +158,7 @@ def user_label_images( image_dir, outdir ):
 
   
   image_classificationss = get_labels( files_to_label )
-  sort_images( image_classificationss, outdir )
+  sort_images( image_dir, image_classificationss, outdir )
 
 
 def main():
