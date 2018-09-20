@@ -57,6 +57,17 @@ def is_grayscale(img_path):
 
 	return True
 
+# Group into bursts
+def create_burst(images_list, dir_camera_trap, burst_count):
+	for i_path in images_list:
+		dir_burst = '%s/%d' % (dir_camera_trap, burst_count)
+
+		if not os.path.exists(dir_burst):
+			os.makedirs(dir_burst)
+
+		outfile = '%s/%s' % (dir_burst, os.path.basename(i_path))
+		os.rename(i_path, outfile)
+
 def main():
 	global latest_timestamp
 	pbar = ProgressBar()
@@ -111,33 +122,16 @@ def main():
 					images_list.append(os.path.join(path, name))
 				# Else, read images, average, and attempt to segment
 				else:
-					for i_path in images_list:
-						dir_burst = '%s/%d' % (dir_camera_trap, burst_count)
-
-						if not os.path.exists(dir_burst):
-							os.makedirs(dir_burst)
-
-						outfile = '%s/%s' % (dir_burst, os.path.basename(i_path))
-						os.rename(i_path, outfile)
-
+					
+					create_burst(images_list, dir_camera_trap, burst_count)
+					
 					images_list = []
 					burst_imgs = []
 					burst_count += 1
 					images_list.append(os.path.join(path, name))
 
 		# Don't forget the last 
-		for i_path in images_list:
-			dir_burst = '%s/%d' % (dir_camera_trap, burst_count)
-
-			if not os.path.exists(dir_burst):
-				os.makedirs(dir_burst)
-
-			outfile = '%s/%s' % (dir_burst, os.path.basename(i_path))
-			os.rename(i_path, outfile)
-
-		images_list = []
-		burst_imgs = []
-		burst_count += 1
+		create_burst(images_list, dir_camera_trap, burst_count)
 
 if __name__ == "__main__":
   main()
