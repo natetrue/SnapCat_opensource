@@ -62,3 +62,12 @@ SORTING:
 	Review images with:
 		python .\scripts\user_label_image.py --image_dir=<images_to_sort> --outdir=<output_directory>
     note: the output_directory will create two folders. "cat/" and "not_cat/" if they don't exist and move the original files to the correct directory
+
+
+
+
+SORTING NATES DATASET:
+	
+	Sort imags into bursts:
+
+		python ./scripts/nate_burst.py --unsorted_directory ./sorting/unsorted_nate/ --burst_directory  ./sorting/bursts_nate/
