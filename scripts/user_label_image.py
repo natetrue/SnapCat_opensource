@@ -95,7 +95,8 @@ def sort_images( image_dir, image_classifications, outdir ):
     print( file, new_file )
     os.rename(file, new_file )
 
-def get_labels( files ):
+
+def get_image_labels( files ):
 
   num_files = len( files )
   index = 0
@@ -148,27 +149,81 @@ def get_labels( files ):
   return image_classifications
 
 
-def user_label_images( image_dir, outdir ):
-  files_to_label = []
-  # Find all JPG files 
-  for (dirpath, dirnames, filenames) in os.walk( image_dir):
+def get_directory_label( files ):
+
+  num_files = len( files )
+
+  # iterate over all files and add label
+  while True:
+
+    for file in files:
+
+      # display image to be labeled
+      image = cv2.imread( file, cv2.IMREAD_COLOR)
+      image = concatenate_images( image, ARROWS_IMG )
+      key = display_image_wait_key( image, 100 )
+      
+      # wait for user input
+      if key == LEFT_KEY:
+        update = cv2.add(image, create_blank(image, RED))
+        display_image_wait_key( update, 100)
+        return "not_cat"
+
+      elif key == RIGHT_KEY:
+        update = cv2.add(image, create_blank(image, GREEN))
+        display_image_wait_key( update, 100)
+        return "cat"
+      
+      elif key == 27: # escape
+        cv2.destroyAllWindows()
+        return "quit"
+
+      elif key == 8: # backspace
+        return "back"
+
+      elif key != -1:
+        image = cv2.imread( USAGE_IMG, cv2.IMREAD_COLOR)
+        key = display_image_wait_key( image, 0)
+        #todo, change image text to contain press any key to continue
+
+
+def list_all_jpgs( directory ):
+  jpeg_files = []
+
+  for (dirpath, dirnames, filenames) in os.walk( directory):
     for file in filenames:
       if file.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
-        files_to_label.append( os.path.join( dirpath, file) )
+        jpeg_files.append( os.path.join( dirpath, file) )
 
+  return jpeg_files
+
+
+def user_label_images( image_dir, outdir, parse_burst ):
   
-  image_classificationss = get_labels( files_to_label )
-  sort_images( image_dir, image_classificationss, outdir )
+  # TODO, this may make more sense to iterate over all the files and label each image instead of calling get_image_labels()
+  if not parse_burst:
+    images_to_label = list_all_jpgs( image_dir )
+    image_classificationss = get_image_labels( images_to_label )
+    sort_images( image_dir, image_classificationss, outdir )
 
-
+  else:
+    directories = next(os.walk(image_dir))[1]
+    for directory in directories:
+      search_dir = os.path.join(image_dir, directory)
+      jpegs_in_dir = list_all_jpgs( search_dir )
+      label = get_directory_label( jpegs_in_dir )
+      print( label)
+      #TODO move whole directory based on label
+  
 def main():
   parser = argparse.ArgumentParser()
   parser.add_argument("--image_dir", help="directory containing images to sort")
   parser.add_argument("--outdir", help="directory to store images classified. Creates ./cat/ and ./not_cat/")
+  parser.add_argument("--burst", default="", help="if true, will display bursts as a gif style and label the whole burst, otherwise labels individual images")
 
   args = parser.parse_args()
   
-  user_label_images( args.image_dir, args.outdir )
+  user_label_images( args.image_dir, args.outdir, args.burst.lower() == "true" )
 
 if __name__ == "__main__":
   main()
