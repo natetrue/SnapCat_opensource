@@ -63,13 +63,18 @@ def main():
   graph = tools.load_graph(model_file)
   labels = tools.load_labels(label_file)
 
-  cat_files = [f for f in listdir(dir_cat) if isfile(join(dir_cat, f))]
+  cat_files = []
   NC_files = []
 
   for (dirpath, dirnames, filenames) in walk(dir_NC):
     for file in filenames:
       if file.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
         NC_files.append(os.path.join(os.path.split(dirpath)[1], file))
+
+  for (dirpath, dirnames, filenames) in walk(dir_cat):
+    for file in filenames:
+      if file.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
+        cat_files.append(os.path.join(os.path.split(dirpath)[1], file))
 
   for cat_file_name in cat_files:
     cat_file_name = dir_cat + cat_file_name
@@ -128,7 +133,7 @@ def main():
 
     top_k = results.argsort()[-5:][::-1]
     for i in top_k:
-      if labels[i] == 'not_cats':
+      if labels[i] == 'not cats':
         predicted_NC_actual_NC += 1
       else:
         predicted_cat_actual_NC += 1
