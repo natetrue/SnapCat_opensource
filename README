@@ -63,3 +63,9 @@ SORTING:
 		python .\scripts\user_label_image.py --image_dir=<images_to_sort> --outdir=<output_directory> --burst=<true or false>
     note: the output_directory will create two folders. "cat/" and "not_cat/" if they don't exist and move the original files to the correct directory
           burst mode assumes that image_dir is a folder that contains folders of images from a burst
+
+  Generate report
+    python scripts\generate_report.py --cat_dir=<sorted bursts> --report=<where to save report.png>
+
+    NOTE: the cat dir specified should be the datetime folder, not the cat folder (EG: ./sorting/sorted/cats/2018_09_20_10_24/ not ./sorting/sorted/cats/)
+
