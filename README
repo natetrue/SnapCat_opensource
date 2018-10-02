@@ -60,5 +60,6 @@ SORTING:
 			python ./scripts/label_image.py --sort true --unsorted_directory ./sorting/blobs/ --sorted_directory ./sorting/sorted/ 
 
 	Review images with:
-		python .\scripts\user_label_image.py --image_dir=<images_to_sort> --outdir=<output_directory>
+		python .\scripts\user_label_image.py --image_dir=<images_to_sort> --outdir=<output_directory> --burst=<true or false>
     note: the output_directory will create two folders. "cat/" and "not_cat/" if they don't exist and move the original files to the correct directory
+          burst mode assumes that image_dir is a folder that contains folders of images from a burst
