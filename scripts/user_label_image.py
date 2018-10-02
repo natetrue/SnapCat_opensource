@@ -25,8 +25,8 @@ BACKSPACE_KEY = 8
 RED = ( 255, 0, 0 )
 GREEN = ( 0, 255, 0 )
 WHITE = ( 255, 255, 255 )
-INVALID_STRING = "not_cat"
-VALID_STRING = "cat"
+INVALID_STRING = "not_cats"
+VALID_STRING = "cats"
 
 IMAGE_TEXT = "Does Image Contain Cat?"
 IMAGE_PATH = os.path.join( os.path.dirname( os.path.realpath(__file__) ), "images" )
@@ -112,6 +112,7 @@ def move_images( image_dir, image_labels, outdir ):
     if not os.path.isdir( new_file_dir ):
       os.makedirs( new_file_dir )
 
+    print(file, new_file)
     os.rename(file, new_file )
 
 
@@ -211,11 +212,11 @@ def display_directory_get_input( files ):
 
 def list_all_jpgs( directory ):
   jpeg_files = []
+  filenames = [f for f in os.listdir(directory) ]
 
-  for (dirpath, dirnames, filenames) in os.walk( directory):
-    for file in filenames:
-      if file.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
-        jpeg_files.append( os.path.join( dirpath, file) )
+  for file in filenames:
+    if file.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
+      jpeg_files.append( os.path.join( directory, file) )
 
   return jpeg_files
 
@@ -272,10 +273,13 @@ def user_label_images( image_dir, outdir, parse_burst ):
     index = 0
     done = False
 
-    while not done:
+    for burst_dir, subdirs, files in os.walk(image_dir):
 
-      burst_dir = os.path.join( image_dir, directories[index] )
       jpegs_in_dir = list_all_jpgs( burst_dir )
+
+      if len(jpegs_in_dir) < 1:
+        continue
+
       key = display_directory_get_input( jpegs_in_dir )
       
       if key == LEFT_KEY:
@@ -297,11 +301,8 @@ def user_label_images( image_dir, outdir, parse_burst ):
 
       elif key == ESCAPE_KEY:
         cv2.destroyAllWindows()
-        done = True
+        break
       
-      if index >= len(directories):
-        done = True
-
     move_directories( image_dir, directory_labels, outdir )
   
 def main():
