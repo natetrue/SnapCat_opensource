@@ -32,7 +32,6 @@ def sort_camera_trap_images(unsorted_dir):
 
   analysis_datetime = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M") 
 
-
   tmp_dirs = [burst_dir, segment_dir, sorted_dir, report_dir]
   for dirname in tmp_dirs:
     if os.path.isdir(dirname):

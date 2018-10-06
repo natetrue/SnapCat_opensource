@@ -79,7 +79,6 @@ def move_image_folder(segmentation_datetime, trap_name, burst_num, current_burst
     print("***************ERROR - can't move: ", dir_blob_old)
     print("Check this just in case: ", dir_blob_new)
 
-
 def sort_images(sorted_blob_directory, sorted_burst_directory, blob_directory, burst_directory):
 
   global dir_burst_sorted
