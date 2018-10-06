@@ -265,7 +265,11 @@ def user_label_images( image_dir, outdir, parse_burst ):
 
   ######################### sort image bursts #########################
   else:
-    directories = next(os.walk(image_dir))[1]
+    try:
+      directories = next(os.walk(image_dir))[1]
+    except:
+      return
+
     if len(directories) == 0:
       return
 

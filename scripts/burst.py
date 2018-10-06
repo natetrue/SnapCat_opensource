@@ -68,22 +68,18 @@ def create_burst(images_list, dir_camera_trap, burst_count):
 		outfile = '%s/%s' % (dir_burst, os.path.basename(i_path))
 		os.rename(i_path, outfile)
 
-def main():
+def create_bursts(unsorted_directory, burst_directory):
+
 	global latest_timestamp
 	pbar = ProgressBar()
 
 	img_count = 0
 	burst_count = 0
 
-	parser = argparse.ArgumentParser()
-	parser.add_argument("--unsorted_directory", help="directory of raw images")
-	parser.add_argument("--burst_directory", help="directory to place segregated bursts")
-	args = parser.parse_args()
-
-	if args.unsorted_directory:
-		dir_unsorted = args.unsorted_directory
-	if args.burst_directory:
-		dir_out = args.burst_directory
+	if unsorted_directory:
+		dir_unsorted = unsorted_directory
+	if burst_directory:
+		dir_out = burst_directory
 
 	if not os.path.exists(dir_out):
 		os.makedirs(dir_out)
@@ -133,5 +129,13 @@ def main():
 		# Don't forget the last 
 		create_burst(images_list, dir_camera_trap, burst_count)
 
+	return analysis_datetime
+
 if __name__ == "__main__":
-  main()
+
+	parser = argparse.ArgumentParser()
+	parser.add_argument("--unsorted_directory", help="directory of raw images")
+	parser.add_argument("--burst_directory", help="directory to place segregated bursts")
+	args = parser.parse_args()
+	
+	create_bursts(args.unsorted_directory, args.burst_directory)

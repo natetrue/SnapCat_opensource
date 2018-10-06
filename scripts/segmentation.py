@@ -10,7 +10,7 @@ import tools
 
 from progressbar import ProgressBar
 
-def main():
+def segment_images( burst_directory, output_directory):
 	global latest_timestamp
 	pbar = ProgressBar()
 
@@ -18,15 +18,10 @@ def main():
 	burst_count = 0
 	burst_imgs = []
 
-	parser = argparse.ArgumentParser()
-	parser.add_argument("--burst_directory", help="directory of bursts to be blobbed")
-	parser.add_argument("--output_directory", help="directory to place blobs")
-	args = parser.parse_args()
-
-	if args.burst_directory:
-		dir_burst = args.burst_directory
-	if args.output_directory:
-		dir_out = args.output_directory
+	if burst_directory:
+		dir_burst = burst_directory
+	if output_directory:
+		dir_out = output_directory
 
 	if not os.path.exists(dir_out):
 		os.makedirs(dir_out)
@@ -39,11 +34,13 @@ def main():
 
 	for path, subdirs, files in os.walk(dir_burst):
 
+		print( path )
 		pbar = ProgressBar()
 		pbar.maxval = len(files)
 		pbar.start()
 
 		for name in pbar(files):
+
 			# only work with JPG 
 			if name.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
 				image_path = os.path.join(path, name)
@@ -58,6 +55,7 @@ def main():
 
 		for i_path, i in burst_imgs:
 			diffimg = np.abs(np.mean(i,-1) - avg_burst_img)
+			
 			diffimg = cv2.blur(diffimg, (25,25))
 			thresimg = diffimg > np.max(diffimg) * settings.segmentation['diff_threshold']
 			x1, x2 = np.where(np.any(thresimg, 0))[0][[0,-1]]
@@ -83,6 +81,14 @@ def main():
 
 		burst_imgs = []
 
+	return analysis_datetime
+
 
 if __name__ == "__main__":
-  main()
+	parser = argparse.ArgumentParser()
+	parser.add_argument("--burst_directory", help="directory of bursts to be blobbed")
+	parser.add_argument("--output_directory", help="directory to place blobs")
+	args = parser.parse_args()
+
+
+	segment_images(args.burst_directory, args.output_directory)
