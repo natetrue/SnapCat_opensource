@@ -71,11 +71,13 @@ def move_image_folder(segmentation_datetime, trap_name, burst_num, current_burst
     shutil.move(dir_burst_old, dir_burst_new)
   except:
     print("***************ERROR - can't move: ", dir_burst_old)
+    print("Check this just in case: ", dir_burst_new)
 
   try:
     shutil.move(dir_blob_old, dir_blob_new)
   except:
     print("***************ERROR - can't move: ", dir_blob_old)
+    print("Check this just in case: ", dir_blob_new)
 
 
 def sort_images(sorted_blob_directory, sorted_burst_directory, blob_directory, burst_directory):
@@ -129,6 +131,7 @@ def sort_images(sorted_blob_directory, sorted_burst_directory, blob_directory, b
     for file in unsorted_files:
 
       if not os.path.isfile(file):
+        print(file)
         print("***************ERROR - File doesn't exist")
         continue
 

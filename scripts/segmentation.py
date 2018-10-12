@@ -10,7 +10,7 @@ import tools
 
 from progressbar import ProgressBar
 
-def segment_images( burst_directory, output_directory):
+def segment_images( burst_directory, output_directory, curr_datetime=None):
 	global latest_timestamp
 	pbar = ProgressBar()
 
@@ -30,7 +30,10 @@ def segment_images( burst_directory, output_directory):
 	# Create a new folder for each segmentation based on the current date and time 
 	# (This will allow segmentation of images from the same camera traps in the future to be placed in
 	#  a different location, thereby preventing overwrites)
-	analysis_datetime = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M") 
+	if not curr_datetime:
+		analysis_datetime = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M") 
+	else:
+		analysis_datetime = curr_datetime
 
 	for path, subdirs, files in os.walk(dir_burst):
 

@@ -95,16 +95,16 @@ def move_images( image_dir, image_labels, outdir ):
   invalid_dir = os.path.join( outdir, INVALID_STRING )
 
   # iterate over all the labeled images and put them within a foler
-  for file in image_labels:
+  for file, label in image_labels:
 
     file_dir = file.split(image_dir)[1] # split path to find any sub directories
     if file_dir[0] == '\\':
       file_dir = file_dir[1:] # get rid of the first slash on the filename
 
-    if image_labels[file] == VALID_STRING:
+    if label == VALID_STRING:
       new_file = os.path.join( valid_dir, file_dir )
 
-    if image_labels[file] == INVALID_STRING:
+    if label == INVALID_STRING:
       new_file = os.path.join( invalid_dir, file_dir )
 
     # make sure the new sub directory exists
@@ -122,16 +122,16 @@ def move_directories( image_dir, directory_labels, outdir ):
   invalid_dir = os.path.join( outdir, INVALID_STRING )
 
   # iterate over all the labeled images and put them within a foler
-  for directory in directory_labels:
+  for directory, label in directory_labels:
 
     file_dir = directory.split(image_dir)[1] # split path to find any sub directories
     if file_dir[0] == '\\':
       file_dir = file_dir[1:] # get rid of the first slash on the filename
 
-    if directory_labels[directory] == VALID_STRING:
+    if label == VALID_STRING:
       new_dir = os.path.join( valid_dir, file_dir )
 
-    if directory_labels[directory] == INVALID_STRING:
+    if label == INVALID_STRING:
       new_dir = os.path.join( invalid_dir, file_dir )
 
     # make sure the new sub directory exists
@@ -139,6 +139,7 @@ def move_directories( image_dir, directory_labels, outdir ):
     if not os.path.isdir( new_file_dir ):
       os.makedirs( new_file_dir )
 
+    print(directory, new_dir)
     shutil.move(directory, new_dir )
 
 
@@ -221,28 +222,41 @@ def list_all_jpgs( directory ):
   return jpeg_files
 
 
-def user_label_images( image_dir, outdir, parse_burst ):
+def user_label_images( burst_dir, blob_dir, outdir_burst, outdir_blob, parse_burst ):
   
   # TODO: there's a lot of duplicated code here, maybe function pointers?
   ######################### sort individual files #########################
-  if not parse_burst:
-    images_to_label = list_all_jpgs( image_dir )
+  images_to_label = []
+
+  if not (parse_burst.lower() == "true"):
+    for pburst_dir, subdirs, files in os.walk(burst_dir):
+      jpegs_in_dir = list_all_jpgs( pburst_dir )
+
+      if len(jpegs_in_dir) < 1:
+        continue
+
+      images_to_label += jpegs_in_dir
+
     if len(images_to_label) == 0:
       return
 
-    image_labels = dict()
+    image_labels = []
+    image_blob_labels = []
     done = False
     index = 0
     while not done: 
       image = images_to_label[index]
+      blob = blob_dir + image.split(burst_dir,1)[1]
       key = disp_image_get_input( image )
       
       if key == LEFT_KEY:
-        image_labels[image] = INVALID_STRING
+        image_labels.append((image, INVALID_STRING))
+        image_blob_labels.append((blob, INVALID_STRING))
         index = index + 1
 
       elif key == RIGHT_KEY:
-        image_labels[image] = VALID_STRING
+        image_labels.append((image, VALID_STRING))
+        image_blob_labels.append((blob, VALID_STRING))
         index = index + 1
 
       elif key == BACKSPACE_KEY:
@@ -250,9 +264,9 @@ def user_label_images( image_dir, outdir, parse_burst ):
         if ( index > 0 ):
           index = index - 1
 
-        # remove the entry from dict
-        image = images_to_label[index]
-        del image_labels[image]
+          # remove the entry from dict
+          image_labels.pop()
+          image_blob_labels.pop()
 
       elif key == ESCAPE_KEY:
         cv2.destroyAllWindows()
@@ -261,37 +275,47 @@ def user_label_images( image_dir, outdir, parse_burst ):
       if index >= len(images_to_label):
         done = True
 
-    move_images( image_dir, image_labels, outdir )
+    cv2.destroyAllWindows()
+    move_images( burst_dir, image_labels, outdir_burst )
+    move_images( blob_dir, image_blob_labels, outdir_blob)
 
   ######################### sort image bursts #########################
   else:
-    try:
-      directories = next(os.walk(image_dir))[1]
-    except:
-      return
-
-    if len(directories) == 0:
-      return
-
-    directory_labels = dict()
+    directory_labels = []
+    directory_blob_labels = []
+    directories_to_label = []
     index = 0
     done = False
 
-    for burst_dir, subdirs, files in os.walk(image_dir):
+    for pburst_dir, subdirs, files in os.walk(burst_dir):
 
-      jpegs_in_dir = list_all_jpgs( burst_dir )
+      jpegs_in_dir = list_all_jpgs( pburst_dir )
 
       if len(jpegs_in_dir) < 1:
         continue
 
+      directories_to_label.append(pburst_dir)
+
+    while not done: 
+      pburst_dir = directories_to_label[index]
+
+      jpegs_in_dir = list_all_jpgs( pburst_dir )
+
+      if len(jpegs_in_dir) < 1:
+        continue
+
+      pblob_dir = blob_dir + pburst_dir.split(burst_dir,1)[1]
+
       key = display_directory_get_input( jpegs_in_dir )
       
       if key == LEFT_KEY:
-        directory_labels[burst_dir] = INVALID_STRING
+        directory_labels.append((pburst_dir, INVALID_STRING))
+        directory_blob_labels.append((pblob_dir, INVALID_STRING))
         index = index + 1
 
       elif key == RIGHT_KEY:
-        directory_labels[burst_dir] = VALID_STRING
+        directory_labels.append((pburst_dir, VALID_STRING))
+        directory_blob_labels.append((pblob_dir, VALID_STRING))
         index = index + 1
 
       elif key == BACKSPACE_KEY:
@@ -299,25 +323,31 @@ def user_label_images( image_dir, outdir, parse_burst ):
         if ( index > 0 ):
           index = index - 1
 
-        # remove the entry from dict
-        burst_dir = os.path.join( image_dir, directories[index] )
-        del directory_labels[burst_dir]
+          directory_labels.pop()
+          directory_blob_labels.pop()
 
       elif key == ESCAPE_KEY:
         cv2.destroyAllWindows()
-        break
+        done = True
       
-    move_directories( image_dir, directory_labels, outdir )
+      if index >= len(directories_to_label):
+        done = True
+
+    cv2.destroyAllWindows()  
+    move_directories( burst_dir, directory_labels, outdir_burst )
+    move_directories( blob_dir, directory_blob_labels, outdir_blob)
   
 def main():
   parser = argparse.ArgumentParser()
-  parser.add_argument("--image_dir", help="directory containing images to sort")
-  parser.add_argument("--outdir", help="directory to store images classified. Creates ./cat/ and ./not_cat/")
+  parser.add_argument("--burst_dir", help="directory containing bursts to sort")
+  parser.add_argument("--blob_dir", help="directory containing blobs to sort")
+  parser.add_argument("--outdir_burst", help="directory to store bursts classified. Creates ./cats/ and ./not_cats/")
+  parser.add_argument("--outdir_blob", help="directory to store blobs classified. Creates ./cats/ and ./not_cats/")
   parser.add_argument("--burst", default="", help="if true, will display bursts as a gif style and label the whole burst, otherwise labels individual images")
 
   args = parser.parse_args()
   
-  user_label_images( args.image_dir, args.outdir, args.burst.lower() == "true" )
+  user_label_images( args.burst_dir, args.blob_dir, args.outdir_burst, args.outdir_blob, args.burst.lower() == "true" )
 
 if __name__ == "__main__":
   main()

@@ -19,8 +19,7 @@ import sort_image
 import user_label_image
 import generate_report
 import shutil
-
-
+import datetime
 
 def sort_camera_trap_images(unsorted_dir):
 
@@ -30,6 +29,8 @@ def sort_camera_trap_images(unsorted_dir):
   segment_dir = os.path.join( root_dir, "tmp_segmented" )
   sorted_dir =  os.path.join( root_dir, "tmp_sorted" )
   report_dir =  os.path.join( root_dir, "tmp_report" )
+
+  analysis_datetime = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M") 
 
 
   tmp_dirs = [burst_dir, segment_dir, sorted_dir, report_dir]
@@ -43,19 +44,19 @@ def sort_camera_trap_images(unsorted_dir):
   # sort images into bursts based on timestamp
   #TODO: don't move original image, if process gets interrupted this will cause issues for the user.
   #TODO: This takes forever. Pass names to the files instead of actually moving them. Should be < 1s operation
-  nested_burst_dir = os.path.join( burst_dir, burst.create_bursts( unsorted_dir, burst_dir ) )
+  nested_burst_dir = os.path.join( burst_dir, burst.create_bursts( unsorted_dir, burst_dir, analysis_datetime ) )
 
 
   ######################### segmentation.py #########################
   # Segment images based on movement
-  date_string = segmentation.segment_images( nested_burst_dir, segment_dir )
+  segmentation.segment_images( nested_burst_dir, segment_dir, analysis_datetime )
 
 
-  ######################### format.py #########################
-  #TODO, format segmented images
+  ######################## format.py #########################
+  # TODO, format segmented images
 
 
-  ######################### sort.py #########################
+  # ######################### sort.py #########################
   blob_dir = segment_dir
   sorted_burst_dir = os.path.join( sorted_dir, "bursts")
   sorted_blob_dir = os.path.join( sorted_dir, "blobs")
@@ -66,13 +67,12 @@ def sort_camera_trap_images(unsorted_dir):
   #todo, add progress bar so that user knows how many images there are in a burst
   #todo - make sure to destroy window at the end. still popped up
   not_sure_dir = os.path.join( sorted_burst_dir, "unsure")
-  user_label_image.user_label_images( not_sure_dir, sorted_dir, "true" ) # display images as bursts
+  not_sure_blob_dir = os.path.join( sorted_blob_dir, "unsure")
+  user_label_image.user_label_images( not_sure_dir, not_sure_blob_dir, sorted_burst_dir, sorted_blob_dir, "true" ) # display images as bursts
 
 
   ######################### generate_report.py #########################
-
-  sorted_cat_dir = os.path.join( sorted_dir, "cats", date_string)
-  print( sorted_cat_dir ) # todo - date string corrupted
+  sorted_cat_dir = os.path.join( sorted_burst_dir, "cats", analysis_datetime)
   generate_report.generate_report( sorted_cat_dir, report_dir )
 
 

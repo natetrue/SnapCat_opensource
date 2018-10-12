@@ -46,7 +46,7 @@ label_image = dict(
 
 # settings for sort_image script
 sort_image = dict(
-    confidence_threshold = .65
+    confidence_threshold = .70
 )
 
 #settings for segmentation script
