@@ -32,7 +32,6 @@ def sort_camera_trap_images(unsorted_dir):
 
   analysis_datetime = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M") 
 
-
   tmp_dirs = [burst_dir, segment_dir, sorted_dir, report_dir]
   for dirname in tmp_dirs:
     if os.path.isdir(dirname):
@@ -52,8 +51,8 @@ def sort_camera_trap_images(unsorted_dir):
   segmentation.segment_images( nested_burst_dir, segment_dir, analysis_datetime )
 
 
-  ######################## format.py #########################
-  # TODO, format segmented images
+#   ######################## format.py #########################
+#   # TODO, format segmented images
 
 
   # ######################### sort.py #########################
@@ -73,7 +72,7 @@ def sort_camera_trap_images(unsorted_dir):
 
   ######################### generate_report.py #########################
   sorted_cat_dir = os.path.join( sorted_burst_dir, "cats", analysis_datetime)
-  generate_report.generate_report( sorted_cat_dir, report_dir )
+  generate_report.generate_report( sorted_cat_dir, unsorted_dir, report_dir )
 
 
 if __name__ == "__main__":

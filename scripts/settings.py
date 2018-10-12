@@ -46,12 +46,13 @@ label_image = dict(
 
 # settings for sort_image script
 sort_image = dict(
-    confidence_threshold = .70
+    confidence_threshold = .65
 )
 
 #settings for segmentation script
 segmentation = dict(
-    diff_threshold = .4
+    diff_threshold = .4,
+    min_square_size = 200
 )
 
 # settings for burst.py

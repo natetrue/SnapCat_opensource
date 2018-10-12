@@ -26,7 +26,10 @@ def list_all_jpgs( directory ):
 
   return jpeg_files
 
-def generate_report( cat_dir, outdir ):
+def generate_report( cat_dir, cam_dir, outdir ):
+
+  # get all possible cameras
+  cameras = [name for name in os.listdir(cam_dir) if os.path.isdir(os.path.join(cam_dir, name))]
 
   # verify that there are images present
   try:
@@ -60,10 +63,13 @@ def generate_report( cat_dir, outdir ):
     cats_detected[camera_directory] = num_cats
  
   # sort data alphabetically
-  cameras = sorted( list( cats_detected.keys() ) )
+  #cameras = sorted( list( cats_detected.keys() ) )
   num_cats = []
   for camera in cameras:
-    num_cats.append( cats_detected[camera] )
+    if not camera in cats_detected:
+      num_cats.append(0)
+    else:
+      num_cats.append( cats_detected[camera] )
 
   # create plot  
   y_pos = np.arange( len(cameras) )
@@ -82,11 +88,12 @@ def generate_report( cat_dir, outdir ):
 def main():
   parser = argparse.ArgumentParser()
   parser.add_argument("--cat_dir", help="directory containing bursts classified as cat")
+  parser.add_argument("--cam_dir", help="directory containing all possible cameras")
   parser.add_argument("--report", help="directory to store report")
 
   args = parser.parse_args()
   
-  generate_report( args.cat_dir, args.report )
+  generate_report( args.cat_dir, args.cam_dir, args.report )
 
 if __name__ == "__main__":
   main()

@@ -38,6 +38,11 @@ def move_image_folder(segmentation_datetime, trap_name, burst_num, current_burst
   global dir_burst
   global dir_blob
 
+  print(current_burst)
+  print(cat_classification)
+  print(unsure_classification)
+  print(not_cat_classification)
+
   dir_burst_new = ''
   dir_burst_old = ''
   dir_blob_new = ''
@@ -50,13 +55,13 @@ def move_image_folder(segmentation_datetime, trap_name, burst_num, current_burst
 
   # If any image is unsure, then move to Unsure folder
   elif unsure_classification:
-    dir_burst_new = os.path.join(dir_burst_sorted, 'not_cats', segmentation_datetime, trap_name)
-    dir_blob_new = os.path.join(dir_blob_sorted, 'not_cats', segmentation_datetime, trap_name)
+    dir_burst_new = os.path.join(dir_burst_sorted, 'unsure', segmentation_datetime, trap_name)
+    dir_blob_new = os.path.join(dir_blob_sorted, 'unsure', segmentation_datetime, trap_name)
 
   # If all images have been labeled as not_cat, move to not_cat folder
   else:
-    dir_burst_new = os.path.join(dir_burst_sorted, 'unsure', segmentation_datetime, trap_name)
-    dir_blob_new = os.path.join(dir_blob_sorted, 'unsure', segmentation_datetime, trap_name)
+    dir_burst_new = os.path.join(dir_burst_sorted, 'not_cats', segmentation_datetime, trap_name)
+    dir_blob_new = os.path.join(dir_blob_sorted, 'not_cats', segmentation_datetime, trap_name)
 
   if not os.path.exists(dir_burst_new):
     os.makedirs(dir_burst_new)
@@ -66,6 +71,13 @@ def move_image_folder(segmentation_datetime, trap_name, burst_num, current_burst
 
   dir_burst_old = os.path.join(dir_burst, segmentation_datetime, trap_name, str(current_burst))
   dir_blob_old = os.path.join(dir_blob, segmentation_datetime, trap_name, str(current_burst))
+
+  print(dir_burst_old)
+  print(dir_burst_new)
+
+  print(dir_blob_old)
+  print(dir_blob_new)
+
 
   try:
     shutil.move(dir_burst_old, dir_burst_new)
@@ -78,7 +90,6 @@ def move_image_folder(segmentation_datetime, trap_name, burst_num, current_burst
   except:
     print("***************ERROR - can't move: ", dir_blob_old)
     print("Check this just in case: ", dir_blob_new)
-
 
 def sort_images(sorted_blob_directory, sorted_burst_directory, blob_directory, burst_directory):
 
@@ -177,13 +188,17 @@ def sort_images(sorted_blob_directory, sorted_burst_directory, blob_directory, b
       for i in top_k:
           
           # if confidence level is below certain value, put in "unsure" folder
+          print("%s: %f" % (labels[i], results[i]))
           if results[i] < settings.sort_image['confidence_threshold']:
+            print("unsure")
             unsure_classification = True
           # else, place it in the proper sorted folder
           else:
             if labels[i] == 'cats':
+              print("cat")
               cat_classification = True
             else:
+              print("not cat")
               not_cat_classification = True
 
           break
