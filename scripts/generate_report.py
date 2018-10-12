@@ -26,10 +26,13 @@ def list_all_jpgs( directory ):
 
   return jpeg_files
 
-def user_label_images( cat_dir, outdir ):
+def generate_report( cat_dir, outdir ):
 
   # verify that there are images present
-  camera_directories = next( os.walk( cat_dir ) )[1]
+  try:
+    camera_directories = next( os.walk( cat_dir ) )[1]
+  except:
+    camera_directories = []
   if len( camera_directories ) == 0:
     return
 
@@ -70,6 +73,9 @@ def user_label_images( cat_dir, outdir ):
   plt.title('Number of Cats Per Camera')
  
   # save and show plot
+  if not os.path.isdir(outdir):
+    os.makedirs(outdir)
+
   plt.savefig( os.path.join( outdir, 'report.png') )
   plt.show()
 
@@ -80,7 +86,7 @@ def main():
 
   args = parser.parse_args()
   
-  user_label_images( args.cat_dir, args.report )
+  generate_report( args.cat_dir, args.report )
 
 if __name__ == "__main__":
   main()

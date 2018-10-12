@@ -5,6 +5,7 @@ import time
 import datetime
 from progressbar import ProgressBar
 import settings
+import random
 
 # Some images have the Reconyx logo at top and bottom of image
 latest_timestamp = 0
@@ -48,12 +49,13 @@ def is_grayscale(img_path):
 
 	img_buffer = settings.burst['img_buffer']
 
-	for x in range(img_buffer, height-img_buffer):
-		for y in range(img_buffer, width-img_buffer):
+	for i in range(0, 5):
+		x = random.randint(img_buffer, height-img_buffer+1)
+		y = random.randint(img_buffer, width-img_buffer+1)
 
-			# values should be consistent across all channels (RGB)
-			if not img[x, y, 0] == img[x, y, 1] == img[x, y, 2]:
-				return False
+		# values should be consistent across all channels (RGB)
+		if not img[x, y, 0] == img[x, y, 1] == img[x, y, 2]:
+			return False
 
 	return True
 
@@ -68,22 +70,18 @@ def create_burst(images_list, dir_camera_trap, burst_count):
 		outfile = '%s/%s' % (dir_burst, os.path.basename(i_path))
 		os.rename(i_path, outfile)
 
-def main():
+def create_bursts(unsorted_directory, burst_directory, curr_datetime=None):
+
 	global latest_timestamp
 	pbar = ProgressBar()
 
 	img_count = 0
 	burst_count = 0
 
-	parser = argparse.ArgumentParser()
-	parser.add_argument("--unsorted_directory", help="directory of raw images")
-	parser.add_argument("--burst_directory", help="directory to place segregated bursts")
-	args = parser.parse_args()
-
-	if args.unsorted_directory:
-		dir_unsorted = args.unsorted_directory
-	if args.burst_directory:
-		dir_out = args.burst_directory
+	if unsorted_directory:
+		dir_unsorted = unsorted_directory
+	if burst_directory:
+		dir_out = burst_directory
 
 	if not os.path.exists(dir_out):
 		os.makedirs(dir_out)
@@ -92,7 +90,10 @@ def main():
 	# Create a new folder for each segmentation based on the current date and time 
 	# (This will allow segmentation of images from the same camera traps in the future to be placed in
 	#  a different location, thereby preventing overwrites)
-	analysis_datetime = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M") 
+	if not curr_datetime:
+		analysis_datetime = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M")
+	else:
+		analysis_datetime = curr_datetime
 
 	for path, subdirs, files in os.walk(dir_unsorted):
 
@@ -133,5 +134,13 @@ def main():
 		# Don't forget the last 
 		create_burst(images_list, dir_camera_trap, burst_count)
 
+	return analysis_datetime
+
 if __name__ == "__main__":
-  main()
+
+	parser = argparse.ArgumentParser()
+	parser.add_argument("--unsorted_directory", help="directory of raw images")
+	parser.add_argument("--burst_directory", help="directory to place segregated bursts")
+	args = parser.parse_args()
+	
+	create_bursts(args.unsorted_directory, args.burst_directory)

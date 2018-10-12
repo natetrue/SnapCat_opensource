@@ -67,13 +67,21 @@ def move_image_folder(segmentation_datetime, trap_name, burst_num, current_burst
   dir_burst_old = os.path.join(dir_burst, segmentation_datetime, trap_name, str(current_burst))
   dir_blob_old = os.path.join(dir_blob, segmentation_datetime, trap_name, str(current_burst))
 
-  shutil.move(dir_burst_old, dir_burst_new)
-  shutil.move(dir_blob_old, dir_blob_new)
+  try:
+    shutil.move(dir_burst_old, dir_burst_new)
+  except:
+    print("***************ERROR - can't move: ", dir_burst_old)
+    print("Check this just in case: ", dir_burst_new)
+
+  try:
+    shutil.move(dir_blob_old, dir_blob_new)
+  except:
+    print("***************ERROR - can't move: ", dir_blob_old)
+    print("Check this just in case: ", dir_blob_new)
 
 
+def sort_images(sorted_blob_directory, sorted_burst_directory, blob_directory, burst_directory):
 
-
-def main():
   global dir_burst_sorted
   global dir_blob_sorted
   global dir_burst
@@ -85,13 +93,6 @@ def main():
   not_cat_classification = False
   unsure_classification = False
 
-  parser = argparse.ArgumentParser()
-  parser.add_argument("--sorted_blob_directory", help="directory to place sorted blobs")
-  parser.add_argument("--sorted_burst_directory", help="directory to place sorted bursts")
-  parser.add_argument("--blob_directory", help="directory of blobs")  
-  parser.add_argument("--burst_directory", help="directory of bursts") 
-  args = parser.parse_args()
-
   model_file = settings.graph['graph']
   label_file = settings.graph['labels']
   input_height = settings.graph['input_height']
@@ -101,14 +102,14 @@ def main():
   input_layer = settings.graph['input_layer']
   output_layer = settings.graph['output_layer']
 
-  if args.sorted_blob_directory:
-    dir_blob_sorted = args.sorted_blob_directory
-  if args.sorted_burst_directory:
-    dir_burst_sorted = args.sorted_burst_directory
-  if args.blob_directory:
-    dir_blob = args.blob_directory
-  if args.burst_directory:
-    dir_burst = args.burst_directory
+  if sorted_blob_directory:
+    dir_blob_sorted = sorted_blob_directory
+  if sorted_burst_directory:
+    dir_burst_sorted = sorted_burst_directory
+  if blob_directory:
+    dir_blob = blob_directory
+  if burst_directory:
+    dir_burst = burst_directory
 
   graph = tools.load_graph(model_file)
   labels = tools.load_labels(label_file)
@@ -124,59 +125,68 @@ def main():
         unsorted_files.append(complete)
 
   # Create Full path
-  for file in unsorted_files:
-    segmentation_datetime, trap_name, burst_num, file_name =  tools.get_image_info(file)
+  # todo, should this be outside the loop, one TF session and then parse all the images?
+  with tf.Session(graph=graph) as sess:
 
-    if first_burst:
-      current_burst = int(burst_num)
-      print(current_burst)
-      first_burst = False
+    for file in unsorted_files:
 
-    if not current_burst == int(burst_num):
+      if not os.path.isfile(file):
+        print(file)
+        print("***************ERROR - File doesn't exist")
+        continue
 
-      move_image_folder(segmentation_datetime, trap_name, burst_num, current_burst,
-                      cat_classification, unsure_classification, not_cat_classification)
+      segmentation_datetime, trap_name, burst_num, file_name =  tools.get_image_info(file)
 
-      cat_classification = False
-      not_cat_classification = False
-      unsure_classification = False
-      current_burst = int(burst_num)
+      if first_burst:
+        current_burst = int(burst_num)
+        print(current_burst)
+        first_burst = False
 
-    previous_file = file
+      if not current_burst == int(burst_num):
 
-    t = tools.read_tensor_from_image_file(
-        file,
-        input_height=input_height,
-        input_width=input_width,
-        input_mean=input_mean,
-        input_std=input_std)
+        move_image_folder(segmentation_datetime, trap_name, burst_num, current_burst,
+                        cat_classification, unsure_classification, not_cat_classification)
 
-    input_name = "import/" + input_layer
-    output_name = "import/" + output_layer
-    input_operation = graph.get_operation_by_name(input_name)
-    output_operation = graph.get_operation_by_name(output_name)
+        cat_classification = False
+        not_cat_classification = False
+        unsure_classification = False
+        current_burst = int(burst_num)
 
-    with tf.Session(graph=graph) as sess:
+      previous_file = file
+
+      t = tools.read_tensor_from_image_file(
+          file,
+          input_height=input_height,
+          input_width=input_width,
+          input_mean=input_mean,
+          input_std=input_std)
+
+      input_name = "import/" + input_layer
+      output_name = "import/" + output_layer
+      input_operation = graph.get_operation_by_name(input_name)
+      output_operation = graph.get_operation_by_name(output_name)
+
+      # todo, suspect this is what's printing a lot of messages. Attempt to consolidate calls to this function
       results = sess.run(output_operation.outputs[0], {
           input_operation.outputs[0]: t
       })
-    results = np.squeeze(results)
+      results = np.squeeze(results)
 
-    # get classification
-    top_k = results.argsort()[-5:][::-1]
-    for i in top_k:
-        
-        # if confidence level is below certain value, put in "unsure" folder
-        if results[i] < settings.sort_image['confidence_threshold']:
-          unsure_classification = True
-        # else, place it in the proper sorted folder
-        else:
-          if labels[i] == 'cats':
-            cat_classification = True
+      # get classification
+      top_k = results.argsort()[-5:][::-1]
+      for i in top_k:
+          
+          # if confidence level is below certain value, put in "unsure" folder
+          if results[i] < settings.sort_image['confidence_threshold']:
+            unsure_classification = True
+          # else, place it in the proper sorted folder
           else:
-            not_cat_classification = True
+            if labels[i] == 'cats':
+              cat_classification = True
+            else:
+              not_cat_classification = True
 
-        break
+          break
 
   # Final Burst needs to be sorted
   segmentation_datetime, trap_name, burst_num, file_name =  tools.get_image_info(file)
@@ -184,4 +194,12 @@ def main():
                       cat_classification, unsure_classification, not_cat_classification)
 
 if __name__ == "__main__":
-  main()
+
+  parser = argparse.ArgumentParser()
+  parser.add_argument("--sorted_blob_directory", help="directory to place sorted blobs")
+  parser.add_argument("--sorted_burst_directory", help="directory to place sorted bursts")
+  parser.add_argument("--blob_directory", help="directory of blobs")  
+  parser.add_argument("--burst_directory", help="directory of bursts") 
+  args = parser.parse_args()
+
+  sort_images(args.sorted_blob_directory, args.sorted_burst_directory, args.blob_directory, args.burst_directory)
