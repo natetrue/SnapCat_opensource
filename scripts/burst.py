@@ -43,6 +43,9 @@ def convert_timestamp(img_path):
 
 # determine if image was taken at night or day
 def is_grayscale(img_path):
+	# todo remove - added to speed up
+	return True
+
 	img = cv2.imread(img_path, 1)
 	height, width, channels = img.shape
 
@@ -59,46 +62,31 @@ def is_grayscale(img_path):
 
 # Group into bursts
 def create_burst(images_list, dir_camera_trap, burst_count):
+
+
 	for i_path in images_list:
-		dir_burst = '%s/%d' % (dir_camera_trap, burst_count)
-
-		if not os.path.exists(dir_burst):
-			os.makedirs(dir_burst)
-
-		outfile = '%s/%s' % (dir_burst, os.path.basename(i_path))
+		
 		os.rename(i_path, outfile)
 
-def create_bursts(unsorted_directory, burst_directory):
+def create_bursts( unsorted_directory ):
 
 	global latest_timestamp
 	pbar = ProgressBar()
 
 	img_count = 0
 	burst_count = 0
-
-	if unsorted_directory:
-		dir_unsorted = unsorted_directory
-	if burst_directory:
-		dir_out = burst_directory
-
-	if not os.path.exists(dir_out):
-		os.makedirs(dir_out)
-
+	bursts_dict = dict()
 
 	# Create a new folder for each segmentation based on the current date and time 
 	# (This will allow segmentation of images from the same camera traps in the future to be placed in
 	#  a different location, thereby preventing overwrites)
 	analysis_datetime = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M") 
 
-	for path, subdirs, files in os.walk(dir_unsorted):
+	for path, subdirs, files in os.walk(unsorted_directory):
 
 		images_list = []
 		burst_imgs = []
-		camera_trap = os.path.join(analysis_datetime, os.path.basename(path))
-		dir_camera_trap = '%s/%s' % (dir_out, camera_trap)
-
-		if len(files) > 1 and not os.path.exists(dir_camera_trap):
-			os.makedirs(dir_camera_trap)
+		camera_trap = os.path.basename(path)
 
 		pbar = ProgressBar()
 		pbar.maxval = len(files)
@@ -106,11 +94,14 @@ def create_bursts(unsorted_directory, burst_directory):
 
 		# Reset for each trap
 		latest_timestamp = 0
-		burst_count = 0
+		bursts = []
 
 		for name in pbar(files):
 			# only work with JPG 
 			if name.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
+
+				#todo convert_timestamp also calls greyscale, rename
+				# todo greyscale takes too long, speed up
 				timestamp, same_burst = convert_timestamp(os.path.join(path, name))
 
 				# If in the same burst, add to list and move on
@@ -119,7 +110,8 @@ def create_bursts(unsorted_directory, burst_directory):
 				# Else, read images, average, and attempt to segment
 				else:
 					
-					create_burst(images_list, dir_camera_trap, burst_count)
+					if images_list:
+						bursts.append( images_list )
 					
 					images_list = []
 					burst_imgs = []
@@ -127,9 +119,13 @@ def create_bursts(unsorted_directory, burst_directory):
 					images_list.append(os.path.join(path, name))
 
 		# Don't forget the last 
-		create_burst(images_list, dir_camera_trap, burst_count)
+		if images_list:
+			bursts.append( images_list )
 
-	return analysis_datetime
+		if bursts:
+			bursts_dict[camera_trap] = bursts
+
+	return bursts_dict
 
 if __name__ == "__main__":
 

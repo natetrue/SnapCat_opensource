@@ -25,8 +25,8 @@ BACKSPACE_KEY = 8
 RED = ( 255, 0, 0 )
 GREEN = ( 0, 255, 0 )
 WHITE = ( 255, 255, 255 )
-INVALID_STRING = "not_cats"
-VALID_STRING = "cats"
+INVALID_STRING = "not_cat"
+VALID_STRING = "cat"
 
 IMAGE_TEXT = "Does Image Contain Cat?"
 IMAGE_PATH = os.path.join( os.path.dirname( os.path.realpath(__file__) ), "images" )
@@ -174,7 +174,7 @@ def disp_image_get_input( file ):
       key = display_image_wait_key( image, 0)
       #todo, change image text to contain press any key to continue
 
-def display_directory_get_input( files ):
+def display_images_get_input( files ):
 
   num_files = len( files )
 
@@ -221,93 +221,57 @@ def list_all_jpgs( directory ):
   return jpeg_files
 
 
-def user_label_images( image_dir, outdir, parse_burst ):
+def user_label_images( unsure_bursts ):
   
-  # TODO: there's a lot of duplicated code here, maybe function pointers?
-  ######################### sort individual files #########################
-  if not parse_burst:
-    images_to_label = list_all_jpgs( image_dir )
-    if len(images_to_label) == 0:
-      return
+  burst_labels = dict()
+  
+  index = 0
+  while index < len(unsure_bursts): 
 
-    image_labels = dict()
-    done = False
-    index = 0
-    while not done: 
-      image = images_to_label[index]
-      key = disp_image_get_input( image )
-      
-      if key == LEFT_KEY:
-        image_labels[image] = INVALID_STRING
-        index = index + 1
+    dictionary_key = str(index)
 
-      elif key == RIGHT_KEY:
-        image_labels[image] = VALID_STRING
-        index = index + 1
+    if not unsure_bursts[index]:
+      continue
 
-      elif key == BACKSPACE_KEY:
-        # ensure we don't go negative with the index
-        if ( index > 0 ):
-          index = index - 1
+    burst_images = unsure_bursts[index]
+    key = display_images_get_input( burst_images )
+    
+    if key == LEFT_KEY:
+      burst_labels[dictionary_key] = INVALID_STRING
+      index = index + 1
 
+    elif key == RIGHT_KEY:
+      burst_labels[dictionary_key] = VALID_STRING
+      index = index + 1
+
+    elif key == BACKSPACE_KEY:
+      # ensure we don't go negative with the index
+      if ( index > 0 ):
+        index = index - 1
         # remove the entry from dict
-        image = images_to_label[index]
-        del image_labels[image]
+        del burst_labels[str(index)]
 
-      elif key == ESCAPE_KEY:
-        cv2.destroyAllWindows()
-        done = True
-      
-      if index >= len(images_to_label):
-        done = True
+    elif key == ESCAPE_KEY:
+      cv2.destroyAllWindows()
+      break
 
-    move_images( image_dir, image_labels, outdir )
+  user_labeled_cat_images = []
+  user_labeled_not_cat_iamges = []
 
-  ######################### sort image bursts #########################
-  else:
-    try:
-      directories = next(os.walk(image_dir))[1]
-    except:
-      return
+  index = 0
+  while index < len(burst_labels):
+    dictionary_key = str(index)
 
-    if len(directories) == 0:
-      return
+    if burst_labels[dictionary_key] == VALID_STRING:
+      user_labeled_cat_images.append(unsure_bursts[index])
+    elif burst_labels[dictionary_key] == INVALID_STRING:
+      user_labeled_not_cat_iamges.append(unsure_bursts[index])
+    else:
+      print("label undefined", burst_labels[dictionary_key])
 
-    directory_labels = dict()
-    index = 0
-    done = False
+    index += 1
 
-    for burst_dir, subdirs, files in os.walk(image_dir):
-
-      jpegs_in_dir = list_all_jpgs( burst_dir )
-
-      if len(jpegs_in_dir) < 1:
-        continue
-
-      key = display_directory_get_input( jpegs_in_dir )
-      
-      if key == LEFT_KEY:
-        directory_labels[burst_dir] = INVALID_STRING
-        index = index + 1
-
-      elif key == RIGHT_KEY:
-        directory_labels[burst_dir] = VALID_STRING
-        index = index + 1
-
-      elif key == BACKSPACE_KEY:
-        # ensure we don't go negative with the index
-        if ( index > 0 ):
-          index = index - 1
-
-        # remove the entry from dict
-        burst_dir = os.path.join( image_dir, directories[index] )
-        del directory_labels[burst_dir]
-
-      elif key == ESCAPE_KEY:
-        cv2.destroyAllWindows()
-        break
-      
-    move_directories( image_dir, directory_labels, outdir )
+  return user_labeled_cat_images, user_labeled_not_cat_iamges, unsure_bursts[len(burst_labels):]
   
 def main():
   parser = argparse.ArgumentParser()
