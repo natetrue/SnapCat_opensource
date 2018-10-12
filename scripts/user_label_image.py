@@ -296,6 +296,9 @@ def user_label_images( burst_dir, blob_dir, outdir_burst, outdir_blob, parse_bur
 
       directories_to_label.append(pburst_dir)
 
+    if len(directories_to_label) == 0:
+      return
+
     while not done: 
       pburst_dir = directories_to_label[index]
 

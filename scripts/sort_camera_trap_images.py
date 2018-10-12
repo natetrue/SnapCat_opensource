@@ -51,8 +51,8 @@ def sort_camera_trap_images(unsorted_dir):
   segmentation.segment_images( nested_burst_dir, segment_dir, analysis_datetime )
 
 
-  ######################## format.py #########################
-  # TODO, format segmented images
+#   ######################## format.py #########################
+#   # TODO, format segmented images
 
 
   # ######################### sort.py #########################

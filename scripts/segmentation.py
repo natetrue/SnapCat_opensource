@@ -122,7 +122,7 @@ def optimal_square(x1,x2,y1,y2,i):
 
 	return int(ret_x1), int(ret_x2), int(ret_y1), int(ret_y2)
 
-def segment_images( burst_directory, output_directory):
+def segment_images( burst_directory, output_directory, curr_datetime):
 	global latest_timestamp
 	pbar = ProgressBar()
 
@@ -149,7 +149,6 @@ def segment_images( burst_directory, output_directory):
 
 	for path, subdirs, files in os.walk(dir_burst):
 
-		print( path )
 		pbar = ProgressBar()
 		pbar.maxval = len(files)
 		pbar.start()
