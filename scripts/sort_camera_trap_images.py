@@ -13,7 +13,8 @@ from __future__ import print_function
 
 import argparse
 import os
-import burst
+#import burst
+import nate_burst
 import segmentation
 import sort_image
 import user_label_image
@@ -43,7 +44,7 @@ def sort_camera_trap_images(unsorted_dir):
   # sort images into bursts based on timestamp
   #TODO: don't move original image, if process gets interrupted this will cause issues for the user.
   #TODO: This takes forever. Pass names to the files instead of actually moving them. Should be < 1s operation
-  nested_burst_dir = os.path.join( burst_dir, burst.create_bursts( unsorted_dir, burst_dir, analysis_datetime ) )
+  nested_burst_dir = os.path.join( burst_dir, nate_burst.create_bursts( unsorted_dir, burst_dir, analysis_datetime ) )
 
 
   ######################### segmentation.py #########################
