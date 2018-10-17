@@ -2,41 +2,30 @@ from os import walk
 import numpy as np
 import os
 import cv2
-from imgaug import augmenters as iaa
-import random
 import argparse
 from progressbar import ProgressBar
+from PIL import Image
+import tools
 
-def random_coords(img):
-	height, width = img.shape[:2]
-	crop_height = 224
-	crop_width = 224
+def process_image(dirpath, new_dirpath, filename):
+	filepath = os.path.join(dirpath,filename)
+	filepath_out = os.path.join(new_dirpath,filename)
 
-	if height < 224:
-		crop_height = height
+	img = cv2.imread(filepath, 1)
+	img = img.astype(np.float32)/255.0
+	#img = img[50:-50,:]
 
-	if width < 224:
-		crop_width = width
+	x1 = 0
+	y1 = 0
+	y2,x2,depth = np.shape(img)
 
-	max_height_start = random.randint(0, height - crop_height)
-	max_width_start = random.randint(0, width - crop_width)
+	opt_x1, opt_x2, opt_y1, opt_y2 = tools.optimal_square(int(x1),int(x2),int(y1),int(y2),img)
 
-	return max_height_start, max_width_start
+	image_obj = Image.open(filepath)
+	subimg = image_obj.crop((opt_x1, opt_y1, opt_x2, opt_y2))
+	subimg = subimg.resize((224,224))
 
-def process_image(dirpath, new_dirpath, filenames):
-
-	seq = iaa.Sequential([
-		iaa.Grayscale(1.0)
-	])
-	
-	img = cv2.imread(dirpath + "/" + filename, 1)
-	img_aug = seq.augment_image(img)
-
-	random_height_coord, random_width_coord = random_coords(img)
-
-	crop_img = img_aug[random_height_coord:random_height_coord+224, random_width_coord:random_width_coord+224]
-
-	cv2.imwrite(new_dirpath + "/" + filename, crop_img)
+	subimg.save(filepath_out)
 
 
 if __name__ == '__main__':
@@ -79,7 +68,7 @@ if __name__ == '__main__':
 
 	# Get number of files for Progress Bar
 	file_count = sum([len(files) for r, d, files in os.walk(input_path)])
-	print (file_count)
+	#print (file_count)
 	pbar.maxval = file_count
 
 	for (dirpath, dirnames, filenames) in walk(input_path):
