@@ -6,12 +6,36 @@ import datetime
 from progressbar import ProgressBar
 import settings
 import random
+from PIL import Image
+from PIL.ExifTags import TAGS
 
 # Some images have the Reconyx logo at top and bottom of image
 latest_timestamp = 0
 #minimum_burst_length = 10
 #current_burst_length = 0
 current_burst_grayscale = False
+
+def get_exif_data_from_file(filename):
+	exif = {}
+	try:
+		print ("FILENAME =>" + filename)
+		img = Image.open(filename)
+		if hasattr( img, '_getexif' ):
+			exifinfo = img._getexif()
+			if exifinfo != None:
+				for tag, value in exifinfo.items():
+					TAG2text = TAGS.get(tag)
+					exif[TAG2text] = value
+	except IOError:
+		print ("IOERROR " + fname)
+
+	return exif
+
+def get_filename_datetime(exif_datetime_string, format):
+	return datetime.datetime.strptime(exif_datetime_string, '%Y:%m:%d %H:%M:%S').timestamp()
+
+def get_epoch():
+	return '%f' % time.time()
 
 # Convert string to seconds
 def convert_timestamp(img_path):
@@ -22,9 +46,8 @@ def convert_timestamp(img_path):
 	global latest_timestamp
 	global current_burst_grayscale
 
-	timestamp_string = os.path.basename(img_path).rsplit( ".", 1 )[ 0 ]
-
-	timestamp = time.mktime(datetime.datetime.strptime(timestamp_string, "%d-%m-%Y %H-%M-%S").timetuple())
+	exif_data = get_exif_data_from_file(img_path)
+	timestamp = get_filename_datetime((exif_data['DateTimeOriginal']), '%Y_%m_%d_%H_%M_%S')
 
 	if latest_timestamp == 0:
 		latest_timestamp = timestamp
