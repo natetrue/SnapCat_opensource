@@ -64,14 +64,26 @@ def segment_images( burst_directory, output_directory, curr_datetime=None):
 		for i_path, i in burst_imgs:
 
 			diffimg = np.abs(np.mean(i,-1) - avg_burst_img)
-			
 			diffimg = cv2.blur(diffimg, (25,25))
 
-			#cv2.imshow('image',diffimg)
-			#cv2.waitKey(0)
-			#cv2.destroyAllWindows()
+			wide_diffimg = cv2.blur(diffimg, (100,100))
+
+			wide_diff = np.abs(wide_diffimg - diffimg)
+
+
+			unsigned_image = img_as_ubyte(wide_diff)
+
+
+			im_color = cv2.applyColorMap(unsigned_image, cv2.COLORMAP_JET)
+			cv2.imshow('image',im_color)
+			cv2.waitKey(0)
+			cv2.destroyAllWindows()
+
+			return
+
 
 			thresimg = diffimg > np.max(diffimg) * settings.segmentation['diff_threshold']
+			# TODO investigate options to identify local differences
 
 			#print ("threshimg", thresimg)
 
@@ -158,6 +170,22 @@ def segment_images( burst_directory, output_directory, curr_datetime=None):
 			resized_image = img_as_ubyte(resized_image)
 			cv2.imwrite(outfile, resized_image)
 			cv2.destroyAllWindows()
+			# TODO save this information in JSON file
+
+			"""
+			1. segmentation (nate) jon to add images to gdrive
+			2. database ( jon )
+			   - save information in JSON
+			3. user review tool for segmented images (jon)
+			   - more user info (backspace escape)
+			   - save info before exit
+		    4. set phone alarm for pizz
+
+		    5. send link to repo
+		    6. send logo 
+		    7. plan party
+			"""
+			return
 
 		burst_imgs = []
 
