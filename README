@@ -3,8 +3,8 @@ Initial Goals:
 1. Create Training Dataset of Cats, Dogs, Rats, Birds, and nothing
 2. Set aside images for testing
 3. Train CNNs on dataset and test to see accuracy
-4. Port to Raspberry Pi w/ webcam attached
-5. Create demo/report findings to show to various organizations
+4. Port to Raspberry Pi w\ webcam attached
+5. Create demo\report findings to show to various organizations
 6. ???
 7. Save endangered species on islands
 
@@ -21,51 +21,51 @@ Steps:
 
 	Run this to convert to grayscale and randomly crop to 224 x 224 pixels (training images from Imagenet):
 
-		python ./scripts/preprocessing_images.py --input_dir ./training/raw_images/ --output_dir ./training/processed_images/
+		python .\scripts\preprocessing_images.py --input_dir .\training\raw_images\ --output_dir .\training\processed_images\
 
 	Run this to retrain the MobilenetV2 graph to train for "cat" vs "not cat":
 
-		python ./scripts/retrain.py ( settings are found in settings.py )
+		python .\scripts\retrain.py ( settings are found in settings.py )
 
 		If you're running into issues with the above script, please check the following link:
 
-		https://github.com/tensorflow/hub/issues/61 ( Just delete the tfhub_modules folder )
+		https:\\github.com\tensorflow\hub\issues\61 ( Just delete the tfhub_modules folder )
 
 	Run this to convert to grayscale and randomly crop to 224 x 224 pixels for (testing images from Imagenet):
 
-		python ./scripts/preprocessing_images.py --input_dir ./testing/raw_images/ --output_dir ./testing/processed_images/
+		python .\scripts\preprocessing_images.py --input_dir .\testing\raw_images\ --output_dir .\testing\processed_images\
 
 	Run this to label the testing images and output a confusion matrix:
 
-		python ./scripts/label_image.py 
+		python .\scripts\label_image.py 
 
 
 SORTING:
 
 	First sort images into bursts:
 
-		python ./scripts/burst.py --unsorted_directory ./sorting/unsorted/ --burst_directory  ./sorting/bursts/
+		python .\scripts\burst.py --unsorted_directory .\sorting\unsorted\ --burst_directory  .\sorting\bursts\
 
 	Do some of the dirty work of segmenting the photos to be fed into the sorting script (Thanks Nate)
 
-		python ./scripts/segmentation.py --burst_directory ./sorting/bursts/ --output_directory  ./sorting/blobs/
+		python .\scripts\segmentation.py --burst_directory .\sorting\bursts\ --output_directory  .\sorting\blobs\
 
 	Run this to label and sort uncategorized images into the appropriate folders:
 
-		python ./scripts/sort_image.py --blob_directory ./sorting/blobs/ --burst_directory ./sorting/bursts/ --sorted_burst_directory ./sorting/sorted/ --sorted_blob_directory ./sorting/sorted_blobs
+		python .\scripts\sort_image.py --blob_directory .\sorting\blobs\ --burst_directory .\sorting\bursts\ --sorted_burst_directory .\sorting\sorted\ --sorted_blob_directory .\sorting\sorted_blobs
 
 		TODO: Images are still pretty big... do we need to convert to 224 x 224?
 
 	Run this to label and sort uncategorized images into the appropriate folders:
-			python ./scripts/label_image.py --sort true --unsorted_directory ./sorting/blobs/ --sorted_directory ./sorting/sorted/ 
+			python .\scripts\label_image.py --sort true --unsorted_directory .\sorting\blobs\ --sorted_directory .\sorting\sorted\ 
 
 	Review images with:
 		python .\scripts\user_label_image.py --image_dir=<images_to_sort> --outdir=<output_directory> --burst=<true or false>
-    note: the output_directory will create two folders. "cat/" and "not_cat/" if they don't exist and move the original files to the correct directory
+    note: the output_directory will create two folders. "cat\" and "not_cat\" if they don't exist and move the original files to the correct directory
           burst mode assumes that image_dir is a folder that contains folders of images from a burst
 
   Generate report
     python scripts\generate_report.py --cat_dir=<sorted bursts> --report=<where to save report.png>
 
-    NOTE: the cat dir specified should be the datetime folder, not the cat folder (EG: ./sorting/sorted/cats/2018_09_20_10_24/ not ./sorting/sorted/cats/)
+    NOTE: the cat dir specified should be the datetime folder, not the cat folder (EG: .\sorting\sorted\cats\2018_09_20_10_24\ not .\sorting\sorted\cats\)
 

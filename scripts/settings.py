@@ -51,8 +51,8 @@ sort_image = dict(
 
 #settings for segmentation script
 segmentation = dict(
-    diff_threshold = .4,
-    min_square_size = 200
+    diff_threshold = .6,
+    min_square_size = 100
 )
 
 # settings for burst.py

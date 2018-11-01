@@ -2,6 +2,7 @@ import os
 import random
 import tensorflow as tf
 
+
 def optimal_square(x1,x2,y1,y2,i):
   max_x = i.shape[1]
   max_y = i.shape[0]
@@ -20,22 +21,42 @@ def optimal_square(x1,x2,y1,y2,i):
   side_2 = 0
   delta = 0
 
-  if (x_length > y_length):
+  #print( x1, x2, y1, y2 )
+  #print( max_x, max_y)
+
+  #width is bigger than height
+  if( x_length == y_length):
+    return x1, x2, y1, y2
+
+  elif (x_length > y_length):
+
+    #reducing x 
     if x_length > max_y:
-      square_size = y_length
+      square_size = max_y
       affected_dimension = 'x'
+      ret_y1 = 0
+      ret_y2 = max_y
       delta = abs(square_size - x_length)
+    
+    # increasing y to x_length
     else:
       square_size = x_length
       affected_dimension = 'y'
       delta = abs(square_size - y_length)
+      #print("hooray")
 
+  #height is bigger than width
   elif (y_length > x_length):
 
+    # reducing y and extending x
     if y_length > max_x:
-      square_size = x_length
+      square_size = max_x
       affected_dimension = 'y'
+      ret_x1 = 0
+      ret_x2 = max_x
       delta = abs(square_size - y_length)
+
+    # extending x to y_length
     else:
       square_size = y_length
       affected_dimension = 'x'
@@ -44,8 +65,14 @@ def optimal_square(x1,x2,y1,y2,i):
   # Split up addition/subtraction on both sides of proposed subimage
   side_1 = int(round(delta / 2))
   side_2 = delta - side_1
+  #print("side 1 should be 4 - it is: ", side_1)
+  #print("side 2 should be 3 - it is: ", side_2)
 
+  #print("square size:", square_size)
+  #print(" y_length:", y_length)
   if affected_dimension == 'y':
+
+    # attempting to extend y
     if square_size > y_length:
       if y1 < side_1:
         side_2 = side_2 + (side_1-y1)
@@ -53,7 +80,7 @@ def optimal_square(x1,x2,y1,y2,i):
         ret_y1 = 0
         ret_y2 = y2 + side_2
 
-      elif (max_y - y2) > side_2:
+      elif (side_2 + y2) > max_y:
         side_1 = side_1 + (side_2 - (max_y-y2))
 
         ret_y1 = y1 - side_1
@@ -62,6 +89,9 @@ def optimal_square(x1,x2,y1,y2,i):
       else:
         ret_y1 = y1 - side_1
         ret_y2 = y2 + side_2
+
+        #print("ret_y1 should be 425 - it s: ", ret_y1)
+        #print("ret_y2 should be 740 - it s: ", ret_y2)
 
     elif square_size < y_length:
       ret_y1 = y1 + side_1
@@ -75,7 +105,7 @@ def optimal_square(x1,x2,y1,y2,i):
         ret_x1 = 0
         ret_x2 = x2 + side_2
 
-      elif (max_x - x2) > side_2:
+      elif (side_2 + x2) > max_x:
         side_1 = side_1 + (side_2 - (max_x-x2))
 
         ret_x1 = x1 - side_1

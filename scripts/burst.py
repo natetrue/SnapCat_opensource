@@ -47,7 +47,14 @@ def convert_timestamp(img_path):
 	global current_burst_grayscale
 
 	exif_data = get_exif_data_from_file(img_path)
-	timestamp = get_filename_datetime((exif_data['DateTimeOriginal']), '%Y_%m_%d_%H_%M_%S')
+
+	timestamp = 0
+
+	try:
+	  timestamp = get_filename_datetime((exif_data['DateTimeOriginal']), '%Y_%m_%d_%H_%M_%S')
+	except:
+	  print ("Error: no timestamp available for:", img_path, " -- skipping")
+	  return 0, False
 
 	if latest_timestamp == 0:
 		latest_timestamp = timestamp
