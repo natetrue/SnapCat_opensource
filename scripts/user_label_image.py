@@ -32,6 +32,9 @@ WHITE = ( 255, 255, 255 )
 INVALID_STRING = "not_cats"
 VALID_STRING = "cats"
 UNSURE_STRING = "unsure"
+POLLING_DURATION_MS = 100
+MAX_POLLING_TIMEOUT_MS = (60 * 2 * 1000) #2 mins
+DISPLAY_HELP_MS = (20 * 1000) # 20 secibds
 
 IMAGE_TEXT = "Does Image Contain Cat?"
 IMAGE_PATH = os.path.join( os.path.dirname( os.path.realpath(__file__) ), "images" )
@@ -162,17 +165,17 @@ def disp_image_get_input( file ):
     # wait for user input
     if key == LEFT_KEY:
       update = cv2.add(image, create_blank( image, RED) )
-      display_image_wait_key( update, 100)
+      display_image_wait_key( update, POLLING_DURATION_MS)
       return key
 
     elif key == RIGHT_KEY:
       update = cv2.add( image, create_blank( image, GREEN ) )
-      display_image_wait_key( update, 100 )
+      display_image_wait_key( update, POLLING_DURATION_MS )
       return key
 
     elif key == DOWN_KEY:
       update = cv2.add( image, create_blank( image, YELLOW ) )
-      display_image_wait_key( update, 100 )
+      display_image_wait_key( update, POLLING_DURATION_MS )
       return key
 
     elif key == ESCAPE_KEY:
@@ -183,10 +186,14 @@ def disp_image_get_input( file ):
 
     else:
       image = cv2.imread( USAGE_IMG, cv2.IMREAD_COLOR)
-      key = display_image_wait_key( image, 0)
+      display_image_wait_key( image, DISPLAY_HELP_MS)
+      key = -1
+
       #todo, change image text to contain press any key to continue
 
 def display_directory_get_input( files ):
+
+  timeout = 0
 
   num_files = len( files )
 
@@ -197,22 +204,27 @@ def display_directory_get_input( files ):
 
       # display image to be labeled
       image = cv2.imread( file, cv2.IMREAD_COLOR)
-      key = display_image_wait_key( image, 100 )
+
+      if timeout > MAX_POLLING_TIMEOUT_MS:
+        key = 1234
+        timeout = 0
+      else:
+        key = display_image_wait_key( image, POLLING_DURATION_MS )
       
       # wait for user input
       if key == LEFT_KEY:
         update = cv2.add(image, create_blank(image, RED))
-        display_image_wait_key( update, 100)
+        display_image_wait_key( update, POLLING_DURATION_MS)
         return key
 
       elif key == RIGHT_KEY:
         update = cv2.add(image, create_blank(image, GREEN))
-        display_image_wait_key( update, 100)
+        display_image_wait_key( update, POLLING_DURATION_MS)
         return key
 
       elif key == DOWN_KEY:
         update = cv2.add( image, create_blank( image, YELLOW ) )
-        display_image_wait_key( update, 100 )
+        display_image_wait_key( update, POLLING_DURATION_MS )
         return key
 
       elif key == ESCAPE_KEY:
@@ -223,8 +235,11 @@ def display_directory_get_input( files ):
 
       elif key != -1:
         image = cv2.imread( USAGE_IMG, cv2.IMREAD_COLOR)
-        key = display_image_wait_key( image, 0)
-        #todo, change image text to contain press any key to continue
+        display_image_wait_key( image, DISPLAY_HELP_MS)
+        key = -1
+      
+      elif key == -1:
+        timeout += POLLING_DURATION_MS
 
 def list_all_jpgs( directory ):
   jpeg_files = []
