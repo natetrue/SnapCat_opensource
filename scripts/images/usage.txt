@@ -12,3 +12,5 @@ Press the escape key to abort the program
 
 Press the backspacekey to 
 review previous images
+
+-- press any key to continue --

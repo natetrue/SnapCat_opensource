@@ -362,6 +362,8 @@ def user_label_images( burst_dir, outdir_blob, parse_burst ):
     cv2.destroyAllWindows()  
     # move_directories( burst_dir, directory_labels, outdir_burst )
     # move_directories( blob_dir, directory_blob_labels, outdir_blob)
+
+    # todo add timeout that displays usage picture if no input for 2 mins. Display for a max of 30 sec and then continue
   
 def main():
   parser = argparse.ArgumentParser()
