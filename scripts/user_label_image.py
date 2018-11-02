@@ -20,13 +20,18 @@ from win32api import GetSystemMetrics
 
 LEFT_KEY = 2424832
 RIGHT_KEY = 2555904
+DOWN_KEY = 2621440
+
 ESCAPE_KEY = 27
 BACKSPACE_KEY = 8
-RED = ( 255, 0, 0 )
-GREEN = ( 0, 255, 0 )
+RED = ( 200, 0, 0 )
+GREEN = ( 0, 150, 0 )
+YELLOW = ( 150, 150, 0 )
+
 WHITE = ( 255, 255, 255 )
 INVALID_STRING = "not_cats"
 VALID_STRING = "cats"
+UNSURE_STRING = "unsure"
 
 IMAGE_TEXT = "Does Image Contain Cat?"
 IMAGE_PATH = os.path.join( os.path.dirname( os.path.realpath(__file__) ), "images" )
@@ -68,9 +73,11 @@ def display_image_wait_key( image, delay_ms=0 ):
   ratio = max_window_size / window_size
 
   dimensions = ( int( image.shape[1] * ratio ) , int( image.shape[0] * ratio) )
-  
+
   # resize image
   image = cv2.resize(image, dimensions)
+
+  image = concatenate_images( image, ARROWS_IMG )
 
   cv2.imshow(IMAGE_TEXT, image)
   return cv2.waitKeyEx( delay_ms )
@@ -150,7 +157,6 @@ def disp_image_get_input( file ):
     
     # display image to be labeled
     image = cv2.imread( file, cv2.IMREAD_COLOR)
-    image = concatenate_images( image, ARROWS_IMG )
     key = display_image_wait_key( image, 0 )
 
     # wait for user input
@@ -161,6 +167,11 @@ def disp_image_get_input( file ):
 
     elif key == RIGHT_KEY:
       update = cv2.add( image, create_blank( image, GREEN ) )
+      display_image_wait_key( update, 100 )
+      return key
+
+    elif key == DOWN_KEY:
+      update = cv2.add( image, create_blank( image, YELLOW ) )
       display_image_wait_key( update, 100 )
       return key
 
@@ -186,7 +197,6 @@ def display_directory_get_input( files ):
 
       # display image to be labeled
       image = cv2.imread( file, cv2.IMREAD_COLOR)
-      image = concatenate_images( image, ARROWS_IMG )
       key = display_image_wait_key( image, 100 )
       
       # wait for user input
@@ -198,6 +208,11 @@ def display_directory_get_input( files ):
       elif key == RIGHT_KEY:
         update = cv2.add(image, create_blank(image, GREEN))
         display_image_wait_key( update, 100)
+        return key
+
+      elif key == DOWN_KEY:
+        update = cv2.add( image, create_blank( image, YELLOW ) )
+        display_image_wait_key( update, 100 )
         return key
 
       elif key == ESCAPE_KEY:
@@ -322,6 +337,11 @@ def user_label_images( burst_dir, outdir_blob, parse_burst ):
       elif key == RIGHT_KEY:
         directory_labels.append((pburst_dir, VALID_STRING))
         # directory_blob_labels.append((pblob_dir, VALID_STRING))
+        index = index + 1
+
+      elif key == DOWN_KEY:
+        directory_labels.append((pburst_dir, UNSURE_STRING))
+        # directory_blob_labels.append((pblob_dir, UNSURE_STRING))
         index = index + 1
 
       elif key == BACKSPACE_KEY:
