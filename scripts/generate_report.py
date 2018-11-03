@@ -15,66 +15,51 @@ import os
 import argparse
 import numpy as np
 import matplotlib.pyplot as plt
+import json_database
 
-def list_all_jpgs( directory ):
-  jpeg_files = []
+def get_bursts( json_data ):
+  bursts = []
+  for image in json_data:
+    burst = json_data[image]["burst_images"]
+    if not burst in bursts:
+      bursts.append(burst)
 
-  for (dirpath, dirnames, filenames) in os.walk( directory):
-    for file in filenames:
-      if file.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
-        jpeg_files.append( os.path.join( dirpath, file) )
+  return bursts
 
-  return jpeg_files
+def generate_report( snapcat_json, outdir ):
 
-def generate_report( cat_dir, cam_dir, outdir ):
-
-  # get all possible cameras
-  cameras = [name for name in os.listdir(cam_dir) if os.path.isdir(os.path.join(cam_dir, name))]
-
-  # verify that there are images present
-  try:
-    camera_directories = next( os.walk( cat_dir ) )[1]
-  except:
-    camera_directories = []
-  if len( camera_directories ) == 0:
-    return
+  bursts = get_bursts( snapcat_json.json_data )
 
   cats_detected = dict()
 
-  # iterate over all cameras within the cats detected folder
-  for camera_directory in camera_directories:
-
-    num_cats = 0
-
-    # iterate over all the bursts in the camera directory
-    burst_directories = next( os.walk( os.path.join( cat_dir, camera_directory ) ) )[1]
-
-    # make sure there are bursts present
-    if len( burst_directories ) > 0:
-
-      # count all bursts in directory
-      for burst_directory in burst_directories:
-        
-        # make sure burst has images
-        jpegs_in_dir = list_all_jpgs( os.path.join( cat_dir, camera_directory, burst_directory ) )
-        if len( jpegs_in_dir ) > 0:
-          num_cats = num_cats + 1
+  for burst in bursts:
     
-    cats_detected[camera_directory] = num_cats
+    cat_detected = False
+    for image in burst:
+      if snapcat_json.json_data[image]["classifier_label"] == "cat":
+        cat_detected = True
+        break
+
+    image = burst[0]
+    image_path = snapcat_json.json_data[image]["path"]
+    image_directory = os.path.dirname(image_path)
+    image_directory = os.path.split(image_directory)[-1]
+
+    if not image_directory in cats_detected:
+        cats_detected[image_directory] = 0
+
+    if cat_detected:
+      cats_detected[image_directory] = cats_detected[image_directory] + 1
  
   # sort data alphabetically
-  #cameras = sorted( list( cats_detected.keys() ) )
   num_cats = []
-  for camera in cameras:
-    if not camera in cats_detected:
-      num_cats.append(0)
-    else:
-      num_cats.append( cats_detected[camera] )
+  for camera in cats_detected:
+    num_cats.append( cats_detected[camera] )
 
-  # create plot  
-  y_pos = np.arange( len(cameras) )
+  # create plot
+  y_pos = np.arange( len(cats_detected) )
   plt.bar(y_pos, num_cats, align='center', alpha=0.5)
-  plt.xticks(y_pos, cameras)
+  plt.xticks(y_pos, cats_detected)
   plt.ylabel('Number of Cats')
   plt.title('Number of Cats Per Camera')
  
@@ -85,15 +70,13 @@ def generate_report( cat_dir, cam_dir, outdir ):
   plt.savefig( os.path.join( outdir, 'report.png') )
   plt.show()
 
-def main():
+if __name__ == "__main__":
   parser = argparse.ArgumentParser()
-  parser.add_argument("--cat_dir", help="directory containing bursts classified as cat")
-  parser.add_argument("--cam_dir", help="directory containing all possible cameras")
+  parser.add_argument("--json_dir", help="path to the json database for images" )
   parser.add_argument("--report", help="directory to store report")
 
   args = parser.parse_args()
   
-  generate_report( args.cat_dir, args.cam_dir, args.report )
+  snapcat_json = json_database.JSONDatabase( args.json_dir )
 
-if __name__ == "__main__":
-  main()
+  generate_report( snapcat_json, args.report )

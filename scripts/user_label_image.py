@@ -212,7 +212,6 @@ def disp_image_get_input( file ):
       img1 = resize_image(img1)
       img2 = resize_image(img2)
 
-      print( img1.size, img2.size )
       image = cv2.addWeighted(img1,alpha,img2,1-alpha,0)
 
       display_image_wait_key( image, 0)
@@ -275,7 +274,6 @@ def display_directory_get_input( files ):
         img1 = resize_image(img1)
         img2 = resize_image(img2)
 
-        print( img1.size, img2.size )
         image = cv2.addWeighted(img1,alpha,img2,1-alpha,0)
 
         display_image_wait_key( image, 0)
@@ -413,7 +411,7 @@ def user_label_images_burst( burst_dir, outdir_blob ):
 def main():
   parser = argparse.ArgumentParser()
   parser.add_argument("--image_dir", help="will list all the images within this directory and have user label them")
-  parser.add_argument("--json_dir", help="path tho the json database for images" )
+  parser.add_argument("--json_dir", help="path to the json database for images" )
 
   args = parser.parse_args()
   

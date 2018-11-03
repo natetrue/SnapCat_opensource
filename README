@@ -43,29 +43,21 @@ Steps:
 SORTING:
 
 	First sort images into bursts:
-
-		python .\scripts\burst.py --unsorted_directory .\sorting\unsorted\ --burst_directory  .\sorting\bursts\
+		python .\scripts\burst.py --image_dir=<path_to_images> --json_dir=<path_to_database>
 
 	Do some of the dirty work of segmenting the photos to be fed into the sorting script (Thanks Nate)
+		python .\scripts\segmentation.py --json_dir=<path_to_database>
 
-		python .\scripts\segmentation.py --burst_directory .\sorting\bursts\ --output_directory  .\sorting\blobs\
-
-	Run this to label and sort uncategorized images into the appropriate folders:
-
-		python .\scripts\sort_image.py --blob_directory .\sorting\blobs\ --burst_directory .\sorting\bursts\ --sorted_burst_directory .\sorting\sorted\ --sorted_blob_directory .\sorting\sorted_blobs
-
-		TODO: Images are still pretty big... do we need to convert to 224 x 224?
-
-	Run this to label and sort uncategorized images into the appropriate folders:
-			python .\scripts\label_image.py --sort true --unsorted_directory .\sorting\blobs\ --sorted_directory .\sorting\sorted\ 
+	Run this to label images:
+		python .\scripts\label_image.py --json_dir=<path_to_database>
 
 	Review images with:
-		python .\scripts\user_label_image.py --image_dir=<images_to_sort> --outdir=<output_directory> --burst=<true or false>
-    note: the output_directory will create two folders. "cat\" and "not_cat\" if they don't exist and move the original files to the correct directory
-          burst mode assumes that image_dir is a folder that contains folders of images from a burst
+		python .\scripts\user_label_image.py --image_dir=<images_to_sort> --json_dir=<path_to_database>
 
-  Generate report
-    python scripts\generate_report.py --cat_dir=<sorted bursts> --report=<where to save report.png>
+  	Generate report
+	    python scripts\generate_report.py --json_dir=<sorted path_to_database> --report=<where to save report.png>
 
-    NOTE: the cat dir specified should be the datetime folder, not the cat folder (EG: .\sorting\sorted\cats\2018_09_20_10_24\ not .\sorting\sorted\cats\)
 
+FULL PIPELINE:
+	python .\scripts\sort_camera_trap_images.py --unsorted_dir=.\image_path
+	note: this will create the report and database within the directory specified by unsorted_dir

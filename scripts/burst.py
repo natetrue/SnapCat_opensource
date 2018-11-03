@@ -6,7 +6,6 @@
 ███████║██║ ╚████║██║  ██║██║     ╚██████╗██║  ██║   ██║   
 ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝      ╚═════╝╚═╝  ╚═╝   ╚═╝                  
 """
-import cv2
 import os
 import argparse
 import time
@@ -16,17 +15,15 @@ import settings
 import random
 from PIL import Image
 from PIL.ExifTags import TAGS
+import json_database
+import cv2
 
-# Some images have the Reconyx logo at top and bottom of image
 latest_timestamp = 0
-#minimum_burst_length = 10
-#current_burst_length = 0
 current_burst_grayscale = False
 
 def get_exif_data_from_file(filename):
 	exif = {}
 	try:
-		print ("FILENAME =>" + filename)
 		img = Image.open(filename)
 		if hasattr( img, '_getexif' ):
 			exifinfo = img._getexif()
@@ -42,15 +39,8 @@ def get_exif_data_from_file(filename):
 def get_filename_datetime(exif_datetime_string, format):
 	return datetime.datetime.strptime(exif_datetime_string, '%Y:%m:%d %H:%M:%S').timestamp()
 
-def get_epoch():
-	return '%f' % time.time()
-
-# Convert string to seconds
-def convert_timestamp(img_path):
-	# Example of Reconyx saved image
-	# 01-05-2013 9-58-15
+def is_same_burst(img_path):
 	same_burst = True
-	#global current_burst_length
 	global latest_timestamp
 	global current_burst_grayscale
 
@@ -68,16 +58,13 @@ def convert_timestamp(img_path):
 		latest_timestamp = timestamp
 		current_burst_grayscale = is_grayscale(img_path)
 
-	#if current_burst_length > minimum_burst_length and (timestamp - latest_timestamp) > burst_threshold:
 	if not is_grayscale(img_path) == current_burst_grayscale or abs(timestamp - latest_timestamp) > settings.burst['burst_threshold']:
 		latest_timestamp = timestamp
 		same_burst = False
 		current_burst_grayscale = is_grayscale(img_path)
-		#current_burst_length = 0
 
-	#current_burst_length += 1
 
-	return timestamp, same_burst
+	return same_burst
 
 
 # determine if image was taken at night or day
@@ -98,50 +85,25 @@ def is_grayscale(img_path):
 	return True
 
 # Group into bursts
-def create_burst(images_list, dir_camera_trap, burst_count):
-	for i_path in images_list:
-		dir_burst = '%s/%d' % (dir_camera_trap, burst_count)
+def label_burst(images_list, snapcat_json):
+	
+	for image_name in images_list:
+		snapcat_json.update( image_name, "burst_images", images_list)
+	
 
-		if not os.path.exists(dir_burst):
-			os.makedirs(dir_burst)
-
-		outfile = '%s/%s' % (dir_burst, os.path.basename(i_path))
-		os.rename(i_path, outfile)
-
-def create_bursts(unsorted_directory, burst_directory, curr_datetime=None):
+def create_bursts( snapcat_json, image_directory ):
 
 	global latest_timestamp
+
 	pbar = ProgressBar()
 
 	img_count = 0
 	burst_count = 0
 
-	if unsorted_directory:
-		dir_unsorted = unsorted_directory
-	if burst_directory:
-		dir_out = burst_directory
+	# Adds entry to JSON file for each grouping of images segmentation based on the files date and time 
+	for path, _, files in os.walk( image_directory ):
 
-	if not os.path.exists(dir_out):
-		os.makedirs(dir_out)
-
-
-	# Create a new folder for each segmentation based on the current date and time 
-	# (This will allow segmentation of images from the same camera traps in the future to be placed in
-	#  a different location, thereby preventing overwrites)
-	if not curr_datetime:
-		analysis_datetime = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M")
-	else:
-		analysis_datetime = curr_datetime
-
-	for path, subdirs, files in os.walk(dir_unsorted):
-
-		images_list = []
-		burst_imgs = []
-		camera_trap = os.path.join(analysis_datetime, os.path.basename(path))
-		dir_camera_trap = '%s/%s' % (dir_out, camera_trap)
-
-		if len(files) > 1 and not os.path.exists(dir_camera_trap):
-			os.makedirs(dir_camera_trap)
+		burst_images_list = []
 
 		pbar = ProgressBar()
 		pbar.maxval = len(files)
@@ -151,34 +113,39 @@ def create_bursts(unsorted_directory, burst_directory, curr_datetime=None):
 		latest_timestamp = 0
 		burst_count = 0
 
-		for name in pbar(files):
+		for filename in pbar(files):
+
 			# only work with JPG 
-			if name.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
-				timestamp, same_burst = convert_timestamp(os.path.join(path, name))
+			if not filename.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
+			    continue
 
-				# If in the same burst, add to list and move on
-				if same_burst:
-					images_list.append(os.path.join(path, name))
-				# Else, read images, average, and attempt to segment
-				else:
-					
-					create_burst(images_list, dir_camera_trap, burst_count)
-					
-					images_list = []
-					burst_imgs = []
-					burst_count += 1
-					images_list.append(os.path.join(path, name))
+			# add every file to the database
+			file_path = os.path.join(path, filename)
+			snapcat_json.update( filename, "path", file_path)
 
-		# Don't forget the last 
-		create_burst(images_list, dir_camera_trap, burst_count)
+			# If in the same burst, add to list and move on
+			if is_same_burst( file_path ):
+				burst_images_list.append( filename )
+			# otherwise group images into a burst
+			else:
+				label_burst(burst_images_list, snapcat_json)
+				burst_images_list = []
+				
+				# the current file is not part of this burst, so it is the beginning of the new burst
+				burst_images_list.append( filename )
 
-	return analysis_datetime
+		# the last image in the folder ends burst detection
+		label_burst(burst_images_list, snapcat_json)
+
+	snapcat_json.save()
 
 if __name__ == "__main__":
 
 	parser = argparse.ArgumentParser()
-	parser.add_argument("--unsorted_directory", help="directory of raw images")
-	parser.add_argument("--burst_directory", help="directory to place segregated bursts")
+	parser.add_argument("--image_dir", help="searches this directory to group images into bursts based on timestamps")
+	parser.add_argument("--json_dir", help="path to the json database for images" )
+
 	args = parser.parse_args()
-	
-	create_bursts(args.unsorted_directory, args.burst_directory)
+
+	snapcat_json = json_database.JSONDatabase( args.json_dir )
+	create_bursts( snapcat_json, args.image_dir )
