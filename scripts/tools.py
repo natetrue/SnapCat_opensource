@@ -1,6 +1,19 @@
+"""
+███████╗███╗   ██╗ █████╗ ██████╗  ██████╗ █████╗ ████████╗
+██╔════╝████╗  ██║██╔══██╗██╔══██╗██╔════╝██╔══██╗╚══██╔══╝
+███████╗██╔██╗ ██║███████║██████╔╝██║     ███████║   ██║   
+╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██║     ██╔══██║   ██║   
+███████║██║ ╚████║██║  ██║██║     ╚██████╗██║  ██║   ██║   
+╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝      ╚═════╝╚═╝  ╚═╝   ╚═╝                  
+"""
 import os
 import random
 import tensorflow as tf
+import argparse
+import json_database
+import cv2
+from skimage import img_as_ubyte
+
 
 
 def optimal_square(x1,x2,y1,y2,i):
@@ -206,3 +219,52 @@ def printTensors(pb_file):
     # print operations
     for op in graph.get_operations():
         print(op.name)
+
+
+# save areas of interest 
+def save_areas_of_interest( snapcat_json, output_directory ):
+  for image in snapcat_json.json_data:
+
+    image_path = snapcat_json.json_data[image]["path"]
+    area_of_interest = snapcat_json.json_data[image]["area_of_interest"]
+
+    img = cv2.imread(image_path)
+
+    x1 = area_of_interest[0]
+    x2 = area_of_interest[1]
+    y1 = area_of_interest[2]
+    y2 = area_of_interest[3]
+
+    img = img[y1:y2 , x1:x2, :]
+    
+    
+    """
+    # for debugging
+    cv2.imshow('image',img)
+    cv2.waitKey(0)
+    return
+    """
+
+    resized_image = cv2.resize(img, (224, 224))
+    
+    
+    if not os.path.isdir(output_directory):
+      os.makedirs(output_directory)
+
+    outfile = os.path.join(output_directory, image )
+
+    resized_image = img_as_ubyte(resized_image)
+    cv2.imwrite(outfile, resized_image)
+    cv2.destroyAllWindows()
+
+
+if __name__ == "__main__":
+  parser = argparse.ArgumentParser()
+  parser.add_argument("--json_dir", help="path to the json database for images" )
+  parser.add_argument("--out_dir", help="path to save images" )
+  
+  args = parser.parse_args()
+
+  snapcat_json = json_database.JSONDatabase( args.json_dir )
+
+  save_areas_of_interest( snapcat_json, args.out_dir )

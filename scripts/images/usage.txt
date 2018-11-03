@@ -1,11 +1,14 @@
-Press the right arrow on the keyboard to 
-indicate that the image contains a cat
+On the Keyboard Press the 
+following key to indicate:
 
-Press the left arrow on the keyboard to 
-indicate the image does not contain a cat
+Right - image contains a cat
+Left -  image does not contain a cat
+Down -  image may contain a cat (unsure)
 
 Press the escape key to abort the program 
 (progress will be saved)
 
 Press the backspacekey to 
 review previous images
+
+-- press any key to continue --
