@@ -1,0 +1,6497 @@
+{
+  "d19947s39i1.jpg": {
+    "burst_images": [
+      "d19947s39i1.jpg",
+      "d19947s39i2.jpg",
+      "d19947s39i3.jpg",
+      "d19947s39i4.jpg",
+      "d19947s39i5.jpg"
+    ],
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19947s39i1.jpg",
+    "area_of_interest": [
+      726,
+      962,
+      444,
+      680
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19947s39i2.jpg": {
+    "burst_images": [
+      "d19947s39i1.jpg",
+      "d19947s39i2.jpg",
+      "d19947s39i3.jpg",
+      "d19947s39i4.jpg",
+      "d19947s39i5.jpg"
+    ],
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19947s39i2.jpg",
+    "area_of_interest": [
+      763,
+      1053,
+      427,
+      717
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19947s39i3.jpg": {
+    "burst_images": [
+      "d19947s39i1.jpg",
+      "d19947s39i2.jpg",
+      "d19947s39i3.jpg",
+      "d19947s39i4.jpg",
+      "d19947s39i5.jpg"
+    ],
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19947s39i3.jpg",
+    "area_of_interest": [
+      903,
+      1173,
+      462,
+      732
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19947s39i4.jpg": {
+    "burst_images": [
+      "d19947s39i1.jpg",
+      "d19947s39i2.jpg",
+      "d19947s39i3.jpg",
+      "d19947s39i4.jpg",
+      "d19947s39i5.jpg"
+    ],
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19947s39i4.jpg",
+    "area_of_interest": [
+      1004,
+      1496,
+      361,
+      853
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19947s39i5.jpg": {
+    "burst_images": [
+      "d19947s39i1.jpg",
+      "d19947s39i2.jpg",
+      "d19947s39i3.jpg",
+      "d19947s39i4.jpg",
+      "d19947s39i5.jpg"
+    ],
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19947s39i5.jpg",
+    "area_of_interest": [
+      1145,
+      1681,
+      299,
+      835
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19947s4i1.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19947s4i1.jpg",
+    "burst_images": [
+      "d19947s4i1.jpg",
+      "d19947s4i10.jpg",
+      "d19947s4i11.jpg",
+      "d19947s4i12.jpg",
+      "d19947s4i13.jpg",
+      "d19947s4i14.jpg",
+      "d19947s4i15.jpg",
+      "d19947s4i2.jpg",
+      "d19947s4i3.jpg",
+      "d19947s4i4.jpg",
+      "d19947s4i5.jpg",
+      "d19947s4i6.jpg",
+      "d19947s4i7.jpg",
+      "d19947s4i8.jpg",
+      "d19947s4i9.jpg"
+    ],
+    "area_of_interest": [
+      548,
+      913,
+      614,
+      979
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19947s4i10.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19947s4i10.jpg",
+    "burst_images": [
+      "d19947s4i1.jpg",
+      "d19947s4i10.jpg",
+      "d19947s4i11.jpg",
+      "d19947s4i12.jpg",
+      "d19947s4i13.jpg",
+      "d19947s4i14.jpg",
+      "d19947s4i15.jpg",
+      "d19947s4i2.jpg",
+      "d19947s4i3.jpg",
+      "d19947s4i4.jpg",
+      "d19947s4i5.jpg",
+      "d19947s4i6.jpg",
+      "d19947s4i7.jpg",
+      "d19947s4i8.jpg",
+      "d19947s4i9.jpg"
+    ],
+    "area_of_interest": [
+      332,
+      1311,
+      0,
+      979
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19947s4i11.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19947s4i11.jpg",
+    "burst_images": [
+      "d19947s4i1.jpg",
+      "d19947s4i10.jpg",
+      "d19947s4i11.jpg",
+      "d19947s4i12.jpg",
+      "d19947s4i13.jpg",
+      "d19947s4i14.jpg",
+      "d19947s4i15.jpg",
+      "d19947s4i2.jpg",
+      "d19947s4i3.jpg",
+      "d19947s4i4.jpg",
+      "d19947s4i5.jpg",
+      "d19947s4i6.jpg",
+      "d19947s4i7.jpg",
+      "d19947s4i8.jpg",
+      "d19947s4i9.jpg"
+    ],
+    "area_of_interest": [
+      0,
+      979,
+      0,
+      979
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19947s4i12.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19947s4i12.jpg",
+    "burst_images": [
+      "d19947s4i1.jpg",
+      "d19947s4i10.jpg",
+      "d19947s4i11.jpg",
+      "d19947s4i12.jpg",
+      "d19947s4i13.jpg",
+      "d19947s4i14.jpg",
+      "d19947s4i15.jpg",
+      "d19947s4i2.jpg",
+      "d19947s4i3.jpg",
+      "d19947s4i4.jpg",
+      "d19947s4i5.jpg",
+      "d19947s4i6.jpg",
+      "d19947s4i7.jpg",
+      "d19947s4i8.jpg",
+      "d19947s4i9.jpg"
+    ],
+    "area_of_interest": [
+      624,
+      1604,
+      0,
+      980
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19947s4i13.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19947s4i13.jpg",
+    "burst_images": [
+      "d19947s4i1.jpg",
+      "d19947s4i10.jpg",
+      "d19947s4i11.jpg",
+      "d19947s4i12.jpg",
+      "d19947s4i13.jpg",
+      "d19947s4i14.jpg",
+      "d19947s4i15.jpg",
+      "d19947s4i2.jpg",
+      "d19947s4i3.jpg",
+      "d19947s4i4.jpg",
+      "d19947s4i5.jpg",
+      "d19947s4i6.jpg",
+      "d19947s4i7.jpg",
+      "d19947s4i8.jpg",
+      "d19947s4i9.jpg"
+    ],
+    "area_of_interest": [
+      623,
+      1603,
+      0,
+      980
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19947s4i14.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19947s4i14.jpg",
+    "burst_images": [
+      "d19947s4i1.jpg",
+      "d19947s4i10.jpg",
+      "d19947s4i11.jpg",
+      "d19947s4i12.jpg",
+      "d19947s4i13.jpg",
+      "d19947s4i14.jpg",
+      "d19947s4i15.jpg",
+      "d19947s4i2.jpg",
+      "d19947s4i3.jpg",
+      "d19947s4i4.jpg",
+      "d19947s4i5.jpg",
+      "d19947s4i6.jpg",
+      "d19947s4i7.jpg",
+      "d19947s4i8.jpg",
+      "d19947s4i9.jpg"
+    ],
+    "area_of_interest": [
+      622,
+      1602,
+      0,
+      980
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19947s4i15.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19947s4i15.jpg",
+    "burst_images": [
+      "d19947s4i1.jpg",
+      "d19947s4i10.jpg",
+      "d19947s4i11.jpg",
+      "d19947s4i12.jpg",
+      "d19947s4i13.jpg",
+      "d19947s4i14.jpg",
+      "d19947s4i15.jpg",
+      "d19947s4i2.jpg",
+      "d19947s4i3.jpg",
+      "d19947s4i4.jpg",
+      "d19947s4i5.jpg",
+      "d19947s4i6.jpg",
+      "d19947s4i7.jpg",
+      "d19947s4i8.jpg",
+      "d19947s4i9.jpg"
+    ],
+    "area_of_interest": [
+      622,
+      1602,
+      0,
+      980
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19947s4i2.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19947s4i2.jpg",
+    "burst_images": [
+      "d19947s4i1.jpg",
+      "d19947s4i10.jpg",
+      "d19947s4i11.jpg",
+      "d19947s4i12.jpg",
+      "d19947s4i13.jpg",
+      "d19947s4i14.jpg",
+      "d19947s4i15.jpg",
+      "d19947s4i2.jpg",
+      "d19947s4i3.jpg",
+      "d19947s4i4.jpg",
+      "d19947s4i5.jpg",
+      "d19947s4i6.jpg",
+      "d19947s4i7.jpg",
+      "d19947s4i8.jpg",
+      "d19947s4i9.jpg"
+    ],
+    "area_of_interest": [
+      354,
+      1334,
+      0,
+      980
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19947s4i3.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19947s4i3.jpg",
+    "burst_images": [
+      "d19947s4i1.jpg",
+      "d19947s4i10.jpg",
+      "d19947s4i11.jpg",
+      "d19947s4i12.jpg",
+      "d19947s4i13.jpg",
+      "d19947s4i14.jpg",
+      "d19947s4i15.jpg",
+      "d19947s4i2.jpg",
+      "d19947s4i3.jpg",
+      "d19947s4i4.jpg",
+      "d19947s4i5.jpg",
+      "d19947s4i6.jpg",
+      "d19947s4i7.jpg",
+      "d19947s4i8.jpg",
+      "d19947s4i9.jpg"
+    ],
+    "area_of_interest": [
+      1338,
+      1518,
+      90,
+      270
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19947s4i4.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19947s4i4.jpg",
+    "burst_images": [
+      "d19947s4i1.jpg",
+      "d19947s4i10.jpg",
+      "d19947s4i11.jpg",
+      "d19947s4i12.jpg",
+      "d19947s4i13.jpg",
+      "d19947s4i14.jpg",
+      "d19947s4i15.jpg",
+      "d19947s4i2.jpg",
+      "d19947s4i3.jpg",
+      "d19947s4i4.jpg",
+      "d19947s4i5.jpg",
+      "d19947s4i6.jpg",
+      "d19947s4i7.jpg",
+      "d19947s4i8.jpg",
+      "d19947s4i9.jpg"
+    ],
+    "area_of_interest": [
+      1323,
+      1499,
+      102,
+      278
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19947s4i5.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19947s4i5.jpg",
+    "burst_images": [
+      "d19947s4i1.jpg",
+      "d19947s4i10.jpg",
+      "d19947s4i11.jpg",
+      "d19947s4i12.jpg",
+      "d19947s4i13.jpg",
+      "d19947s4i14.jpg",
+      "d19947s4i15.jpg",
+      "d19947s4i2.jpg",
+      "d19947s4i3.jpg",
+      "d19947s4i4.jpg",
+      "d19947s4i5.jpg",
+      "d19947s4i6.jpg",
+      "d19947s4i7.jpg",
+      "d19947s4i8.jpg",
+      "d19947s4i9.jpg"
+    ],
+    "area_of_interest": [
+      1303,
+      1500,
+      79,
+      276
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19947s4i6.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19947s4i6.jpg",
+    "burst_images": [
+      "d19947s4i1.jpg",
+      "d19947s4i10.jpg",
+      "d19947s4i11.jpg",
+      "d19947s4i12.jpg",
+      "d19947s4i13.jpg",
+      "d19947s4i14.jpg",
+      "d19947s4i15.jpg",
+      "d19947s4i2.jpg",
+      "d19947s4i3.jpg",
+      "d19947s4i4.jpg",
+      "d19947s4i5.jpg",
+      "d19947s4i6.jpg",
+      "d19947s4i7.jpg",
+      "d19947s4i8.jpg",
+      "d19947s4i9.jpg"
+    ],
+    "area_of_interest": [
+      755,
+      1656,
+      0,
+      901
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19947s4i7.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19947s4i7.jpg",
+    "burst_images": [
+      "d19947s4i1.jpg",
+      "d19947s4i10.jpg",
+      "d19947s4i11.jpg",
+      "d19947s4i12.jpg",
+      "d19947s4i13.jpg",
+      "d19947s4i14.jpg",
+      "d19947s4i15.jpg",
+      "d19947s4i2.jpg",
+      "d19947s4i3.jpg",
+      "d19947s4i4.jpg",
+      "d19947s4i5.jpg",
+      "d19947s4i6.jpg",
+      "d19947s4i7.jpg",
+      "d19947s4i8.jpg",
+      "d19947s4i9.jpg"
+    ],
+    "area_of_interest": [
+      846,
+      1487,
+      0,
+      641
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19947s4i8.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19947s4i8.jpg",
+    "burst_images": [
+      "d19947s4i1.jpg",
+      "d19947s4i10.jpg",
+      "d19947s4i11.jpg",
+      "d19947s4i12.jpg",
+      "d19947s4i13.jpg",
+      "d19947s4i14.jpg",
+      "d19947s4i15.jpg",
+      "d19947s4i2.jpg",
+      "d19947s4i3.jpg",
+      "d19947s4i4.jpg",
+      "d19947s4i5.jpg",
+      "d19947s4i6.jpg",
+      "d19947s4i7.jpg",
+      "d19947s4i8.jpg",
+      "d19947s4i9.jpg"
+    ],
+    "area_of_interest": [
+      636,
+      1456,
+      0,
+      820
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19947s4i9.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19947s4i9.jpg",
+    "burst_images": [
+      "d19947s4i1.jpg",
+      "d19947s4i10.jpg",
+      "d19947s4i11.jpg",
+      "d19947s4i12.jpg",
+      "d19947s4i13.jpg",
+      "d19947s4i14.jpg",
+      "d19947s4i15.jpg",
+      "d19947s4i2.jpg",
+      "d19947s4i3.jpg",
+      "d19947s4i4.jpg",
+      "d19947s4i5.jpg",
+      "d19947s4i6.jpg",
+      "d19947s4i7.jpg",
+      "d19947s4i8.jpg",
+      "d19947s4i9.jpg"
+    ],
+    "area_of_interest": [
+      796,
+      987,
+      18,
+      209
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s15i1.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s15i1.jpg",
+    "burst_images": [
+      "d19975s15i1.jpg",
+      "d19975s15i10.jpg",
+      "d19975s15i2.jpg",
+      "d19975s15i3.jpg",
+      "d19975s15i4.jpg",
+      "d19975s15i5.jpg",
+      "d19975s15i6.jpg",
+      "d19975s15i7.jpg",
+      "d19975s15i8.jpg",
+      "d19975s15i9.jpg"
+    ],
+    "area_of_interest": [
+      263,
+      1663,
+      0,
+      1400
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s15i10.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s15i10.jpg",
+    "burst_images": [
+      "d19975s15i1.jpg",
+      "d19975s15i10.jpg",
+      "d19975s15i2.jpg",
+      "d19975s15i3.jpg",
+      "d19975s15i4.jpg",
+      "d19975s15i5.jpg",
+      "d19975s15i6.jpg",
+      "d19975s15i7.jpg",
+      "d19975s15i8.jpg",
+      "d19975s15i9.jpg"
+    ],
+    "area_of_interest": [
+      215,
+      374,
+      1240,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s15i2.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s15i2.jpg",
+    "burst_images": [
+      "d19975s15i1.jpg",
+      "d19975s15i10.jpg",
+      "d19975s15i2.jpg",
+      "d19975s15i3.jpg",
+      "d19975s15i4.jpg",
+      "d19975s15i5.jpg",
+      "d19975s15i6.jpg",
+      "d19975s15i7.jpg",
+      "d19975s15i8.jpg",
+      "d19975s15i9.jpg"
+    ],
+    "area_of_interest": [
+      220,
+      348,
+      1271,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s15i3.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s15i3.jpg",
+    "burst_images": [
+      "d19975s15i1.jpg",
+      "d19975s15i10.jpg",
+      "d19975s15i2.jpg",
+      "d19975s15i3.jpg",
+      "d19975s15i4.jpg",
+      "d19975s15i5.jpg",
+      "d19975s15i6.jpg",
+      "d19975s15i7.jpg",
+      "d19975s15i8.jpg",
+      "d19975s15i9.jpg"
+    ],
+    "area_of_interest": [
+      167,
+      332,
+      1234,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s15i4.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s15i4.jpg",
+    "burst_images": [
+      "d19975s15i1.jpg",
+      "d19975s15i10.jpg",
+      "d19975s15i2.jpg",
+      "d19975s15i3.jpg",
+      "d19975s15i4.jpg",
+      "d19975s15i5.jpg",
+      "d19975s15i6.jpg",
+      "d19975s15i7.jpg",
+      "d19975s15i8.jpg",
+      "d19975s15i9.jpg"
+    ],
+    "area_of_interest": [
+      191,
+      321,
+      1269,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s15i5.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s15i5.jpg",
+    "burst_images": [
+      "d19975s15i1.jpg",
+      "d19975s15i10.jpg",
+      "d19975s15i2.jpg",
+      "d19975s15i3.jpg",
+      "d19975s15i4.jpg",
+      "d19975s15i5.jpg",
+      "d19975s15i6.jpg",
+      "d19975s15i7.jpg",
+      "d19975s15i8.jpg",
+      "d19975s15i9.jpg"
+    ],
+    "area_of_interest": [
+      106,
+      307,
+      1198,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s15i6.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s15i6.jpg",
+    "burst_images": [
+      "d19975s15i1.jpg",
+      "d19975s15i10.jpg",
+      "d19975s15i2.jpg",
+      "d19975s15i3.jpg",
+      "d19975s15i4.jpg",
+      "d19975s15i5.jpg",
+      "d19975s15i6.jpg",
+      "d19975s15i7.jpg",
+      "d19975s15i8.jpg",
+      "d19975s15i9.jpg"
+    ],
+    "area_of_interest": [
+      207,
+      321,
+      1285,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s15i7.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s15i7.jpg",
+    "burst_images": [
+      "d19975s15i1.jpg",
+      "d19975s15i10.jpg",
+      "d19975s15i2.jpg",
+      "d19975s15i3.jpg",
+      "d19975s15i4.jpg",
+      "d19975s15i5.jpg",
+      "d19975s15i6.jpg",
+      "d19975s15i7.jpg",
+      "d19975s15i8.jpg",
+      "d19975s15i9.jpg"
+    ],
+    "area_of_interest": [
+      190,
+      322,
+      1267,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s15i8.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s15i8.jpg",
+    "burst_images": [
+      "d19975s15i1.jpg",
+      "d19975s15i10.jpg",
+      "d19975s15i2.jpg",
+      "d19975s15i3.jpg",
+      "d19975s15i4.jpg",
+      "d19975s15i5.jpg",
+      "d19975s15i6.jpg",
+      "d19975s15i7.jpg",
+      "d19975s15i8.jpg",
+      "d19975s15i9.jpg"
+    ],
+    "area_of_interest": [
+      168,
+      327,
+      1240,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s15i9.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s15i9.jpg",
+    "burst_images": [
+      "d19975s15i1.jpg",
+      "d19975s15i10.jpg",
+      "d19975s15i2.jpg",
+      "d19975s15i3.jpg",
+      "d19975s15i4.jpg",
+      "d19975s15i5.jpg",
+      "d19975s15i6.jpg",
+      "d19975s15i7.jpg",
+      "d19975s15i8.jpg",
+      "d19975s15i9.jpg"
+    ],
+    "area_of_interest": [
+      221,
+      367,
+      1253,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s35i1.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s35i1.jpg",
+    "burst_images": [
+      "d19975s35i1.jpg",
+      "d19975s35i10.jpg",
+      "d19975s35i2.jpg",
+      "d19975s35i3.jpg",
+      "d19975s35i4.jpg",
+      "d19975s35i5.jpg",
+      "d19975s35i6.jpg",
+      "d19975s35i7.jpg",
+      "d19975s35i8.jpg",
+      "d19975s35i9.jpg"
+    ],
+    "area_of_interest": [
+      288,
+      1415,
+      273,
+      1400
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s35i10.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s35i10.jpg",
+    "burst_images": [
+      "d19975s35i1.jpg",
+      "d19975s35i10.jpg",
+      "d19975s35i2.jpg",
+      "d19975s35i3.jpg",
+      "d19975s35i4.jpg",
+      "d19975s35i5.jpg",
+      "d19975s35i6.jpg",
+      "d19975s35i7.jpg",
+      "d19975s35i8.jpg",
+      "d19975s35i9.jpg"
+    ],
+    "area_of_interest": [
+      973,
+      1115,
+      741,
+      883
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s35i2.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s35i2.jpg",
+    "burst_images": [
+      "d19975s35i1.jpg",
+      "d19975s35i10.jpg",
+      "d19975s35i2.jpg",
+      "d19975s35i3.jpg",
+      "d19975s35i4.jpg",
+      "d19975s35i5.jpg",
+      "d19975s35i6.jpg",
+      "d19975s35i7.jpg",
+      "d19975s35i8.jpg",
+      "d19975s35i9.jpg"
+    ],
+    "area_of_interest": [
+      1025,
+      1174,
+      758,
+      907
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s35i3.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s35i3.jpg",
+    "burst_images": [
+      "d19975s35i1.jpg",
+      "d19975s35i10.jpg",
+      "d19975s35i2.jpg",
+      "d19975s35i3.jpg",
+      "d19975s35i4.jpg",
+      "d19975s35i5.jpg",
+      "d19975s35i6.jpg",
+      "d19975s35i7.jpg",
+      "d19975s35i8.jpg",
+      "d19975s35i9.jpg"
+    ],
+    "area_of_interest": [
+      1018,
+      1160,
+      771,
+      913
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s35i4.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s35i4.jpg",
+    "burst_images": [
+      "d19975s35i1.jpg",
+      "d19975s35i10.jpg",
+      "d19975s35i2.jpg",
+      "d19975s35i3.jpg",
+      "d19975s35i4.jpg",
+      "d19975s35i5.jpg",
+      "d19975s35i6.jpg",
+      "d19975s35i7.jpg",
+      "d19975s35i8.jpg",
+      "d19975s35i9.jpg"
+    ],
+    "area_of_interest": [
+      971,
+      1187,
+      729,
+      945
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s35i5.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s35i5.jpg",
+    "burst_images": [
+      "d19975s35i1.jpg",
+      "d19975s35i10.jpg",
+      "d19975s35i2.jpg",
+      "d19975s35i3.jpg",
+      "d19975s35i4.jpg",
+      "d19975s35i5.jpg",
+      "d19975s35i6.jpg",
+      "d19975s35i7.jpg",
+      "d19975s35i8.jpg",
+      "d19975s35i9.jpg"
+    ],
+    "area_of_interest": [
+      317,
+      1231,
+      486,
+      1400
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s35i6.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s35i6.jpg",
+    "burst_images": [
+      "d19975s35i1.jpg",
+      "d19975s35i10.jpg",
+      "d19975s35i2.jpg",
+      "d19975s35i3.jpg",
+      "d19975s35i4.jpg",
+      "d19975s35i5.jpg",
+      "d19975s35i6.jpg",
+      "d19975s35i7.jpg",
+      "d19975s35i8.jpg",
+      "d19975s35i9.jpg"
+    ],
+    "area_of_interest": [
+      317,
+      1248,
+      469,
+      1400
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s35i7.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s35i7.jpg",
+    "burst_images": [
+      "d19975s35i1.jpg",
+      "d19975s35i10.jpg",
+      "d19975s35i2.jpg",
+      "d19975s35i3.jpg",
+      "d19975s35i4.jpg",
+      "d19975s35i5.jpg",
+      "d19975s35i6.jpg",
+      "d19975s35i7.jpg",
+      "d19975s35i8.jpg",
+      "d19975s35i9.jpg"
+    ],
+    "area_of_interest": [
+      1008,
+      1173,
+      745,
+      910
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s35i8.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s35i8.jpg",
+    "burst_images": [
+      "d19975s35i1.jpg",
+      "d19975s35i10.jpg",
+      "d19975s35i2.jpg",
+      "d19975s35i3.jpg",
+      "d19975s35i4.jpg",
+      "d19975s35i5.jpg",
+      "d19975s35i6.jpg",
+      "d19975s35i7.jpg",
+      "d19975s35i8.jpg",
+      "d19975s35i9.jpg"
+    ],
+    "area_of_interest": [
+      969,
+      1157,
+      743,
+      931
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s35i9.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s35i9.jpg",
+    "burst_images": [
+      "d19975s35i1.jpg",
+      "d19975s35i10.jpg",
+      "d19975s35i2.jpg",
+      "d19975s35i3.jpg",
+      "d19975s35i4.jpg",
+      "d19975s35i5.jpg",
+      "d19975s35i6.jpg",
+      "d19975s35i7.jpg",
+      "d19975s35i8.jpg",
+      "d19975s35i9.jpg"
+    ],
+    "area_of_interest": [
+      973,
+      1112,
+      743,
+      882
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s40i1.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s40i1.jpg",
+    "burst_images": [
+      "d19975s40i1.jpg",
+      "d19975s40i10.jpg",
+      "d19975s40i2.jpg",
+      "d19975s40i3.jpg",
+      "d19975s40i4.jpg",
+      "d19975s40i5.jpg",
+      "d19975s40i6.jpg",
+      "d19975s40i7.jpg",
+      "d19975s40i8.jpg",
+      "d19975s40i9.jpg"
+    ],
+    "area_of_interest": [
+      0,
+      555,
+      666,
+      1221
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s40i10.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s40i10.jpg",
+    "burst_images": [
+      "d19975s40i1.jpg",
+      "d19975s40i10.jpg",
+      "d19975s40i2.jpg",
+      "d19975s40i3.jpg",
+      "d19975s40i4.jpg",
+      "d19975s40i5.jpg",
+      "d19975s40i6.jpg",
+      "d19975s40i7.jpg",
+      "d19975s40i8.jpg",
+      "d19975s40i9.jpg"
+    ],
+    "area_of_interest": [
+      261,
+      657,
+      742,
+      1138
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s40i2.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s40i2.jpg",
+    "burst_images": [
+      "d19975s40i1.jpg",
+      "d19975s40i10.jpg",
+      "d19975s40i2.jpg",
+      "d19975s40i3.jpg",
+      "d19975s40i4.jpg",
+      "d19975s40i5.jpg",
+      "d19975s40i6.jpg",
+      "d19975s40i7.jpg",
+      "d19975s40i8.jpg",
+      "d19975s40i9.jpg"
+    ],
+    "area_of_interest": [
+      219,
+      687,
+      695,
+      1163
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s40i3.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s40i3.jpg",
+    "burst_images": [
+      "d19975s40i1.jpg",
+      "d19975s40i10.jpg",
+      "d19975s40i2.jpg",
+      "d19975s40i3.jpg",
+      "d19975s40i4.jpg",
+      "d19975s40i5.jpg",
+      "d19975s40i6.jpg",
+      "d19975s40i7.jpg",
+      "d19975s40i8.jpg",
+      "d19975s40i9.jpg"
+    ],
+    "area_of_interest": [
+      331,
+      709,
+      755,
+      1133
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s40i4.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s40i4.jpg",
+    "burst_images": [
+      "d19975s40i1.jpg",
+      "d19975s40i10.jpg",
+      "d19975s40i2.jpg",
+      "d19975s40i3.jpg",
+      "d19975s40i4.jpg",
+      "d19975s40i5.jpg",
+      "d19975s40i6.jpg",
+      "d19975s40i7.jpg",
+      "d19975s40i8.jpg",
+      "d19975s40i9.jpg"
+    ],
+    "area_of_interest": [
+      517,
+      835,
+      713,
+      1031
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s40i5.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s40i5.jpg",
+    "burst_images": [
+      "d19975s40i1.jpg",
+      "d19975s40i10.jpg",
+      "d19975s40i2.jpg",
+      "d19975s40i3.jpg",
+      "d19975s40i4.jpg",
+      "d19975s40i5.jpg",
+      "d19975s40i6.jpg",
+      "d19975s40i7.jpg",
+      "d19975s40i8.jpg",
+      "d19975s40i9.jpg"
+    ],
+    "area_of_interest": [
+      650,
+      1018,
+      694,
+      1062
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s40i6.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s40i6.jpg",
+    "burst_images": [
+      "d19975s40i1.jpg",
+      "d19975s40i10.jpg",
+      "d19975s40i2.jpg",
+      "d19975s40i3.jpg",
+      "d19975s40i4.jpg",
+      "d19975s40i5.jpg",
+      "d19975s40i6.jpg",
+      "d19975s40i7.jpg",
+      "d19975s40i8.jpg",
+      "d19975s40i9.jpg"
+    ],
+    "area_of_interest": [
+      934,
+      1314,
+      692,
+      1072
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s40i7.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s40i7.jpg",
+    "burst_images": [
+      "d19975s40i1.jpg",
+      "d19975s40i10.jpg",
+      "d19975s40i2.jpg",
+      "d19975s40i3.jpg",
+      "d19975s40i4.jpg",
+      "d19975s40i5.jpg",
+      "d19975s40i6.jpg",
+      "d19975s40i7.jpg",
+      "d19975s40i8.jpg",
+      "d19975s40i9.jpg"
+    ],
+    "area_of_interest": [
+      1117,
+      1484,
+      688,
+      1055
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s40i8.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s40i8.jpg",
+    "burst_images": [
+      "d19975s40i1.jpg",
+      "d19975s40i10.jpg",
+      "d19975s40i2.jpg",
+      "d19975s40i3.jpg",
+      "d19975s40i4.jpg",
+      "d19975s40i5.jpg",
+      "d19975s40i6.jpg",
+      "d19975s40i7.jpg",
+      "d19975s40i8.jpg",
+      "d19975s40i9.jpg"
+    ],
+    "area_of_interest": [
+      1270,
+      1660,
+      692,
+      1082
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s40i9.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s40i9.jpg",
+    "burst_images": [
+      "d19975s40i1.jpg",
+      "d19975s40i10.jpg",
+      "d19975s40i2.jpg",
+      "d19975s40i3.jpg",
+      "d19975s40i4.jpg",
+      "d19975s40i5.jpg",
+      "d19975s40i6.jpg",
+      "d19975s40i7.jpg",
+      "d19975s40i8.jpg",
+      "d19975s40i9.jpg"
+    ],
+    "area_of_interest": [
+      361,
+      1761,
+      0,
+      1400
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s41i1.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s41i1.jpg",
+    "burst_images": [
+      "d19975s41i1.jpg",
+      "d19975s41i10.jpg",
+      "d19975s41i2.jpg",
+      "d19975s41i3.jpg",
+      "d19975s41i4.jpg",
+      "d19975s41i5.jpg",
+      "d19975s41i6.jpg",
+      "d19975s41i7.jpg",
+      "d19975s41i8.jpg",
+      "d19975s41i9.jpg"
+    ],
+    "area_of_interest": [
+      118,
+      616,
+      642,
+      1140
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s41i10.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s41i10.jpg",
+    "burst_images": [
+      "d19975s41i1.jpg",
+      "d19975s41i10.jpg",
+      "d19975s41i2.jpg",
+      "d19975s41i3.jpg",
+      "d19975s41i4.jpg",
+      "d19975s41i5.jpg",
+      "d19975s41i6.jpg",
+      "d19975s41i7.jpg",
+      "d19975s41i8.jpg",
+      "d19975s41i9.jpg"
+    ],
+    "area_of_interest": [
+      161,
+      913,
+      611,
+      1363
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s41i2.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s41i2.jpg",
+    "burst_images": [
+      "d19975s41i1.jpg",
+      "d19975s41i10.jpg",
+      "d19975s41i2.jpg",
+      "d19975s41i3.jpg",
+      "d19975s41i4.jpg",
+      "d19975s41i5.jpg",
+      "d19975s41i6.jpg",
+      "d19975s41i7.jpg",
+      "d19975s41i8.jpg",
+      "d19975s41i9.jpg"
+    ],
+    "area_of_interest": [
+      60,
+      1460,
+      0,
+      1400
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s41i3.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s41i3.jpg",
+    "burst_images": [
+      "d19975s41i1.jpg",
+      "d19975s41i10.jpg",
+      "d19975s41i2.jpg",
+      "d19975s41i3.jpg",
+      "d19975s41i4.jpg",
+      "d19975s41i5.jpg",
+      "d19975s41i6.jpg",
+      "d19975s41i7.jpg",
+      "d19975s41i8.jpg",
+      "d19975s41i9.jpg"
+    ],
+    "area_of_interest": [
+      124,
+      1302,
+      222,
+      1400
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s41i4.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s41i4.jpg",
+    "burst_images": [
+      "d19975s41i1.jpg",
+      "d19975s41i10.jpg",
+      "d19975s41i2.jpg",
+      "d19975s41i3.jpg",
+      "d19975s41i4.jpg",
+      "d19975s41i5.jpg",
+      "d19975s41i6.jpg",
+      "d19975s41i7.jpg",
+      "d19975s41i8.jpg",
+      "d19975s41i9.jpg"
+    ],
+    "area_of_interest": [
+      183,
+      739,
+      647,
+      1203
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s41i5.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s41i5.jpg",
+    "burst_images": [
+      "d19975s41i1.jpg",
+      "d19975s41i10.jpg",
+      "d19975s41i2.jpg",
+      "d19975s41i3.jpg",
+      "d19975s41i4.jpg",
+      "d19975s41i5.jpg",
+      "d19975s41i6.jpg",
+      "d19975s41i7.jpg",
+      "d19975s41i8.jpg",
+      "d19975s41i9.jpg"
+    ],
+    "area_of_interest": [
+      155,
+      685,
+      649,
+      1179
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s41i6.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s41i6.jpg",
+    "burst_images": [
+      "d19975s41i1.jpg",
+      "d19975s41i10.jpg",
+      "d19975s41i2.jpg",
+      "d19975s41i3.jpg",
+      "d19975s41i4.jpg",
+      "d19975s41i5.jpg",
+      "d19975s41i6.jpg",
+      "d19975s41i7.jpg",
+      "d19975s41i8.jpg",
+      "d19975s41i9.jpg"
+    ],
+    "area_of_interest": [
+      177,
+      663,
+      687,
+      1173
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s41i7.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s41i7.jpg",
+    "burst_images": [
+      "d19975s41i1.jpg",
+      "d19975s41i10.jpg",
+      "d19975s41i2.jpg",
+      "d19975s41i3.jpg",
+      "d19975s41i4.jpg",
+      "d19975s41i5.jpg",
+      "d19975s41i6.jpg",
+      "d19975s41i7.jpg",
+      "d19975s41i8.jpg",
+      "d19975s41i9.jpg"
+    ],
+    "area_of_interest": [
+      192,
+      664,
+      696,
+      1168
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s41i8.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s41i8.jpg",
+    "burst_images": [
+      "d19975s41i1.jpg",
+      "d19975s41i10.jpg",
+      "d19975s41i2.jpg",
+      "d19975s41i3.jpg",
+      "d19975s41i4.jpg",
+      "d19975s41i5.jpg",
+      "d19975s41i6.jpg",
+      "d19975s41i7.jpg",
+      "d19975s41i8.jpg",
+      "d19975s41i9.jpg"
+    ],
+    "area_of_interest": [
+      196,
+      662,
+      696,
+      1162
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s41i9.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s41i9.jpg",
+    "burst_images": [
+      "d19975s41i1.jpg",
+      "d19975s41i10.jpg",
+      "d19975s41i2.jpg",
+      "d19975s41i3.jpg",
+      "d19975s41i4.jpg",
+      "d19975s41i5.jpg",
+      "d19975s41i6.jpg",
+      "d19975s41i7.jpg",
+      "d19975s41i8.jpg",
+      "d19975s41i9.jpg"
+    ],
+    "area_of_interest": [
+      188,
+      738,
+      631,
+      1181
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s4i1.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s4i1.jpg",
+    "burst_images": [
+      "d19975s4i1.jpg",
+      "d19975s4i10.jpg",
+      "d19975s4i11.jpg",
+      "d19975s4i12.jpg",
+      "d19975s4i13.jpg",
+      "d19975s4i14.jpg",
+      "d19975s4i15.jpg",
+      "d19975s4i16.jpg",
+      "d19975s4i17.jpg",
+      "d19975s4i18.jpg",
+      "d19975s4i19.jpg",
+      "d19975s4i2.jpg",
+      "d19975s4i20.jpg",
+      "d19975s4i3.jpg",
+      "d19975s4i4.jpg",
+      "d19975s4i5.jpg",
+      "d19975s4i6.jpg",
+      "d19975s4i7.jpg",
+      "d19975s4i8.jpg",
+      "d19975s4i9.jpg"
+    ],
+    "area_of_interest": [
+      1367,
+      1533,
+      759,
+      925
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s4i10.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s4i10.jpg",
+    "burst_images": [
+      "d19975s4i1.jpg",
+      "d19975s4i10.jpg",
+      "d19975s4i11.jpg",
+      "d19975s4i12.jpg",
+      "d19975s4i13.jpg",
+      "d19975s4i14.jpg",
+      "d19975s4i15.jpg",
+      "d19975s4i16.jpg",
+      "d19975s4i17.jpg",
+      "d19975s4i18.jpg",
+      "d19975s4i19.jpg",
+      "d19975s4i2.jpg",
+      "d19975s4i20.jpg",
+      "d19975s4i3.jpg",
+      "d19975s4i4.jpg",
+      "d19975s4i5.jpg",
+      "d19975s4i6.jpg",
+      "d19975s4i7.jpg",
+      "d19975s4i8.jpg",
+      "d19975s4i9.jpg"
+    ],
+    "area_of_interest": [
+      942,
+      1210,
+      795,
+      1063
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s4i11.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s4i11.jpg",
+    "burst_images": [
+      "d19975s4i1.jpg",
+      "d19975s4i10.jpg",
+      "d19975s4i11.jpg",
+      "d19975s4i12.jpg",
+      "d19975s4i13.jpg",
+      "d19975s4i14.jpg",
+      "d19975s4i15.jpg",
+      "d19975s4i16.jpg",
+      "d19975s4i17.jpg",
+      "d19975s4i18.jpg",
+      "d19975s4i19.jpg",
+      "d19975s4i2.jpg",
+      "d19975s4i20.jpg",
+      "d19975s4i3.jpg",
+      "d19975s4i4.jpg",
+      "d19975s4i5.jpg",
+      "d19975s4i6.jpg",
+      "d19975s4i7.jpg",
+      "d19975s4i8.jpg",
+      "d19975s4i9.jpg"
+    ],
+    "area_of_interest": [
+      67,
+      603,
+      796,
+      1332
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s4i12.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s4i12.jpg",
+    "burst_images": [
+      "d19975s4i1.jpg",
+      "d19975s4i10.jpg",
+      "d19975s4i11.jpg",
+      "d19975s4i12.jpg",
+      "d19975s4i13.jpg",
+      "d19975s4i14.jpg",
+      "d19975s4i15.jpg",
+      "d19975s4i16.jpg",
+      "d19975s4i17.jpg",
+      "d19975s4i18.jpg",
+      "d19975s4i19.jpg",
+      "d19975s4i2.jpg",
+      "d19975s4i20.jpg",
+      "d19975s4i3.jpg",
+      "d19975s4i4.jpg",
+      "d19975s4i5.jpg",
+      "d19975s4i6.jpg",
+      "d19975s4i7.jpg",
+      "d19975s4i8.jpg",
+      "d19975s4i9.jpg"
+    ],
+    "area_of_interest": [
+      0,
+      624,
+      775,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s4i13.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s4i13.jpg",
+    "burst_images": [
+      "d19975s4i1.jpg",
+      "d19975s4i10.jpg",
+      "d19975s4i11.jpg",
+      "d19975s4i12.jpg",
+      "d19975s4i13.jpg",
+      "d19975s4i14.jpg",
+      "d19975s4i15.jpg",
+      "d19975s4i16.jpg",
+      "d19975s4i17.jpg",
+      "d19975s4i18.jpg",
+      "d19975s4i19.jpg",
+      "d19975s4i2.jpg",
+      "d19975s4i20.jpg",
+      "d19975s4i3.jpg",
+      "d19975s4i4.jpg",
+      "d19975s4i5.jpg",
+      "d19975s4i6.jpg",
+      "d19975s4i7.jpg",
+      "d19975s4i8.jpg",
+      "d19975s4i9.jpg"
+    ],
+    "area_of_interest": [
+      0,
+      454,
+      874,
+      1328
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s4i14.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s4i14.jpg",
+    "burst_images": [
+      "d19975s4i1.jpg",
+      "d19975s4i10.jpg",
+      "d19975s4i11.jpg",
+      "d19975s4i12.jpg",
+      "d19975s4i13.jpg",
+      "d19975s4i14.jpg",
+      "d19975s4i15.jpg",
+      "d19975s4i16.jpg",
+      "d19975s4i17.jpg",
+      "d19975s4i18.jpg",
+      "d19975s4i19.jpg",
+      "d19975s4i2.jpg",
+      "d19975s4i20.jpg",
+      "d19975s4i3.jpg",
+      "d19975s4i4.jpg",
+      "d19975s4i5.jpg",
+      "d19975s4i6.jpg",
+      "d19975s4i7.jpg",
+      "d19975s4i8.jpg",
+      "d19975s4i9.jpg"
+    ],
+    "area_of_interest": [
+      0,
+      522,
+      877,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s4i15.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s4i15.jpg",
+    "burst_images": [
+      "d19975s4i1.jpg",
+      "d19975s4i10.jpg",
+      "d19975s4i11.jpg",
+      "d19975s4i12.jpg",
+      "d19975s4i13.jpg",
+      "d19975s4i14.jpg",
+      "d19975s4i15.jpg",
+      "d19975s4i16.jpg",
+      "d19975s4i17.jpg",
+      "d19975s4i18.jpg",
+      "d19975s4i19.jpg",
+      "d19975s4i2.jpg",
+      "d19975s4i20.jpg",
+      "d19975s4i3.jpg",
+      "d19975s4i4.jpg",
+      "d19975s4i5.jpg",
+      "d19975s4i6.jpg",
+      "d19975s4i7.jpg",
+      "d19975s4i8.jpg",
+      "d19975s4i9.jpg"
+    ],
+    "area_of_interest": [
+      0,
+      442,
+      957,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s4i16.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s4i16.jpg",
+    "burst_images": [
+      "d19975s4i1.jpg",
+      "d19975s4i10.jpg",
+      "d19975s4i11.jpg",
+      "d19975s4i12.jpg",
+      "d19975s4i13.jpg",
+      "d19975s4i14.jpg",
+      "d19975s4i15.jpg",
+      "d19975s4i16.jpg",
+      "d19975s4i17.jpg",
+      "d19975s4i18.jpg",
+      "d19975s4i19.jpg",
+      "d19975s4i2.jpg",
+      "d19975s4i20.jpg",
+      "d19975s4i3.jpg",
+      "d19975s4i4.jpg",
+      "d19975s4i5.jpg",
+      "d19975s4i6.jpg",
+      "d19975s4i7.jpg",
+      "d19975s4i8.jpg",
+      "d19975s4i9.jpg"
+    ],
+    "area_of_interest": [
+      300,
+      1700,
+      0,
+      1400
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s4i17.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s4i17.jpg",
+    "burst_images": [
+      "d19975s4i1.jpg",
+      "d19975s4i10.jpg",
+      "d19975s4i11.jpg",
+      "d19975s4i12.jpg",
+      "d19975s4i13.jpg",
+      "d19975s4i14.jpg",
+      "d19975s4i15.jpg",
+      "d19975s4i16.jpg",
+      "d19975s4i17.jpg",
+      "d19975s4i18.jpg",
+      "d19975s4i19.jpg",
+      "d19975s4i2.jpg",
+      "d19975s4i20.jpg",
+      "d19975s4i3.jpg",
+      "d19975s4i4.jpg",
+      "d19975s4i5.jpg",
+      "d19975s4i6.jpg",
+      "d19975s4i7.jpg",
+      "d19975s4i8.jpg",
+      "d19975s4i9.jpg"
+    ],
+    "area_of_interest": [
+      300,
+      1700,
+      0,
+      1400
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s4i18.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s4i18.jpg",
+    "burst_images": [
+      "d19975s4i1.jpg",
+      "d19975s4i10.jpg",
+      "d19975s4i11.jpg",
+      "d19975s4i12.jpg",
+      "d19975s4i13.jpg",
+      "d19975s4i14.jpg",
+      "d19975s4i15.jpg",
+      "d19975s4i16.jpg",
+      "d19975s4i17.jpg",
+      "d19975s4i18.jpg",
+      "d19975s4i19.jpg",
+      "d19975s4i2.jpg",
+      "d19975s4i20.jpg",
+      "d19975s4i3.jpg",
+      "d19975s4i4.jpg",
+      "d19975s4i5.jpg",
+      "d19975s4i6.jpg",
+      "d19975s4i7.jpg",
+      "d19975s4i8.jpg",
+      "d19975s4i9.jpg"
+    ],
+    "area_of_interest": [
+      300,
+      1700,
+      0,
+      1400
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s4i19.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s4i19.jpg",
+    "burst_images": [
+      "d19975s4i1.jpg",
+      "d19975s4i10.jpg",
+      "d19975s4i11.jpg",
+      "d19975s4i12.jpg",
+      "d19975s4i13.jpg",
+      "d19975s4i14.jpg",
+      "d19975s4i15.jpg",
+      "d19975s4i16.jpg",
+      "d19975s4i17.jpg",
+      "d19975s4i18.jpg",
+      "d19975s4i19.jpg",
+      "d19975s4i2.jpg",
+      "d19975s4i20.jpg",
+      "d19975s4i3.jpg",
+      "d19975s4i4.jpg",
+      "d19975s4i5.jpg",
+      "d19975s4i6.jpg",
+      "d19975s4i7.jpg",
+      "d19975s4i8.jpg",
+      "d19975s4i9.jpg"
+    ],
+    "area_of_interest": [
+      300,
+      1700,
+      0,
+      1400
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s4i2.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s4i2.jpg",
+    "burst_images": [
+      "d19975s4i1.jpg",
+      "d19975s4i10.jpg",
+      "d19975s4i11.jpg",
+      "d19975s4i12.jpg",
+      "d19975s4i13.jpg",
+      "d19975s4i14.jpg",
+      "d19975s4i15.jpg",
+      "d19975s4i16.jpg",
+      "d19975s4i17.jpg",
+      "d19975s4i18.jpg",
+      "d19975s4i19.jpg",
+      "d19975s4i2.jpg",
+      "d19975s4i20.jpg",
+      "d19975s4i3.jpg",
+      "d19975s4i4.jpg",
+      "d19975s4i5.jpg",
+      "d19975s4i6.jpg",
+      "d19975s4i7.jpg",
+      "d19975s4i8.jpg",
+      "d19975s4i9.jpg"
+    ],
+    "area_of_interest": [
+      1306,
+      1495,
+      759,
+      948
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s4i20.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s4i20.jpg",
+    "burst_images": [
+      "d19975s4i1.jpg",
+      "d19975s4i10.jpg",
+      "d19975s4i11.jpg",
+      "d19975s4i12.jpg",
+      "d19975s4i13.jpg",
+      "d19975s4i14.jpg",
+      "d19975s4i15.jpg",
+      "d19975s4i16.jpg",
+      "d19975s4i17.jpg",
+      "d19975s4i18.jpg",
+      "d19975s4i19.jpg",
+      "d19975s4i2.jpg",
+      "d19975s4i20.jpg",
+      "d19975s4i3.jpg",
+      "d19975s4i4.jpg",
+      "d19975s4i5.jpg",
+      "d19975s4i6.jpg",
+      "d19975s4i7.jpg",
+      "d19975s4i8.jpg",
+      "d19975s4i9.jpg"
+    ],
+    "area_of_interest": [
+      300,
+      1700,
+      0,
+      1400
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s4i3.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s4i3.jpg",
+    "burst_images": [
+      "d19975s4i1.jpg",
+      "d19975s4i10.jpg",
+      "d19975s4i11.jpg",
+      "d19975s4i12.jpg",
+      "d19975s4i13.jpg",
+      "d19975s4i14.jpg",
+      "d19975s4i15.jpg",
+      "d19975s4i16.jpg",
+      "d19975s4i17.jpg",
+      "d19975s4i18.jpg",
+      "d19975s4i19.jpg",
+      "d19975s4i2.jpg",
+      "d19975s4i20.jpg",
+      "d19975s4i3.jpg",
+      "d19975s4i4.jpg",
+      "d19975s4i5.jpg",
+      "d19975s4i6.jpg",
+      "d19975s4i7.jpg",
+      "d19975s4i8.jpg",
+      "d19975s4i9.jpg"
+    ],
+    "area_of_interest": [
+      1323,
+      1475,
+      772,
+      924
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s4i4.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s4i4.jpg",
+    "burst_images": [
+      "d19975s4i1.jpg",
+      "d19975s4i10.jpg",
+      "d19975s4i11.jpg",
+      "d19975s4i12.jpg",
+      "d19975s4i13.jpg",
+      "d19975s4i14.jpg",
+      "d19975s4i15.jpg",
+      "d19975s4i16.jpg",
+      "d19975s4i17.jpg",
+      "d19975s4i18.jpg",
+      "d19975s4i19.jpg",
+      "d19975s4i2.jpg",
+      "d19975s4i20.jpg",
+      "d19975s4i3.jpg",
+      "d19975s4i4.jpg",
+      "d19975s4i5.jpg",
+      "d19975s4i6.jpg",
+      "d19975s4i7.jpg",
+      "d19975s4i8.jpg",
+      "d19975s4i9.jpg"
+    ],
+    "area_of_interest": [
+      1237,
+      1409,
+      794,
+      966
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s4i5.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s4i5.jpg",
+    "burst_images": [
+      "d19975s4i1.jpg",
+      "d19975s4i10.jpg",
+      "d19975s4i11.jpg",
+      "d19975s4i12.jpg",
+      "d19975s4i13.jpg",
+      "d19975s4i14.jpg",
+      "d19975s4i15.jpg",
+      "d19975s4i16.jpg",
+      "d19975s4i17.jpg",
+      "d19975s4i18.jpg",
+      "d19975s4i19.jpg",
+      "d19975s4i2.jpg",
+      "d19975s4i20.jpg",
+      "d19975s4i3.jpg",
+      "d19975s4i4.jpg",
+      "d19975s4i5.jpg",
+      "d19975s4i6.jpg",
+      "d19975s4i7.jpg",
+      "d19975s4i8.jpg",
+      "d19975s4i9.jpg"
+    ],
+    "area_of_interest": [
+      1168,
+      1341,
+      794,
+      967
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s4i6.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s4i6.jpg",
+    "burst_images": [
+      "d19975s4i1.jpg",
+      "d19975s4i10.jpg",
+      "d19975s4i11.jpg",
+      "d19975s4i12.jpg",
+      "d19975s4i13.jpg",
+      "d19975s4i14.jpg",
+      "d19975s4i15.jpg",
+      "d19975s4i16.jpg",
+      "d19975s4i17.jpg",
+      "d19975s4i18.jpg",
+      "d19975s4i19.jpg",
+      "d19975s4i2.jpg",
+      "d19975s4i20.jpg",
+      "d19975s4i3.jpg",
+      "d19975s4i4.jpg",
+      "d19975s4i5.jpg",
+      "d19975s4i6.jpg",
+      "d19975s4i7.jpg",
+      "d19975s4i8.jpg",
+      "d19975s4i9.jpg"
+    ],
+    "area_of_interest": [
+      1125,
+      1315,
+      793,
+      983
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s4i7.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s4i7.jpg",
+    "burst_images": [
+      "d19975s4i1.jpg",
+      "d19975s4i10.jpg",
+      "d19975s4i11.jpg",
+      "d19975s4i12.jpg",
+      "d19975s4i13.jpg",
+      "d19975s4i14.jpg",
+      "d19975s4i15.jpg",
+      "d19975s4i16.jpg",
+      "d19975s4i17.jpg",
+      "d19975s4i18.jpg",
+      "d19975s4i19.jpg",
+      "d19975s4i2.jpg",
+      "d19975s4i20.jpg",
+      "d19975s4i3.jpg",
+      "d19975s4i4.jpg",
+      "d19975s4i5.jpg",
+      "d19975s4i6.jpg",
+      "d19975s4i7.jpg",
+      "d19975s4i8.jpg",
+      "d19975s4i9.jpg"
+    ],
+    "area_of_interest": [
+      1088,
+      1285,
+      790,
+      987
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s4i8.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s4i8.jpg",
+    "burst_images": [
+      "d19975s4i1.jpg",
+      "d19975s4i10.jpg",
+      "d19975s4i11.jpg",
+      "d19975s4i12.jpg",
+      "d19975s4i13.jpg",
+      "d19975s4i14.jpg",
+      "d19975s4i15.jpg",
+      "d19975s4i16.jpg",
+      "d19975s4i17.jpg",
+      "d19975s4i18.jpg",
+      "d19975s4i19.jpg",
+      "d19975s4i2.jpg",
+      "d19975s4i20.jpg",
+      "d19975s4i3.jpg",
+      "d19975s4i4.jpg",
+      "d19975s4i5.jpg",
+      "d19975s4i6.jpg",
+      "d19975s4i7.jpg",
+      "d19975s4i8.jpg",
+      "d19975s4i9.jpg"
+    ],
+    "area_of_interest": [
+      1028,
+      1298,
+      772,
+      1042
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s4i9.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s4i9.jpg",
+    "burst_images": [
+      "d19975s4i1.jpg",
+      "d19975s4i10.jpg",
+      "d19975s4i11.jpg",
+      "d19975s4i12.jpg",
+      "d19975s4i13.jpg",
+      "d19975s4i14.jpg",
+      "d19975s4i15.jpg",
+      "d19975s4i16.jpg",
+      "d19975s4i17.jpg",
+      "d19975s4i18.jpg",
+      "d19975s4i19.jpg",
+      "d19975s4i2.jpg",
+      "d19975s4i20.jpg",
+      "d19975s4i3.jpg",
+      "d19975s4i4.jpg",
+      "d19975s4i5.jpg",
+      "d19975s4i6.jpg",
+      "d19975s4i7.jpg",
+      "d19975s4i8.jpg",
+      "d19975s4i9.jpg"
+    ],
+    "area_of_interest": [
+      1002,
+      1294,
+      761,
+      1053
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s54i1.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s54i1.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      0,
+      420,
+      746,
+      1166
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s54i10.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s54i10.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      1367,
+      1804,
+      752,
+      1189
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s54i2.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s54i2.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      141,
+      564,
+      715,
+      1138
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s54i3.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s54i3.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      233,
+      621,
+      721,
+      1109
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s54i4.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s54i4.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      293,
+      636,
+      743,
+      1086
+    ],
+    "classifier_label": "cat"
+  },
+  "d19975s54i5.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s54i5.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      370,
+      825,
+      690,
+      1145
+    ],
+    "classifier_label": "cat"
+  },
+  "d19975s54i6.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s54i6.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      506,
+      1000,
+      671,
+      1165
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s54i7.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s54i7.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      703,
+      1214,
+      664,
+      1175
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s54i8.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s54i8.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      1035,
+      1459,
+      697,
+      1121
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s54i9.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s54i9.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      1168,
+      1570,
+      737,
+      1139
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s62i1.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s62i1.jpg",
+    "burst_images": [
+      "d19975s62i1.jpg",
+      "d19975s62i10.jpg",
+      "d19975s62i2.jpg",
+      "d19975s62i3.jpg",
+      "d19975s62i4.jpg",
+      "d19975s62i5.jpg",
+      "d19975s62i6.jpg",
+      "d19975s62i7.jpg",
+      "d19975s62i8.jpg",
+      "d19975s62i9.jpg"
+    ],
+    "area_of_interest": [
+      212,
+      1117,
+      495,
+      1400
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s62i10.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s62i10.jpg",
+    "burst_images": [
+      "d19975s62i1.jpg",
+      "d19975s62i10.jpg",
+      "d19975s62i2.jpg",
+      "d19975s62i3.jpg",
+      "d19975s62i4.jpg",
+      "d19975s62i5.jpg",
+      "d19975s62i6.jpg",
+      "d19975s62i7.jpg",
+      "d19975s62i8.jpg",
+      "d19975s62i9.jpg"
+    ],
+    "area_of_interest": [
+      0,
+      524,
+      876,
+      1400
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s62i2.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s62i2.jpg",
+    "burst_images": [
+      "d19975s62i1.jpg",
+      "d19975s62i10.jpg",
+      "d19975s62i2.jpg",
+      "d19975s62i3.jpg",
+      "d19975s62i4.jpg",
+      "d19975s62i5.jpg",
+      "d19975s62i6.jpg",
+      "d19975s62i7.jpg",
+      "d19975s62i8.jpg",
+      "d19975s62i9.jpg"
+    ],
+    "area_of_interest": [
+      77,
+      764,
+      712,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s62i3.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s62i3.jpg",
+    "burst_images": [
+      "d19975s62i1.jpg",
+      "d19975s62i10.jpg",
+      "d19975s62i2.jpg",
+      "d19975s62i3.jpg",
+      "d19975s62i4.jpg",
+      "d19975s62i5.jpg",
+      "d19975s62i6.jpg",
+      "d19975s62i7.jpg",
+      "d19975s62i8.jpg",
+      "d19975s62i9.jpg"
+    ],
+    "area_of_interest": [
+      97,
+      798,
+      698,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s62i4.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s62i4.jpg",
+    "burst_images": [
+      "d19975s62i1.jpg",
+      "d19975s62i10.jpg",
+      "d19975s62i2.jpg",
+      "d19975s62i3.jpg",
+      "d19975s62i4.jpg",
+      "d19975s62i5.jpg",
+      "d19975s62i6.jpg",
+      "d19975s62i7.jpg",
+      "d19975s62i8.jpg",
+      "d19975s62i9.jpg"
+    ],
+    "area_of_interest": [
+      67,
+      725,
+      741,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s62i5.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s62i5.jpg",
+    "burst_images": [
+      "d19975s62i1.jpg",
+      "d19975s62i10.jpg",
+      "d19975s62i2.jpg",
+      "d19975s62i3.jpg",
+      "d19975s62i4.jpg",
+      "d19975s62i5.jpg",
+      "d19975s62i6.jpg",
+      "d19975s62i7.jpg",
+      "d19975s62i8.jpg",
+      "d19975s62i9.jpg"
+    ],
+    "area_of_interest": [
+      0,
+      580,
+      819,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s62i6.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s62i6.jpg",
+    "burst_images": [
+      "d19975s62i1.jpg",
+      "d19975s62i10.jpg",
+      "d19975s62i2.jpg",
+      "d19975s62i3.jpg",
+      "d19975s62i4.jpg",
+      "d19975s62i5.jpg",
+      "d19975s62i6.jpg",
+      "d19975s62i7.jpg",
+      "d19975s62i8.jpg",
+      "d19975s62i9.jpg"
+    ],
+    "area_of_interest": [
+      0,
+      561,
+      838,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s62i7.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s62i7.jpg",
+    "burst_images": [
+      "d19975s62i1.jpg",
+      "d19975s62i10.jpg",
+      "d19975s62i2.jpg",
+      "d19975s62i3.jpg",
+      "d19975s62i4.jpg",
+      "d19975s62i5.jpg",
+      "d19975s62i6.jpg",
+      "d19975s62i7.jpg",
+      "d19975s62i8.jpg",
+      "d19975s62i9.jpg"
+    ],
+    "area_of_interest": [
+      0,
+      306,
+      1090,
+      1396
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s62i8.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s62i8.jpg",
+    "burst_images": [
+      "d19975s62i1.jpg",
+      "d19975s62i10.jpg",
+      "d19975s62i2.jpg",
+      "d19975s62i3.jpg",
+      "d19975s62i4.jpg",
+      "d19975s62i5.jpg",
+      "d19975s62i6.jpg",
+      "d19975s62i7.jpg",
+      "d19975s62i8.jpg",
+      "d19975s62i9.jpg"
+    ],
+    "area_of_interest": [
+      0,
+      302,
+      1092,
+      1394
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s62i9.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s62i9.jpg",
+    "burst_images": [
+      "d19975s62i1.jpg",
+      "d19975s62i10.jpg",
+      "d19975s62i2.jpg",
+      "d19975s62i3.jpg",
+      "d19975s62i4.jpg",
+      "d19975s62i5.jpg",
+      "d19975s62i6.jpg",
+      "d19975s62i7.jpg",
+      "d19975s62i8.jpg",
+      "d19975s62i9.jpg"
+    ],
+    "area_of_interest": [
+      0,
+      272,
+      1108,
+      1380
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s74i1.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s74i1.jpg",
+    "burst_images": [
+      "d19975s74i1.jpg",
+      "d19975s74i10.jpg",
+      "d19975s74i2.jpg",
+      "d19975s74i3.jpg",
+      "d19975s74i4.jpg",
+      "d19975s74i5.jpg",
+      "d19975s74i6.jpg",
+      "d19975s74i7.jpg",
+      "d19975s74i8.jpg",
+      "d19975s74i9.jpg"
+    ],
+    "area_of_interest": [
+      309,
+      1709,
+      0,
+      1400
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s74i10.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s74i10.jpg",
+    "burst_images": [
+      "d19975s74i1.jpg",
+      "d19975s74i10.jpg",
+      "d19975s74i2.jpg",
+      "d19975s74i3.jpg",
+      "d19975s74i4.jpg",
+      "d19975s74i5.jpg",
+      "d19975s74i6.jpg",
+      "d19975s74i7.jpg",
+      "d19975s74i8.jpg",
+      "d19975s74i9.jpg"
+    ],
+    "area_of_interest": [
+      881,
+      1999,
+      282,
+      1400
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s74i2.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s74i2.jpg",
+    "burst_images": [
+      "d19975s74i1.jpg",
+      "d19975s74i10.jpg",
+      "d19975s74i2.jpg",
+      "d19975s74i3.jpg",
+      "d19975s74i4.jpg",
+      "d19975s74i5.jpg",
+      "d19975s74i6.jpg",
+      "d19975s74i7.jpg",
+      "d19975s74i8.jpg",
+      "d19975s74i9.jpg"
+    ],
+    "area_of_interest": [
+      311,
+      1711,
+      0,
+      1400
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s74i3.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s74i3.jpg",
+    "burst_images": [
+      "d19975s74i1.jpg",
+      "d19975s74i10.jpg",
+      "d19975s74i2.jpg",
+      "d19975s74i3.jpg",
+      "d19975s74i4.jpg",
+      "d19975s74i5.jpg",
+      "d19975s74i6.jpg",
+      "d19975s74i7.jpg",
+      "d19975s74i8.jpg",
+      "d19975s74i9.jpg"
+    ],
+    "area_of_interest": [
+      276,
+      1676,
+      0,
+      1400
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s74i4.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s74i4.jpg",
+    "burst_images": [
+      "d19975s74i1.jpg",
+      "d19975s74i10.jpg",
+      "d19975s74i2.jpg",
+      "d19975s74i3.jpg",
+      "d19975s74i4.jpg",
+      "d19975s74i5.jpg",
+      "d19975s74i6.jpg",
+      "d19975s74i7.jpg",
+      "d19975s74i8.jpg",
+      "d19975s74i9.jpg"
+    ],
+    "area_of_interest": [
+      546,
+      1764,
+      182,
+      1400
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s74i5.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s74i5.jpg",
+    "burst_images": [
+      "d19975s74i1.jpg",
+      "d19975s74i10.jpg",
+      "d19975s74i2.jpg",
+      "d19975s74i3.jpg",
+      "d19975s74i4.jpg",
+      "d19975s74i5.jpg",
+      "d19975s74i6.jpg",
+      "d19975s74i7.jpg",
+      "d19975s74i8.jpg",
+      "d19975s74i9.jpg"
+    ],
+    "area_of_interest": [
+      1149,
+      1999,
+      550,
+      1400
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s74i6.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s74i6.jpg",
+    "burst_images": [
+      "d19975s74i1.jpg",
+      "d19975s74i10.jpg",
+      "d19975s74i2.jpg",
+      "d19975s74i3.jpg",
+      "d19975s74i4.jpg",
+      "d19975s74i5.jpg",
+      "d19975s74i6.jpg",
+      "d19975s74i7.jpg",
+      "d19975s74i8.jpg",
+      "d19975s74i9.jpg"
+    ],
+    "area_of_interest": [
+      1612,
+      1999,
+      1013,
+      1400
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s74i7.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s74i7.jpg",
+    "burst_images": [
+      "d19975s74i1.jpg",
+      "d19975s74i10.jpg",
+      "d19975s74i2.jpg",
+      "d19975s74i3.jpg",
+      "d19975s74i4.jpg",
+      "d19975s74i5.jpg",
+      "d19975s74i6.jpg",
+      "d19975s74i7.jpg",
+      "d19975s74i8.jpg",
+      "d19975s74i9.jpg"
+    ],
+    "area_of_interest": [
+      1273,
+      1999,
+      674,
+      1400
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s74i8.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s74i8.jpg",
+    "burst_images": [
+      "d19975s74i1.jpg",
+      "d19975s74i10.jpg",
+      "d19975s74i2.jpg",
+      "d19975s74i3.jpg",
+      "d19975s74i4.jpg",
+      "d19975s74i5.jpg",
+      "d19975s74i6.jpg",
+      "d19975s74i7.jpg",
+      "d19975s74i8.jpg",
+      "d19975s74i9.jpg"
+    ],
+    "area_of_interest": [
+      689,
+      2000,
+      88,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s74i9.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19975s74i9.jpg",
+    "burst_images": [
+      "d19975s74i1.jpg",
+      "d19975s74i10.jpg",
+      "d19975s74i2.jpg",
+      "d19975s74i3.jpg",
+      "d19975s74i4.jpg",
+      "d19975s74i5.jpg",
+      "d19975s74i6.jpg",
+      "d19975s74i7.jpg",
+      "d19975s74i8.jpg",
+      "d19975s74i9.jpg"
+    ],
+    "area_of_interest": [
+      601,
+      2000,
+      0,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19978s2i1.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19978s2i1.jpg",
+    "burst_images": [
+      "d19978s2i1.jpg",
+      "d19978s2i10.jpg",
+      "d19978s2i2.jpg",
+      "d19978s2i4.jpg",
+      "d19978s2i5.jpg",
+      "d19978s2i6.jpg",
+      "d19978s2i7.jpg",
+      "d19978s2i8.jpg",
+      "d19978s2i9.jpg"
+    ],
+    "area_of_interest": [
+      772,
+      1422,
+      395,
+      1045
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19978s2i10.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19978s2i10.jpg",
+    "burst_images": [
+      "d19978s2i1.jpg",
+      "d19978s2i10.jpg",
+      "d19978s2i2.jpg",
+      "d19978s2i4.jpg",
+      "d19978s2i5.jpg",
+      "d19978s2i6.jpg",
+      "d19978s2i7.jpg",
+      "d19978s2i8.jpg",
+      "d19978s2i9.jpg"
+    ],
+    "area_of_interest": [
+      1545,
+      2000,
+      944,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19978s2i2.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19978s2i2.jpg",
+    "burst_images": [
+      "d19978s2i1.jpg",
+      "d19978s2i10.jpg",
+      "d19978s2i2.jpg",
+      "d19978s2i4.jpg",
+      "d19978s2i5.jpg",
+      "d19978s2i6.jpg",
+      "d19978s2i7.jpg",
+      "d19978s2i8.jpg",
+      "d19978s2i9.jpg"
+    ],
+    "area_of_interest": [
+      859,
+      1505,
+      402,
+      1048
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19978s2i4.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19978s2i4.jpg",
+    "burst_images": [
+      "d19978s2i1.jpg",
+      "d19978s2i10.jpg",
+      "d19978s2i2.jpg",
+      "d19978s2i4.jpg",
+      "d19978s2i5.jpg",
+      "d19978s2i6.jpg",
+      "d19978s2i7.jpg",
+      "d19978s2i8.jpg",
+      "d19978s2i9.jpg"
+    ],
+    "area_of_interest": [
+      1102,
+      1722,
+      454,
+      1074
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19978s2i5.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19978s2i5.jpg",
+    "burst_images": [
+      "d19978s2i1.jpg",
+      "d19978s2i10.jpg",
+      "d19978s2i2.jpg",
+      "d19978s2i4.jpg",
+      "d19978s2i5.jpg",
+      "d19978s2i6.jpg",
+      "d19978s2i7.jpg",
+      "d19978s2i8.jpg",
+      "d19978s2i9.jpg"
+    ],
+    "area_of_interest": [
+      1204,
+      2000,
+      603,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19978s2i6.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19978s2i6.jpg",
+    "burst_images": [
+      "d19978s2i1.jpg",
+      "d19978s2i10.jpg",
+      "d19978s2i2.jpg",
+      "d19978s2i4.jpg",
+      "d19978s2i5.jpg",
+      "d19978s2i6.jpg",
+      "d19978s2i7.jpg",
+      "d19978s2i8.jpg",
+      "d19978s2i9.jpg"
+    ],
+    "area_of_interest": [
+      1341,
+      2000,
+      740,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19978s2i7.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19978s2i7.jpg",
+    "burst_images": [
+      "d19978s2i1.jpg",
+      "d19978s2i10.jpg",
+      "d19978s2i2.jpg",
+      "d19978s2i4.jpg",
+      "d19978s2i5.jpg",
+      "d19978s2i6.jpg",
+      "d19978s2i7.jpg",
+      "d19978s2i8.jpg",
+      "d19978s2i9.jpg"
+    ],
+    "area_of_interest": [
+      1486,
+      2000,
+      885,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19978s2i8.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19978s2i8.jpg",
+    "burst_images": [
+      "d19978s2i1.jpg",
+      "d19978s2i10.jpg",
+      "d19978s2i2.jpg",
+      "d19978s2i4.jpg",
+      "d19978s2i5.jpg",
+      "d19978s2i6.jpg",
+      "d19978s2i7.jpg",
+      "d19978s2i8.jpg",
+      "d19978s2i9.jpg"
+    ],
+    "area_of_interest": [
+      1545,
+      2000,
+      944,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19978s2i9.jpg": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C1\\d19978s2i9.jpg",
+    "burst_images": [
+      "d19978s2i1.jpg",
+      "d19978s2i10.jpg",
+      "d19978s2i2.jpg",
+      "d19978s2i4.jpg",
+      "d19978s2i5.jpg",
+      "d19978s2i6.jpg",
+      "d19978s2i7.jpg",
+      "d19978s2i8.jpg",
+      "d19978s2i9.jpg"
+    ],
+    "area_of_interest": [
+      1545,
+      2000,
+      944,
+      1399
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-01-2013 0-48-39.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-01-2013 0-48-39.JPG",
+    "burst_images": [
+      "02-01-2013 0-48-39.JPG",
+      "02-01-2013 0-48-41.JPG",
+      "02-01-2013 0-48-42.JPG"
+    ],
+    "area_of_interest": [
+      1715,
+      1945,
+      713,
+      943
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-01-2013 0-48-41.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-01-2013 0-48-41.JPG",
+    "burst_images": [
+      "02-01-2013 0-48-39.JPG",
+      "02-01-2013 0-48-41.JPG",
+      "02-01-2013 0-48-42.JPG"
+    ],
+    "area_of_interest": [
+      613,
+      2048,
+      0,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-01-2013 0-48-42.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-01-2013 0-48-42.JPG",
+    "burst_images": [
+      "02-01-2013 0-48-39.JPG",
+      "02-01-2013 0-48-41.JPG",
+      "02-01-2013 0-48-42.JPG"
+    ],
+    "area_of_interest": [
+      253,
+      1427,
+      161,
+      1335
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-01-2013 2-21-56.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-01-2013 2-21-56.JPG",
+    "burst_images": [
+      "02-01-2013 2-21-56.JPG",
+      "02-01-2013 2-21-58.JPG",
+      "02-01-2013 2-21-59.JPG"
+    ],
+    "area_of_interest": [
+      459,
+      1063,
+      832,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-01-2013 2-21-58.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-01-2013 2-21-58.JPG",
+    "burst_images": [
+      "02-01-2013 2-21-56.JPG",
+      "02-01-2013 2-21-58.JPG",
+      "02-01-2013 2-21-59.JPG"
+    ],
+    "area_of_interest": [
+      948,
+      1356,
+      1023,
+      1431
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-01-2013 2-21-59.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-01-2013 2-21-59.JPG",
+    "burst_images": [
+      "02-01-2013 2-21-56.JPG",
+      "02-01-2013 2-21-58.JPG",
+      "02-01-2013 2-21-59.JPG"
+    ],
+    "area_of_interest": [
+      554,
+      1237,
+      753,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-01-2013 22-33-06.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-01-2013 22-33-06.JPG",
+    "burst_images": [
+      "02-01-2013 22-33-06.JPG",
+      "02-01-2013 22-33-07.JPG",
+      "02-01-2013 22-33-09.JPG",
+      "02-01-2013 22-37-23.JPG",
+      "02-01-2013 22-37-25.JPG",
+      "02-01-2013 22-37-26.JPG",
+      "02-01-2013 23-29-49.JPG",
+      "02-01-2013 23-29-50.JPG",
+      "02-01-2013 23-29-52.JPG"
+    ],
+    "area_of_interest": [
+      457,
+      1893,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-01-2013 22-33-07.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-01-2013 22-33-07.JPG",
+    "burst_images": [
+      "02-01-2013 22-33-06.JPG",
+      "02-01-2013 22-33-07.JPG",
+      "02-01-2013 22-33-09.JPG",
+      "02-01-2013 22-37-23.JPG",
+      "02-01-2013 22-37-25.JPG",
+      "02-01-2013 22-37-26.JPG",
+      "02-01-2013 23-29-49.JPG",
+      "02-01-2013 23-29-50.JPG",
+      "02-01-2013 23-29-52.JPG"
+    ],
+    "area_of_interest": [
+      466,
+      1902,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-01-2013 22-33-09.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-01-2013 22-33-09.JPG",
+    "burst_images": [
+      "02-01-2013 22-33-06.JPG",
+      "02-01-2013 22-33-07.JPG",
+      "02-01-2013 22-33-09.JPG",
+      "02-01-2013 22-37-23.JPG",
+      "02-01-2013 22-37-25.JPG",
+      "02-01-2013 22-37-26.JPG",
+      "02-01-2013 23-29-49.JPG",
+      "02-01-2013 23-29-50.JPG",
+      "02-01-2013 23-29-52.JPG"
+    ],
+    "area_of_interest": [
+      462,
+      1898,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-01-2013 22-37-23.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-01-2013 22-37-23.JPG",
+    "burst_images": [
+      "02-01-2013 22-33-06.JPG",
+      "02-01-2013 22-33-07.JPG",
+      "02-01-2013 22-33-09.JPG",
+      "02-01-2013 22-37-23.JPG",
+      "02-01-2013 22-37-25.JPG",
+      "02-01-2013 22-37-26.JPG",
+      "02-01-2013 23-29-49.JPG",
+      "02-01-2013 23-29-50.JPG",
+      "02-01-2013 23-29-52.JPG"
+    ],
+    "area_of_interest": [
+      1307,
+      2047,
+      696,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-01-2013 22-37-25.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-01-2013 22-37-25.JPG",
+    "burst_images": [
+      "02-01-2013 22-33-06.JPG",
+      "02-01-2013 22-33-07.JPG",
+      "02-01-2013 22-33-09.JPG",
+      "02-01-2013 22-37-23.JPG",
+      "02-01-2013 22-37-25.JPG",
+      "02-01-2013 22-37-26.JPG",
+      "02-01-2013 23-29-49.JPG",
+      "02-01-2013 23-29-50.JPG",
+      "02-01-2013 23-29-52.JPG"
+    ],
+    "area_of_interest": [
+      1305,
+      2047,
+      694,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-01-2013 22-37-26.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-01-2013 22-37-26.JPG",
+    "burst_images": [
+      "02-01-2013 22-33-06.JPG",
+      "02-01-2013 22-33-07.JPG",
+      "02-01-2013 22-33-09.JPG",
+      "02-01-2013 22-37-23.JPG",
+      "02-01-2013 22-37-25.JPG",
+      "02-01-2013 22-37-26.JPG",
+      "02-01-2013 23-29-49.JPG",
+      "02-01-2013 23-29-50.JPG",
+      "02-01-2013 23-29-52.JPG"
+    ],
+    "area_of_interest": [
+      1322,
+      2047,
+      711,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-01-2013 23-29-49.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-01-2013 23-29-49.JPG",
+    "burst_images": [
+      "02-01-2013 22-33-06.JPG",
+      "02-01-2013 22-33-07.JPG",
+      "02-01-2013 22-33-09.JPG",
+      "02-01-2013 22-37-23.JPG",
+      "02-01-2013 22-37-25.JPG",
+      "02-01-2013 22-37-26.JPG",
+      "02-01-2013 23-29-49.JPG",
+      "02-01-2013 23-29-50.JPG",
+      "02-01-2013 23-29-52.JPG"
+    ],
+    "area_of_interest": [
+      1012,
+      2047,
+      401,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-01-2013 23-29-50.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-01-2013 23-29-50.JPG",
+    "burst_images": [
+      "02-01-2013 22-33-06.JPG",
+      "02-01-2013 22-33-07.JPG",
+      "02-01-2013 22-33-09.JPG",
+      "02-01-2013 22-37-23.JPG",
+      "02-01-2013 22-37-25.JPG",
+      "02-01-2013 22-37-26.JPG",
+      "02-01-2013 23-29-49.JPG",
+      "02-01-2013 23-29-50.JPG",
+      "02-01-2013 23-29-52.JPG"
+    ],
+    "area_of_interest": [
+      1026,
+      2047,
+      415,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-01-2013 23-29-52.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-01-2013 23-29-52.JPG",
+    "burst_images": [
+      "02-01-2013 22-33-06.JPG",
+      "02-01-2013 22-33-07.JPG",
+      "02-01-2013 22-33-09.JPG",
+      "02-01-2013 22-37-23.JPG",
+      "02-01-2013 22-37-25.JPG",
+      "02-01-2013 22-37-26.JPG",
+      "02-01-2013 23-29-49.JPG",
+      "02-01-2013 23-29-50.JPG",
+      "02-01-2013 23-29-52.JPG"
+    ],
+    "area_of_interest": [
+      1024,
+      2047,
+      413,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-01-2013 4-00-06.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-01-2013 4-00-06.JPG",
+    "burst_images": [
+      "02-01-2013 4-00-06.JPG",
+      "02-01-2013 4-00-07.JPG",
+      "02-01-2013 4-00-09.JPG"
+    ],
+    "area_of_interest": [
+      440,
+      1876,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-01-2013 4-00-07.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-01-2013 4-00-07.JPG",
+    "burst_images": [
+      "02-01-2013 4-00-06.JPG",
+      "02-01-2013 4-00-07.JPG",
+      "02-01-2013 4-00-09.JPG"
+    ],
+    "area_of_interest": [
+      416,
+      934,
+      544,
+      1062
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-01-2013 4-00-09.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-01-2013 4-00-09.JPG",
+    "burst_images": [
+      "02-01-2013 4-00-06.JPG",
+      "02-01-2013 4-00-07.JPG",
+      "02-01-2013 4-00-09.JPG"
+    ],
+    "area_of_interest": [
+      486,
+      1388,
+      384,
+      1286
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-02-2013 0-13-05.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-02-2013 0-13-05.JPG",
+    "burst_images": [
+      "02-02-2013 0-13-05.JPG",
+      "02-02-2013 0-13-06.JPG",
+      "02-02-2013 0-13-08.JPG"
+    ],
+    "area_of_interest": [
+      862,
+      1422,
+      567,
+      1127
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-02-2013 0-13-06.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-02-2013 0-13-06.JPG",
+    "burst_images": [
+      "02-02-2013 0-13-05.JPG",
+      "02-02-2013 0-13-06.JPG",
+      "02-02-2013 0-13-08.JPG"
+    ],
+    "area_of_interest": [
+      875,
+      1002,
+      792,
+      919
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-02-2013 0-13-08.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-02-2013 0-13-08.JPG",
+    "burst_images": [
+      "02-02-2013 0-13-05.JPG",
+      "02-02-2013 0-13-06.JPG",
+      "02-02-2013 0-13-08.JPG"
+    ],
+    "area_of_interest": [
+      907,
+      1037,
+      767,
+      897
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-02-2013 16-14-28.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-02-2013 16-14-28.JPG",
+    "burst_images": [
+      "02-02-2013 16-14-28.JPG",
+      "02-02-2013 16-14-31.JPG",
+      "02-02-2013 16-14-33.JPG",
+      "02-02-2013 16-15-45.JPG",
+      "02-02-2013 16-15-47.JPG",
+      "02-02-2013 16-15-49.JPG"
+    ],
+    "area_of_interest": [
+      702,
+      1143,
+      995,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-02-2013 16-14-31.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-02-2013 16-14-31.JPG",
+    "burst_images": [
+      "02-02-2013 16-14-28.JPG",
+      "02-02-2013 16-14-31.JPG",
+      "02-02-2013 16-14-33.JPG",
+      "02-02-2013 16-15-45.JPG",
+      "02-02-2013 16-15-47.JPG",
+      "02-02-2013 16-15-49.JPG"
+    ],
+    "area_of_interest": [
+      980,
+      1390,
+      1025,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-02-2013 16-14-33.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-02-2013 16-14-33.JPG",
+    "burst_images": [
+      "02-02-2013 16-14-28.JPG",
+      "02-02-2013 16-14-31.JPG",
+      "02-02-2013 16-14-33.JPG",
+      "02-02-2013 16-15-45.JPG",
+      "02-02-2013 16-15-47.JPG",
+      "02-02-2013 16-15-49.JPG"
+    ],
+    "area_of_interest": [
+      1122,
+      1511,
+      1047,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-02-2013 16-15-45.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-02-2013 16-15-45.JPG",
+    "burst_images": [
+      "02-02-2013 16-14-28.JPG",
+      "02-02-2013 16-14-31.JPG",
+      "02-02-2013 16-14-33.JPG",
+      "02-02-2013 16-15-45.JPG",
+      "02-02-2013 16-15-47.JPG",
+      "02-02-2013 16-15-49.JPG"
+    ],
+    "area_of_interest": [
+      406,
+      1842,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-02-2013 16-15-47.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-02-2013 16-15-47.JPG",
+    "burst_images": [
+      "02-02-2013 16-14-28.JPG",
+      "02-02-2013 16-14-31.JPG",
+      "02-02-2013 16-14-33.JPG",
+      "02-02-2013 16-15-45.JPG",
+      "02-02-2013 16-15-47.JPG",
+      "02-02-2013 16-15-49.JPG"
+    ],
+    "area_of_interest": [
+      225,
+      1502,
+      158,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "02-02-2013 16-15-49.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\02-02-2013 16-15-49.JPG",
+    "burst_images": [
+      "02-02-2013 16-14-28.JPG",
+      "02-02-2013 16-14-31.JPG",
+      "02-02-2013 16-14-33.JPG",
+      "02-02-2013 16-15-45.JPG",
+      "02-02-2013 16-15-47.JPG",
+      "02-02-2013 16-15-49.JPG"
+    ],
+    "area_of_interest": [
+      182,
+      1441,
+      176,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 0-03-58.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\03-01-2013 0-03-58.JPG",
+    "burst_images": [
+      "03-01-2013 0-03-58.JPG",
+      "03-01-2013 0-04-00.JPG",
+      "03-01-2013 0-04-01.JPG",
+      "03-01-2013 0-14-08.JPG",
+      "03-01-2013 0-14-09.JPG",
+      "03-01-2013 0-14-10.JPG"
+    ],
+    "area_of_interest": [
+      1497,
+      1990,
+      705,
+      1198
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 0-04-00.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\03-01-2013 0-04-00.JPG",
+    "burst_images": [
+      "03-01-2013 0-03-58.JPG",
+      "03-01-2013 0-04-00.JPG",
+      "03-01-2013 0-04-01.JPG",
+      "03-01-2013 0-14-08.JPG",
+      "03-01-2013 0-14-09.JPG",
+      "03-01-2013 0-14-10.JPG"
+    ],
+    "area_of_interest": [
+      1539,
+      1927,
+      721,
+      1109
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 0-04-01.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\03-01-2013 0-04-01.JPG",
+    "burst_images": [
+      "03-01-2013 0-03-58.JPG",
+      "03-01-2013 0-04-00.JPG",
+      "03-01-2013 0-04-01.JPG",
+      "03-01-2013 0-14-08.JPG",
+      "03-01-2013 0-14-09.JPG",
+      "03-01-2013 0-14-10.JPG"
+    ],
+    "area_of_interest": [
+      1532,
+      1921,
+      726,
+      1115
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 0-14-08.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\03-01-2013 0-14-08.JPG",
+    "burst_images": [
+      "03-01-2013 0-03-58.JPG",
+      "03-01-2013 0-04-00.JPG",
+      "03-01-2013 0-04-01.JPG",
+      "03-01-2013 0-14-08.JPG",
+      "03-01-2013 0-14-09.JPG",
+      "03-01-2013 0-14-10.JPG"
+    ],
+    "area_of_interest": [
+      1184,
+      1490,
+      611,
+      917
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 0-14-09.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\03-01-2013 0-14-09.JPG",
+    "burst_images": [
+      "03-01-2013 0-03-58.JPG",
+      "03-01-2013 0-04-00.JPG",
+      "03-01-2013 0-04-01.JPG",
+      "03-01-2013 0-14-08.JPG",
+      "03-01-2013 0-14-09.JPG",
+      "03-01-2013 0-14-10.JPG"
+    ],
+    "area_of_interest": [
+      1430,
+      1742,
+      517,
+      829
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 0-14-10.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\03-01-2013 0-14-10.JPG",
+    "burst_images": [
+      "03-01-2013 0-03-58.JPG",
+      "03-01-2013 0-04-00.JPG",
+      "03-01-2013 0-04-01.JPG",
+      "03-01-2013 0-14-08.JPG",
+      "03-01-2013 0-14-09.JPG",
+      "03-01-2013 0-14-10.JPG"
+    ],
+    "area_of_interest": [
+      1631,
+      1771,
+      621,
+      761
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 3-42-54.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\03-01-2013 3-42-54.JPG",
+    "burst_images": [
+      "03-01-2013 3-42-54.JPG",
+      "03-01-2013 3-42-56.JPG",
+      "03-01-2013 3-42-57.JPG"
+    ],
+    "area_of_interest": [
+      1675,
+      1896,
+      868,
+      1089
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 3-42-56.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\03-01-2013 3-42-56.JPG",
+    "burst_images": [
+      "03-01-2013 3-42-54.JPG",
+      "03-01-2013 3-42-56.JPG",
+      "03-01-2013 3-42-57.JPG"
+    ],
+    "area_of_interest": [
+      1807,
+      1962,
+      780,
+      935
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 3-42-57.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\03-01-2013 3-42-57.JPG",
+    "burst_images": [
+      "03-01-2013 3-42-54.JPG",
+      "03-01-2013 3-42-56.JPG",
+      "03-01-2013 3-42-57.JPG"
+    ],
+    "area_of_interest": [
+      1809,
+      1933,
+      775,
+      899
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 4-45-26.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\03-01-2013 4-45-26.JPG",
+    "burst_images": [
+      "03-01-2013 4-45-26.JPG",
+      "03-01-2013 4-45-28.JPG",
+      "03-01-2013 4-45-29.JPG"
+    ],
+    "area_of_interest": [
+      1572,
+      2048,
+      494,
+      970
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 4-45-28.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\03-01-2013 4-45-28.JPG",
+    "burst_images": [
+      "03-01-2013 4-45-26.JPG",
+      "03-01-2013 4-45-28.JPG",
+      "03-01-2013 4-45-29.JPG"
+    ],
+    "area_of_interest": [
+      1726,
+      2048,
+      488,
+      810
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 4-45-29.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C2\\03-01-2013 4-45-29.JPG",
+    "burst_images": [
+      "03-01-2013 4-45-26.JPG",
+      "03-01-2013 4-45-28.JPG",
+      "03-01-2013 4-45-29.JPG"
+    ],
+    "area_of_interest": [
+      717,
+      1835,
+      157,
+      1275
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 11-37-23.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C3\\03-01-2013 11-37-23.JPG",
+    "burst_images": [
+      "03-01-2013 11-37-23.JPG",
+      "03-01-2013 11-37-26.JPG",
+      "03-01-2013 11-37-28.JPG",
+      "03-01-2013 11-56-27.JPG",
+      "03-01-2013 11-56-29.JPG",
+      "03-01-2013 11-56-32.JPG"
+    ],
+    "area_of_interest": [
+      277,
+      1687,
+      25,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 11-37-26.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C3\\03-01-2013 11-37-26.JPG",
+    "burst_images": [
+      "03-01-2013 11-37-23.JPG",
+      "03-01-2013 11-37-26.JPG",
+      "03-01-2013 11-37-28.JPG",
+      "03-01-2013 11-56-27.JPG",
+      "03-01-2013 11-56-29.JPG",
+      "03-01-2013 11-56-32.JPG"
+    ],
+    "area_of_interest": [
+      123,
+      1559,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 11-37-28.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C3\\03-01-2013 11-37-28.JPG",
+    "burst_images": [
+      "03-01-2013 11-37-23.JPG",
+      "03-01-2013 11-37-26.JPG",
+      "03-01-2013 11-37-28.JPG",
+      "03-01-2013 11-56-27.JPG",
+      "03-01-2013 11-56-29.JPG",
+      "03-01-2013 11-56-32.JPG"
+    ],
+    "area_of_interest": [
+      429,
+      1759,
+      35,
+      1365
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 11-56-27.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C3\\03-01-2013 11-56-27.JPG",
+    "burst_images": [
+      "03-01-2013 11-37-23.JPG",
+      "03-01-2013 11-37-26.JPG",
+      "03-01-2013 11-37-28.JPG",
+      "03-01-2013 11-56-27.JPG",
+      "03-01-2013 11-56-29.JPG",
+      "03-01-2013 11-56-32.JPG"
+    ],
+    "area_of_interest": [
+      462,
+      1898,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 11-56-29.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C3\\03-01-2013 11-56-29.JPG",
+    "burst_images": [
+      "03-01-2013 11-37-23.JPG",
+      "03-01-2013 11-37-26.JPG",
+      "03-01-2013 11-37-28.JPG",
+      "03-01-2013 11-56-27.JPG",
+      "03-01-2013 11-56-29.JPG",
+      "03-01-2013 11-56-32.JPG"
+    ],
+    "area_of_interest": [
+      1803,
+      1927,
+      519,
+      643
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 11-56-32.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C3\\03-01-2013 11-56-32.JPG",
+    "burst_images": [
+      "03-01-2013 11-37-23.JPG",
+      "03-01-2013 11-37-26.JPG",
+      "03-01-2013 11-37-28.JPG",
+      "03-01-2013 11-56-27.JPG",
+      "03-01-2013 11-56-29.JPG",
+      "03-01-2013 11-56-32.JPG"
+    ],
+    "area_of_interest": [
+      306,
+      1742,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 20-03-57.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C3\\03-01-2013 20-03-57.JPG",
+    "burst_images": [
+      "03-01-2013 20-03-57.JPG",
+      "03-01-2013 20-03-59.JPG",
+      "03-01-2013 20-04-01.JPG",
+      "03-01-2013 20-04-10.JPG",
+      "03-01-2013 20-04-12.JPG",
+      "03-01-2013 20-04-13.JPG"
+    ],
+    "area_of_interest": [
+      1661,
+      1875,
+      534,
+      748
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 20-03-59.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C3\\03-01-2013 20-03-59.JPG",
+    "burst_images": [
+      "03-01-2013 20-03-57.JPG",
+      "03-01-2013 20-03-59.JPG",
+      "03-01-2013 20-04-01.JPG",
+      "03-01-2013 20-04-10.JPG",
+      "03-01-2013 20-04-12.JPG",
+      "03-01-2013 20-04-13.JPG"
+    ],
+    "area_of_interest": [
+      1614,
+      1908,
+      511,
+      805
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 20-04-01.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C3\\03-01-2013 20-04-01.JPG",
+    "burst_images": [
+      "03-01-2013 20-03-57.JPG",
+      "03-01-2013 20-03-59.JPG",
+      "03-01-2013 20-04-01.JPG",
+      "03-01-2013 20-04-10.JPG",
+      "03-01-2013 20-04-12.JPG",
+      "03-01-2013 20-04-13.JPG"
+    ],
+    "area_of_interest": [
+      367,
+      1803,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 20-04-10.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C3\\03-01-2013 20-04-10.JPG",
+    "burst_images": [
+      "03-01-2013 20-03-57.JPG",
+      "03-01-2013 20-03-59.JPG",
+      "03-01-2013 20-04-01.JPG",
+      "03-01-2013 20-04-10.JPG",
+      "03-01-2013 20-04-12.JPG",
+      "03-01-2013 20-04-13.JPG"
+    ],
+    "area_of_interest": [
+      1103,
+      1285,
+      746,
+      928
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 20-04-12.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C3\\03-01-2013 20-04-12.JPG",
+    "burst_images": [
+      "03-01-2013 20-03-57.JPG",
+      "03-01-2013 20-03-59.JPG",
+      "03-01-2013 20-04-01.JPG",
+      "03-01-2013 20-04-10.JPG",
+      "03-01-2013 20-04-12.JPG",
+      "03-01-2013 20-04-13.JPG"
+    ],
+    "area_of_interest": [
+      1065,
+      1293,
+      740,
+      968
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-01-2013 20-04-13.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C3\\03-01-2013 20-04-13.JPG",
+    "burst_images": [
+      "03-01-2013 20-03-57.JPG",
+      "03-01-2013 20-03-59.JPG",
+      "03-01-2013 20-04-01.JPG",
+      "03-01-2013 20-04-10.JPG",
+      "03-01-2013 20-04-12.JPG",
+      "03-01-2013 20-04-13.JPG"
+    ],
+    "area_of_interest": [
+      944,
+      1130,
+      863,
+      1049
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-02-2013 16-02-02.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C3\\03-02-2013 16-02-02.JPG",
+    "burst_images": [
+      "03-02-2013 16-02-02.JPG",
+      "03-02-2013 16-02-04.JPG",
+      "03-02-2013 16-02-06.JPG",
+      "03-02-2013 16-02-42.JPG",
+      "03-02-2013 16-02-44.JPG",
+      "03-02-2013 16-02-46.JPG"
+    ],
+    "area_of_interest": [
+      945,
+      1788,
+      593,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-02-2013 16-02-04.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C3\\03-02-2013 16-02-04.JPG",
+    "burst_images": [
+      "03-02-2013 16-02-02.JPG",
+      "03-02-2013 16-02-04.JPG",
+      "03-02-2013 16-02-06.JPG",
+      "03-02-2013 16-02-42.JPG",
+      "03-02-2013 16-02-44.JPG",
+      "03-02-2013 16-02-46.JPG"
+    ],
+    "area_of_interest": [
+      70,
+      1505,
+      0,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-02-2013 16-02-06.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C3\\03-02-2013 16-02-06.JPG",
+    "burst_images": [
+      "03-02-2013 16-02-02.JPG",
+      "03-02-2013 16-02-04.JPG",
+      "03-02-2013 16-02-06.JPG",
+      "03-02-2013 16-02-42.JPG",
+      "03-02-2013 16-02-44.JPG",
+      "03-02-2013 16-02-46.JPG"
+    ],
+    "area_of_interest": [
+      1130,
+      1373,
+      1193,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-02-2013 16-02-42.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C3\\03-02-2013 16-02-42.JPG",
+    "burst_images": [
+      "03-02-2013 16-02-02.JPG",
+      "03-02-2013 16-02-04.JPG",
+      "03-02-2013 16-02-06.JPG",
+      "03-02-2013 16-02-42.JPG",
+      "03-02-2013 16-02-44.JPG",
+      "03-02-2013 16-02-46.JPG"
+    ],
+    "area_of_interest": [
+      38,
+      1474,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-02-2013 16-02-44.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C3\\03-02-2013 16-02-44.JPG",
+    "burst_images": [
+      "03-02-2013 16-02-02.JPG",
+      "03-02-2013 16-02-04.JPG",
+      "03-02-2013 16-02-06.JPG",
+      "03-02-2013 16-02-42.JPG",
+      "03-02-2013 16-02-44.JPG",
+      "03-02-2013 16-02-46.JPG"
+    ],
+    "area_of_interest": [
+      143,
+      1579,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-02-2013 16-02-46.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C3\\03-02-2013 16-02-46.JPG",
+    "burst_images": [
+      "03-02-2013 16-02-02.JPG",
+      "03-02-2013 16-02-04.JPG",
+      "03-02-2013 16-02-06.JPG",
+      "03-02-2013 16-02-42.JPG",
+      "03-02-2013 16-02-44.JPG",
+      "03-02-2013 16-02-46.JPG"
+    ],
+    "area_of_interest": [
+      189,
+      1624,
+      0,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-02-2013 21-11-35.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\03-02-2013 21-11-35.JPG",
+    "burst_images": [
+      "03-02-2013 21-11-35.JPG",
+      "03-02-2013 21-11-36.JPG",
+      "03-02-2013 21-11-38.JPG",
+      "03-02-2013 21-11-43.JPG",
+      "03-02-2013 21-11-44.JPG",
+      "03-02-2013 21-11-46.JPG"
+    ],
+    "area_of_interest": [
+      1001,
+      1126,
+      1143,
+      1268
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-02-2013 21-11-36.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\03-02-2013 21-11-36.JPG",
+    "burst_images": [
+      "03-02-2013 21-11-35.JPG",
+      "03-02-2013 21-11-36.JPG",
+      "03-02-2013 21-11-38.JPG",
+      "03-02-2013 21-11-43.JPG",
+      "03-02-2013 21-11-44.JPG",
+      "03-02-2013 21-11-46.JPG"
+    ],
+    "area_of_interest": [
+      992,
+      1116,
+      1128,
+      1252
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-02-2013 21-11-38.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\03-02-2013 21-11-38.JPG",
+    "burst_images": [
+      "03-02-2013 21-11-35.JPG",
+      "03-02-2013 21-11-36.JPG",
+      "03-02-2013 21-11-38.JPG",
+      "03-02-2013 21-11-43.JPG",
+      "03-02-2013 21-11-44.JPG",
+      "03-02-2013 21-11-46.JPG"
+    ],
+    "area_of_interest": [
+      931,
+      1058,
+      1142,
+      1269
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-02-2013 21-11-43.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\03-02-2013 21-11-43.JPG",
+    "burst_images": [
+      "03-02-2013 21-11-35.JPG",
+      "03-02-2013 21-11-36.JPG",
+      "03-02-2013 21-11-38.JPG",
+      "03-02-2013 21-11-43.JPG",
+      "03-02-2013 21-11-44.JPG",
+      "03-02-2013 21-11-46.JPG"
+    ],
+    "area_of_interest": [
+      1091,
+      1523,
+      866,
+      1298
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-02-2013 21-11-44.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\03-02-2013 21-11-44.JPG",
+    "burst_images": [
+      "03-02-2013 21-11-35.JPG",
+      "03-02-2013 21-11-36.JPG",
+      "03-02-2013 21-11-38.JPG",
+      "03-02-2013 21-11-43.JPG",
+      "03-02-2013 21-11-44.JPG",
+      "03-02-2013 21-11-46.JPG"
+    ],
+    "area_of_interest": [
+      835,
+      1647,
+      624,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "03-02-2013 21-11-46.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\03-02-2013 21-11-46.JPG",
+    "burst_images": [
+      "03-02-2013 21-11-35.JPG",
+      "03-02-2013 21-11-36.JPG",
+      "03-02-2013 21-11-38.JPG",
+      "03-02-2013 21-11-43.JPG",
+      "03-02-2013 21-11-44.JPG",
+      "03-02-2013 21-11-46.JPG"
+    ],
+    "area_of_interest": [
+      804,
+      1934,
+      306,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 0-12-01.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 0-12-01.JPG",
+    "burst_images": [
+      "04-01-2013 0-12-01.JPG",
+      "04-01-2013 0-12-03.JPG",
+      "04-01-2013 0-12-04.JPG",
+      "04-01-2013 0-22-44.JPG",
+      "04-01-2013 0-22-45.JPG",
+      "04-01-2013 0-22-47.JPG",
+      "04-01-2013 0-46-14.JPG",
+      "04-01-2013 0-46-15.JPG",
+      "04-01-2013 0-46-17.JPG"
+    ],
+    "area_of_interest": [
+      1020,
+      1981,
+      475,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 0-12-03.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 0-12-03.JPG",
+    "burst_images": [
+      "04-01-2013 0-12-01.JPG",
+      "04-01-2013 0-12-03.JPG",
+      "04-01-2013 0-12-04.JPG",
+      "04-01-2013 0-22-44.JPG",
+      "04-01-2013 0-22-45.JPG",
+      "04-01-2013 0-22-47.JPG",
+      "04-01-2013 0-46-14.JPG",
+      "04-01-2013 0-46-15.JPG",
+      "04-01-2013 0-46-17.JPG"
+    ],
+    "area_of_interest": [
+      1745,
+      1883,
+      804,
+      942
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 0-12-04.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 0-12-04.JPG",
+    "burst_images": [
+      "04-01-2013 0-12-01.JPG",
+      "04-01-2013 0-12-03.JPG",
+      "04-01-2013 0-12-04.JPG",
+      "04-01-2013 0-22-44.JPG",
+      "04-01-2013 0-22-45.JPG",
+      "04-01-2013 0-22-47.JPG",
+      "04-01-2013 0-46-14.JPG",
+      "04-01-2013 0-46-15.JPG",
+      "04-01-2013 0-46-17.JPG"
+    ],
+    "area_of_interest": [
+      1746,
+      1884,
+      805,
+      943
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 0-22-44.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 0-22-44.JPG",
+    "burst_images": [
+      "04-01-2013 0-12-01.JPG",
+      "04-01-2013 0-12-03.JPG",
+      "04-01-2013 0-12-04.JPG",
+      "04-01-2013 0-22-44.JPG",
+      "04-01-2013 0-22-45.JPG",
+      "04-01-2013 0-22-47.JPG",
+      "04-01-2013 0-46-14.JPG",
+      "04-01-2013 0-46-15.JPG",
+      "04-01-2013 0-46-17.JPG"
+    ],
+    "area_of_interest": [
+      1602,
+      1950,
+      462,
+      810
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 0-22-45.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 0-22-45.JPG",
+    "burst_images": [
+      "04-01-2013 0-12-01.JPG",
+      "04-01-2013 0-12-03.JPG",
+      "04-01-2013 0-12-04.JPG",
+      "04-01-2013 0-22-44.JPG",
+      "04-01-2013 0-22-45.JPG",
+      "04-01-2013 0-22-47.JPG",
+      "04-01-2013 0-46-14.JPG",
+      "04-01-2013 0-46-15.JPG",
+      "04-01-2013 0-46-17.JPG"
+    ],
+    "area_of_interest": [
+      630,
+      2047,
+      19,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 0-22-47.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 0-22-47.JPG",
+    "burst_images": [
+      "04-01-2013 0-12-01.JPG",
+      "04-01-2013 0-12-03.JPG",
+      "04-01-2013 0-12-04.JPG",
+      "04-01-2013 0-22-44.JPG",
+      "04-01-2013 0-22-45.JPG",
+      "04-01-2013 0-22-47.JPG",
+      "04-01-2013 0-46-14.JPG",
+      "04-01-2013 0-46-15.JPG",
+      "04-01-2013 0-46-17.JPG"
+    ],
+    "area_of_interest": [
+      468,
+      1904,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 0-46-14.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 0-46-14.JPG",
+    "burst_images": [
+      "04-01-2013 0-12-01.JPG",
+      "04-01-2013 0-12-03.JPG",
+      "04-01-2013 0-12-04.JPG",
+      "04-01-2013 0-22-44.JPG",
+      "04-01-2013 0-22-45.JPG",
+      "04-01-2013 0-22-47.JPG",
+      "04-01-2013 0-46-14.JPG",
+      "04-01-2013 0-46-15.JPG",
+      "04-01-2013 0-46-17.JPG"
+    ],
+    "area_of_interest": [
+      1373,
+      2047,
+      762,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 0-46-15.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 0-46-15.JPG",
+    "burst_images": [
+      "04-01-2013 0-12-01.JPG",
+      "04-01-2013 0-12-03.JPG",
+      "04-01-2013 0-12-04.JPG",
+      "04-01-2013 0-22-44.JPG",
+      "04-01-2013 0-22-45.JPG",
+      "04-01-2013 0-22-47.JPG",
+      "04-01-2013 0-46-14.JPG",
+      "04-01-2013 0-46-15.JPG",
+      "04-01-2013 0-46-17.JPG"
+    ],
+    "area_of_interest": [
+      1802,
+      2047,
+      818,
+      1063
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 0-46-17.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 0-46-17.JPG",
+    "burst_images": [
+      "04-01-2013 0-12-01.JPG",
+      "04-01-2013 0-12-03.JPG",
+      "04-01-2013 0-12-04.JPG",
+      "04-01-2013 0-22-44.JPG",
+      "04-01-2013 0-22-45.JPG",
+      "04-01-2013 0-22-47.JPG",
+      "04-01-2013 0-46-14.JPG",
+      "04-01-2013 0-46-15.JPG",
+      "04-01-2013 0-46-17.JPG"
+    ],
+    "area_of_interest": [
+      1801,
+      2047,
+      817,
+      1063
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 10-54-33.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 10-54-33.JPG",
+    "burst_images": [
+      "04-01-2013 10-54-33.JPG",
+      "04-01-2013 10-54-36.JPG",
+      "04-01-2013 10-54-38.JPG"
+    ],
+    "area_of_interest": [
+      303,
+      1625,
+      113,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 10-54-36.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 10-54-36.JPG",
+    "burst_images": [
+      "04-01-2013 10-54-33.JPG",
+      "04-01-2013 10-54-36.JPG",
+      "04-01-2013 10-54-38.JPG"
+    ],
+    "area_of_interest": [
+      1200,
+      1348,
+      820,
+      968
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 10-54-38.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 10-54-38.JPG",
+    "burst_images": [
+      "04-01-2013 10-54-33.JPG",
+      "04-01-2013 10-54-36.JPG",
+      "04-01-2013 10-54-38.JPG"
+    ],
+    "area_of_interest": [
+      509,
+      867,
+      890,
+      1248
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 22-14-50.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 22-14-50.JPG",
+    "burst_images": [
+      "04-01-2013 22-14-50.JPG",
+      "04-01-2013 22-14-51.JPG",
+      "04-01-2013 22-14-52.JPG",
+      "04-01-2013 22-15-12.JPG",
+      "04-01-2013 22-15-13.JPG",
+      "04-01-2013 22-15-15.JPG",
+      "04-01-2013 22-38-28.JPG",
+      "04-01-2013 22-38-30.JPG",
+      "04-01-2013 22-38-31.JPG",
+      "04-01-2013 22-41-01.JPG",
+      "04-01-2013 22-41-03.JPG",
+      "04-01-2013 22-41-04.JPG"
+    ],
+    "area_of_interest": [
+      376,
+      1812,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 22-14-51.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 22-14-51.JPG",
+    "burst_images": [
+      "04-01-2013 22-14-50.JPG",
+      "04-01-2013 22-14-51.JPG",
+      "04-01-2013 22-14-52.JPG",
+      "04-01-2013 22-15-12.JPG",
+      "04-01-2013 22-15-13.JPG",
+      "04-01-2013 22-15-15.JPG",
+      "04-01-2013 22-38-28.JPG",
+      "04-01-2013 22-38-30.JPG",
+      "04-01-2013 22-38-31.JPG",
+      "04-01-2013 22-41-01.JPG",
+      "04-01-2013 22-41-03.JPG",
+      "04-01-2013 22-41-04.JPG"
+    ],
+    "area_of_interest": [
+      581,
+      2017,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 22-14-52.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 22-14-52.JPG",
+    "burst_images": [
+      "04-01-2013 22-14-50.JPG",
+      "04-01-2013 22-14-51.JPG",
+      "04-01-2013 22-14-52.JPG",
+      "04-01-2013 22-15-12.JPG",
+      "04-01-2013 22-15-13.JPG",
+      "04-01-2013 22-15-15.JPG",
+      "04-01-2013 22-38-28.JPG",
+      "04-01-2013 22-38-30.JPG",
+      "04-01-2013 22-38-31.JPG",
+      "04-01-2013 22-41-01.JPG",
+      "04-01-2013 22-41-03.JPG",
+      "04-01-2013 22-41-04.JPG"
+    ],
+    "area_of_interest": [
+      569,
+      2005,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 22-15-12.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 22-15-12.JPG",
+    "burst_images": [
+      "04-01-2013 22-14-50.JPG",
+      "04-01-2013 22-14-51.JPG",
+      "04-01-2013 22-14-52.JPG",
+      "04-01-2013 22-15-12.JPG",
+      "04-01-2013 22-15-13.JPG",
+      "04-01-2013 22-15-15.JPG",
+      "04-01-2013 22-38-28.JPG",
+      "04-01-2013 22-38-30.JPG",
+      "04-01-2013 22-38-31.JPG",
+      "04-01-2013 22-41-01.JPG",
+      "04-01-2013 22-41-03.JPG",
+      "04-01-2013 22-41-04.JPG"
+    ],
+    "area_of_interest": [
+      464,
+      1900,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 22-15-13.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 22-15-13.JPG",
+    "burst_images": [
+      "04-01-2013 22-14-50.JPG",
+      "04-01-2013 22-14-51.JPG",
+      "04-01-2013 22-14-52.JPG",
+      "04-01-2013 22-15-12.JPG",
+      "04-01-2013 22-15-13.JPG",
+      "04-01-2013 22-15-15.JPG",
+      "04-01-2013 22-38-28.JPG",
+      "04-01-2013 22-38-30.JPG",
+      "04-01-2013 22-38-31.JPG",
+      "04-01-2013 22-41-01.JPG",
+      "04-01-2013 22-41-03.JPG",
+      "04-01-2013 22-41-04.JPG"
+    ],
+    "area_of_interest": [
+      445,
+      758,
+      1123,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 22-15-15.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 22-15-15.JPG",
+    "burst_images": [
+      "04-01-2013 22-14-50.JPG",
+      "04-01-2013 22-14-51.JPG",
+      "04-01-2013 22-14-52.JPG",
+      "04-01-2013 22-15-12.JPG",
+      "04-01-2013 22-15-13.JPG",
+      "04-01-2013 22-15-15.JPG",
+      "04-01-2013 22-38-28.JPG",
+      "04-01-2013 22-38-30.JPG",
+      "04-01-2013 22-38-31.JPG",
+      "04-01-2013 22-41-01.JPG",
+      "04-01-2013 22-41-03.JPG",
+      "04-01-2013 22-41-04.JPG"
+    ],
+    "area_of_interest": [
+      378,
+      1814,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 22-38-28.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 22-38-28.JPG",
+    "burst_images": [
+      "04-01-2013 22-14-50.JPG",
+      "04-01-2013 22-14-51.JPG",
+      "04-01-2013 22-14-52.JPG",
+      "04-01-2013 22-15-12.JPG",
+      "04-01-2013 22-15-13.JPG",
+      "04-01-2013 22-15-15.JPG",
+      "04-01-2013 22-38-28.JPG",
+      "04-01-2013 22-38-30.JPG",
+      "04-01-2013 22-38-31.JPG",
+      "04-01-2013 22-41-01.JPG",
+      "04-01-2013 22-41-03.JPG",
+      "04-01-2013 22-41-04.JPG"
+    ],
+    "area_of_interest": [
+      1329,
+      1928,
+      748,
+      1347
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 22-38-30.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 22-38-30.JPG",
+    "burst_images": [
+      "04-01-2013 22-14-50.JPG",
+      "04-01-2013 22-14-51.JPG",
+      "04-01-2013 22-14-52.JPG",
+      "04-01-2013 22-15-12.JPG",
+      "04-01-2013 22-15-13.JPG",
+      "04-01-2013 22-15-15.JPG",
+      "04-01-2013 22-38-28.JPG",
+      "04-01-2013 22-38-30.JPG",
+      "04-01-2013 22-38-31.JPG",
+      "04-01-2013 22-41-01.JPG",
+      "04-01-2013 22-41-03.JPG",
+      "04-01-2013 22-41-04.JPG"
+    ],
+    "area_of_interest": [
+      1396,
+      1981,
+      765,
+      1350
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 22-38-31.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 22-38-31.JPG",
+    "burst_images": [
+      "04-01-2013 22-14-50.JPG",
+      "04-01-2013 22-14-51.JPG",
+      "04-01-2013 22-14-52.JPG",
+      "04-01-2013 22-15-12.JPG",
+      "04-01-2013 22-15-13.JPG",
+      "04-01-2013 22-15-15.JPG",
+      "04-01-2013 22-38-28.JPG",
+      "04-01-2013 22-38-30.JPG",
+      "04-01-2013 22-38-31.JPG",
+      "04-01-2013 22-41-01.JPG",
+      "04-01-2013 22-41-03.JPG",
+      "04-01-2013 22-41-04.JPG"
+    ],
+    "area_of_interest": [
+      1554,
+      1963,
+      822,
+      1231
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 22-41-01.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 22-41-01.JPG",
+    "burst_images": [
+      "04-01-2013 22-14-50.JPG",
+      "04-01-2013 22-14-51.JPG",
+      "04-01-2013 22-14-52.JPG",
+      "04-01-2013 22-15-12.JPG",
+      "04-01-2013 22-15-13.JPG",
+      "04-01-2013 22-15-15.JPG",
+      "04-01-2013 22-38-28.JPG",
+      "04-01-2013 22-38-30.JPG",
+      "04-01-2013 22-38-31.JPG",
+      "04-01-2013 22-41-01.JPG",
+      "04-01-2013 22-41-03.JPG",
+      "04-01-2013 22-41-04.JPG"
+    ],
+    "area_of_interest": [
+      1450,
+      1942,
+      779,
+      1271
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 22-41-03.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 22-41-03.JPG",
+    "burst_images": [
+      "04-01-2013 22-14-50.JPG",
+      "04-01-2013 22-14-51.JPG",
+      "04-01-2013 22-14-52.JPG",
+      "04-01-2013 22-15-12.JPG",
+      "04-01-2013 22-15-13.JPG",
+      "04-01-2013 22-15-15.JPG",
+      "04-01-2013 22-38-28.JPG",
+      "04-01-2013 22-38-30.JPG",
+      "04-01-2013 22-38-31.JPG",
+      "04-01-2013 22-41-01.JPG",
+      "04-01-2013 22-41-03.JPG",
+      "04-01-2013 22-41-04.JPG"
+    ],
+    "area_of_interest": [
+      1467,
+      1859,
+      858,
+      1250
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 22-41-04.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 22-41-04.JPG",
+    "burst_images": [
+      "04-01-2013 22-14-50.JPG",
+      "04-01-2013 22-14-51.JPG",
+      "04-01-2013 22-14-52.JPG",
+      "04-01-2013 22-15-12.JPG",
+      "04-01-2013 22-15-13.JPG",
+      "04-01-2013 22-15-15.JPG",
+      "04-01-2013 22-38-28.JPG",
+      "04-01-2013 22-38-30.JPG",
+      "04-01-2013 22-38-31.JPG",
+      "04-01-2013 22-41-01.JPG",
+      "04-01-2013 22-41-03.JPG",
+      "04-01-2013 22-41-04.JPG"
+    ],
+    "area_of_interest": [
+      1380,
+      2047,
+      723,
+      1390
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 4-40-26.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 4-40-26.JPG",
+    "burst_images": [
+      "04-01-2013 4-40-26.JPG",
+      "04-01-2013 4-40-28.JPG",
+      "04-01-2013 4-40-29.JPG"
+    ],
+    "area_of_interest": [
+      1523,
+      1826,
+      915,
+      1218
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 4-40-28.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 4-40-28.JPG",
+    "burst_images": [
+      "04-01-2013 4-40-26.JPG",
+      "04-01-2013 4-40-28.JPG",
+      "04-01-2013 4-40-29.JPG"
+    ],
+    "area_of_interest": [
+      1591,
+      1973,
+      733,
+      1115
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 4-40-29.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 4-40-29.JPG",
+    "burst_images": [
+      "04-01-2013 4-40-26.JPG",
+      "04-01-2013 4-40-28.JPG",
+      "04-01-2013 4-40-29.JPG"
+    ],
+    "area_of_interest": [
+      1506,
+      1936,
+      820,
+      1250
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 6-16-22.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 6-16-22.JPG",
+    "burst_images": [
+      "04-01-2013 6-16-22.JPG",
+      "04-01-2013 6-16-24.JPG",
+      "04-01-2013 6-16-26.JPG"
+    ],
+    "area_of_interest": [
+      900,
+      1136,
+      1200,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 6-16-24.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 6-16-24.JPG",
+    "burst_images": [
+      "04-01-2013 6-16-22.JPG",
+      "04-01-2013 6-16-24.JPG",
+      "04-01-2013 6-16-26.JPG"
+    ],
+    "area_of_interest": [
+      306,
+      1742,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-01-2013 6-16-26.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-01-2013 6-16-26.JPG",
+    "burst_images": [
+      "04-01-2013 6-16-22.JPG",
+      "04-01-2013 6-16-24.JPG",
+      "04-01-2013 6-16-26.JPG"
+    ],
+    "area_of_interest": [
+      833,
+      1563,
+      706,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-02-2013 20-42-29.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-02-2013 20-42-29.JPG",
+    "burst_images": [
+      "04-02-2013 20-42-29.JPG",
+      "04-02-2013 20-42-30.JPG",
+      "04-02-2013 20-42-31.JPG"
+    ],
+    "area_of_interest": [
+      1227,
+      1356,
+      938,
+      1067
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-02-2013 20-42-30.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-02-2013 20-42-30.JPG",
+    "burst_images": [
+      "04-02-2013 20-42-29.JPG",
+      "04-02-2013 20-42-30.JPG",
+      "04-02-2013 20-42-31.JPG"
+    ],
+    "area_of_interest": [
+      1068,
+      1195,
+      1127,
+      1254
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-02-2013 20-42-31.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-02-2013 20-42-31.JPG",
+    "burst_images": [
+      "04-02-2013 20-42-29.JPG",
+      "04-02-2013 20-42-30.JPG",
+      "04-02-2013 20-42-31.JPG"
+    ],
+    "area_of_interest": [
+      520,
+      688,
+      1268,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-02-2013 4-01-20.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-02-2013 4-01-20.JPG",
+    "burst_images": [
+      "04-02-2013 4-01-20.JPG",
+      "04-02-2013 4-01-21.JPG",
+      "04-02-2013 4-01-23.JPG",
+      "04-02-2013 4-03-57.JPG",
+      "04-02-2013 4-03-59.JPG",
+      "04-02-2013 4-04-00.JPG"
+    ],
+    "area_of_interest": [
+      558,
+      631,
+      1363,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-02-2013 4-01-21.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-02-2013 4-01-21.JPG",
+    "burst_images": [
+      "04-02-2013 4-01-20.JPG",
+      "04-02-2013 4-01-21.JPG",
+      "04-02-2013 4-01-23.JPG",
+      "04-02-2013 4-03-57.JPG",
+      "04-02-2013 4-03-59.JPG",
+      "04-02-2013 4-04-00.JPG"
+    ],
+    "area_of_interest": [
+      422,
+      1691,
+      166,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-02-2013 4-01-23.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-02-2013 4-01-23.JPG",
+    "burst_images": [
+      "04-02-2013 4-01-20.JPG",
+      "04-02-2013 4-01-21.JPG",
+      "04-02-2013 4-01-23.JPG",
+      "04-02-2013 4-03-57.JPG",
+      "04-02-2013 4-03-59.JPG",
+      "04-02-2013 4-04-00.JPG"
+    ],
+    "area_of_interest": [
+      102,
+      1537,
+      0,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-02-2013 4-03-57.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-02-2013 4-03-57.JPG",
+    "burst_images": [
+      "04-02-2013 4-01-20.JPG",
+      "04-02-2013 4-01-21.JPG",
+      "04-02-2013 4-01-23.JPG",
+      "04-02-2013 4-03-57.JPG",
+      "04-02-2013 4-03-59.JPG",
+      "04-02-2013 4-04-00.JPG"
+    ],
+    "area_of_interest": [
+      1017,
+      1140,
+      1235,
+      1358
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-02-2013 4-03-59.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-02-2013 4-03-59.JPG",
+    "burst_images": [
+      "04-02-2013 4-01-20.JPG",
+      "04-02-2013 4-01-21.JPG",
+      "04-02-2013 4-01-23.JPG",
+      "04-02-2013 4-03-57.JPG",
+      "04-02-2013 4-03-59.JPG",
+      "04-02-2013 4-04-00.JPG"
+    ],
+    "area_of_interest": [
+      788,
+      1346,
+      878,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-02-2013 4-04-00.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-02-2013 4-04-00.JPG",
+    "burst_images": [
+      "04-02-2013 4-01-20.JPG",
+      "04-02-2013 4-01-21.JPG",
+      "04-02-2013 4-01-23.JPG",
+      "04-02-2013 4-03-57.JPG",
+      "04-02-2013 4-03-59.JPG",
+      "04-02-2013 4-04-00.JPG"
+    ],
+    "area_of_interest": [
+      1405,
+      1531,
+      1029,
+      1155
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-12-2012 21-48-51.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-12-2012 21-48-51.JPG",
+    "burst_images": [
+      "04-12-2012 21-48-51.JPG",
+      "04-12-2012 21-48-53.JPG",
+      "04-12-2012 21-48-54.JPG",
+      "04-12-2012 21-49-35.JPG",
+      "04-12-2012 21-49-36.JPG",
+      "04-12-2012 21-49-38.JPG",
+      "04-12-2012 22-13-22.JPG",
+      "04-12-2012 22-13-23.JPG",
+      "04-12-2012 22-13-25.JPG"
+    ],
+    "area_of_interest": [
+      1436,
+      1698,
+      1174,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-12-2012 21-48-53.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-12-2012 21-48-53.JPG",
+    "burst_images": [
+      "04-12-2012 21-48-51.JPG",
+      "04-12-2012 21-48-53.JPG",
+      "04-12-2012 21-48-54.JPG",
+      "04-12-2012 21-49-35.JPG",
+      "04-12-2012 21-49-36.JPG",
+      "04-12-2012 21-49-38.JPG",
+      "04-12-2012 22-13-22.JPG",
+      "04-12-2012 22-13-23.JPG",
+      "04-12-2012 22-13-25.JPG"
+    ],
+    "area_of_interest": [
+      734,
+      1862,
+      307,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-12-2012 21-48-54.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-12-2012 21-48-54.JPG",
+    "burst_images": [
+      "04-12-2012 21-48-51.JPG",
+      "04-12-2012 21-48-53.JPG",
+      "04-12-2012 21-48-54.JPG",
+      "04-12-2012 21-49-35.JPG",
+      "04-12-2012 21-49-36.JPG",
+      "04-12-2012 21-49-38.JPG",
+      "04-12-2012 22-13-22.JPG",
+      "04-12-2012 22-13-23.JPG",
+      "04-12-2012 22-13-25.JPG"
+    ],
+    "area_of_interest": [
+      383,
+      1819,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-12-2012 21-49-35.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-12-2012 21-49-35.JPG",
+    "burst_images": [
+      "04-12-2012 21-48-51.JPG",
+      "04-12-2012 21-48-53.JPG",
+      "04-12-2012 21-48-54.JPG",
+      "04-12-2012 21-49-35.JPG",
+      "04-12-2012 21-49-36.JPG",
+      "04-12-2012 21-49-38.JPG",
+      "04-12-2012 22-13-22.JPG",
+      "04-12-2012 22-13-23.JPG",
+      "04-12-2012 22-13-25.JPG"
+    ],
+    "area_of_interest": [
+      1245,
+      1478,
+      1203,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-12-2012 21-49-36.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-12-2012 21-49-36.JPG",
+    "burst_images": [
+      "04-12-2012 21-48-51.JPG",
+      "04-12-2012 21-48-53.JPG",
+      "04-12-2012 21-48-54.JPG",
+      "04-12-2012 21-49-35.JPG",
+      "04-12-2012 21-49-36.JPG",
+      "04-12-2012 21-49-38.JPG",
+      "04-12-2012 22-13-22.JPG",
+      "04-12-2012 22-13-23.JPG",
+      "04-12-2012 22-13-25.JPG"
+    ],
+    "area_of_interest": [
+      377,
+      1480,
+      332,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-12-2012 21-49-38.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-12-2012 21-49-38.JPG",
+    "burst_images": [
+      "04-12-2012 21-48-51.JPG",
+      "04-12-2012 21-48-53.JPG",
+      "04-12-2012 21-48-54.JPG",
+      "04-12-2012 21-49-35.JPG",
+      "04-12-2012 21-49-36.JPG",
+      "04-12-2012 21-49-38.JPG",
+      "04-12-2012 22-13-22.JPG",
+      "04-12-2012 22-13-23.JPG",
+      "04-12-2012 22-13-25.JPG"
+    ],
+    "area_of_interest": [
+      377,
+      1501,
+      312,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-12-2012 22-13-22.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-12-2012 22-13-22.JPG",
+    "burst_images": [
+      "04-12-2012 21-48-51.JPG",
+      "04-12-2012 21-48-53.JPG",
+      "04-12-2012 21-48-54.JPG",
+      "04-12-2012 21-49-35.JPG",
+      "04-12-2012 21-49-36.JPG",
+      "04-12-2012 21-49-38.JPG",
+      "04-12-2012 22-13-22.JPG",
+      "04-12-2012 22-13-23.JPG",
+      "04-12-2012 22-13-25.JPG"
+    ],
+    "area_of_interest": [
+      1550,
+      2048,
+      757,
+      1255
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-12-2012 22-13-23.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-12-2012 22-13-23.JPG",
+    "burst_images": [
+      "04-12-2012 21-48-51.JPG",
+      "04-12-2012 21-48-53.JPG",
+      "04-12-2012 21-48-54.JPG",
+      "04-12-2012 21-49-35.JPG",
+      "04-12-2012 21-49-36.JPG",
+      "04-12-2012 21-49-38.JPG",
+      "04-12-2012 22-13-22.JPG",
+      "04-12-2012 22-13-23.JPG",
+      "04-12-2012 22-13-25.JPG"
+    ],
+    "area_of_interest": [
+      1542,
+      2048,
+      753,
+      1259
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-12-2012 22-13-25.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-12-2012 22-13-25.JPG",
+    "burst_images": [
+      "04-12-2012 21-48-51.JPG",
+      "04-12-2012 21-48-53.JPG",
+      "04-12-2012 21-48-54.JPG",
+      "04-12-2012 21-49-35.JPG",
+      "04-12-2012 21-49-36.JPG",
+      "04-12-2012 21-49-38.JPG",
+      "04-12-2012 22-13-22.JPG",
+      "04-12-2012 22-13-23.JPG",
+      "04-12-2012 22-13-25.JPG"
+    ],
+    "area_of_interest": [
+      1558,
+      2048,
+      766,
+      1256
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-12-2012 4-13-47.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-12-2012 4-13-47.JPG",
+    "burst_images": [
+      "04-12-2012 4-13-47.JPG",
+      "04-12-2012 4-13-48.JPG",
+      "04-12-2012 4-13-50.JPG"
+    ],
+    "area_of_interest": [
+      1213,
+      2047,
+      539,
+      1373
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-12-2012 4-13-48.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-12-2012 4-13-48.JPG",
+    "burst_images": [
+      "04-12-2012 4-13-47.JPG",
+      "04-12-2012 4-13-48.JPG",
+      "04-12-2012 4-13-50.JPG"
+    ],
+    "area_of_interest": [
+      1843,
+      2047,
+      751,
+      955
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-12-2012 4-13-50.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-12-2012 4-13-50.JPG",
+    "burst_images": [
+      "04-12-2012 4-13-47.JPG",
+      "04-12-2012 4-13-48.JPG",
+      "04-12-2012 4-13-50.JPG"
+    ],
+    "area_of_interest": [
+      1865,
+      2042,
+      785,
+      962
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-12-2012 5-56-08.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-12-2012 5-56-08.JPG",
+    "burst_images": [
+      "04-12-2012 5-56-08.JPG",
+      "04-12-2012 5-56-10.JPG",
+      "04-12-2012 5-56-12.JPG"
+    ],
+    "area_of_interest": [
+      395,
+      1557,
+      274,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-12-2012 5-56-10.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-12-2012 5-56-10.JPG",
+    "burst_images": [
+      "04-12-2012 5-56-08.JPG",
+      "04-12-2012 5-56-10.JPG",
+      "04-12-2012 5-56-12.JPG"
+    ],
+    "area_of_interest": [
+      1009,
+      1170,
+      1090,
+      1251
+    ],
+    "classifier_label": "unsure"
+  },
+  "04-12-2012 5-56-12.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\04-12-2012 5-56-12.JPG",
+    "burst_images": [
+      "04-12-2012 5-56-08.JPG",
+      "04-12-2012 5-56-10.JPG",
+      "04-12-2012 5-56-12.JPG"
+    ],
+    "area_of_interest": [
+      984,
+      1336,
+      1083,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 0-58-27.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 0-58-27.JPG",
+    "burst_images": [
+      "05-01-2013 0-58-27.JPG",
+      "05-01-2013 0-58-29.JPG",
+      "05-01-2013 0-58-30.JPG",
+      "05-01-2013 1-35-39.JPG",
+      "05-01-2013 1-35-41.JPG",
+      "05-01-2013 1-35-42.JPG",
+      "05-01-2013 1-55-45.JPG",
+      "05-01-2013 1-55-46.JPG",
+      "05-01-2013 1-55-48.JPG"
+    ],
+    "area_of_interest": [
+      693,
+      1778,
+      351,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 0-58-29.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 0-58-29.JPG",
+    "burst_images": [
+      "05-01-2013 0-58-27.JPG",
+      "05-01-2013 0-58-29.JPG",
+      "05-01-2013 0-58-30.JPG",
+      "05-01-2013 1-35-39.JPG",
+      "05-01-2013 1-35-41.JPG",
+      "05-01-2013 1-35-42.JPG",
+      "05-01-2013 1-55-45.JPG",
+      "05-01-2013 1-55-46.JPG",
+      "05-01-2013 1-55-48.JPG"
+    ],
+    "area_of_interest": [
+      432,
+      1868,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 0-58-30.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 0-58-30.JPG",
+    "burst_images": [
+      "05-01-2013 0-58-27.JPG",
+      "05-01-2013 0-58-29.JPG",
+      "05-01-2013 0-58-30.JPG",
+      "05-01-2013 1-35-39.JPG",
+      "05-01-2013 1-35-41.JPG",
+      "05-01-2013 1-35-42.JPG",
+      "05-01-2013 1-55-45.JPG",
+      "05-01-2013 1-55-46.JPG",
+      "05-01-2013 1-55-48.JPG"
+    ],
+    "area_of_interest": [
+      379,
+      1815,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 1-35-39.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 1-35-39.JPG",
+    "burst_images": [
+      "05-01-2013 0-58-27.JPG",
+      "05-01-2013 0-58-29.JPG",
+      "05-01-2013 0-58-30.JPG",
+      "05-01-2013 1-35-39.JPG",
+      "05-01-2013 1-35-41.JPG",
+      "05-01-2013 1-35-42.JPG",
+      "05-01-2013 1-55-45.JPG",
+      "05-01-2013 1-55-46.JPG",
+      "05-01-2013 1-55-48.JPG"
+    ],
+    "area_of_interest": [
+      279,
+      1714,
+      0,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 1-35-41.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 1-35-41.JPG",
+    "burst_images": [
+      "05-01-2013 0-58-27.JPG",
+      "05-01-2013 0-58-29.JPG",
+      "05-01-2013 0-58-30.JPG",
+      "05-01-2013 1-35-39.JPG",
+      "05-01-2013 1-35-41.JPG",
+      "05-01-2013 1-35-42.JPG",
+      "05-01-2013 1-55-45.JPG",
+      "05-01-2013 1-55-46.JPG",
+      "05-01-2013 1-55-48.JPG"
+    ],
+    "area_of_interest": [
+      313,
+      1705,
+      43,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 1-35-42.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 1-35-42.JPG",
+    "burst_images": [
+      "05-01-2013 0-58-27.JPG",
+      "05-01-2013 0-58-29.JPG",
+      "05-01-2013 0-58-30.JPG",
+      "05-01-2013 1-35-39.JPG",
+      "05-01-2013 1-35-41.JPG",
+      "05-01-2013 1-35-42.JPG",
+      "05-01-2013 1-55-45.JPG",
+      "05-01-2013 1-55-46.JPG",
+      "05-01-2013 1-55-48.JPG"
+    ],
+    "area_of_interest": [
+      347,
+      1480,
+      302,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 1-55-45.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 1-55-45.JPG",
+    "burst_images": [
+      "05-01-2013 0-58-27.JPG",
+      "05-01-2013 0-58-29.JPG",
+      "05-01-2013 0-58-30.JPG",
+      "05-01-2013 1-35-39.JPG",
+      "05-01-2013 1-35-41.JPG",
+      "05-01-2013 1-35-42.JPG",
+      "05-01-2013 1-55-45.JPG",
+      "05-01-2013 1-55-46.JPG",
+      "05-01-2013 1-55-48.JPG"
+    ],
+    "area_of_interest": [
+      785,
+      1238,
+      983,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 1-55-46.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 1-55-46.JPG",
+    "burst_images": [
+      "05-01-2013 0-58-27.JPG",
+      "05-01-2013 0-58-29.JPG",
+      "05-01-2013 0-58-30.JPG",
+      "05-01-2013 1-35-39.JPG",
+      "05-01-2013 1-35-41.JPG",
+      "05-01-2013 1-35-42.JPG",
+      "05-01-2013 1-55-45.JPG",
+      "05-01-2013 1-55-46.JPG",
+      "05-01-2013 1-55-48.JPG"
+    ],
+    "area_of_interest": [
+      538,
+      1277,
+      697,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 1-55-48.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 1-55-48.JPG",
+    "burst_images": [
+      "05-01-2013 0-58-27.JPG",
+      "05-01-2013 0-58-29.JPG",
+      "05-01-2013 0-58-30.JPG",
+      "05-01-2013 1-35-39.JPG",
+      "05-01-2013 1-35-41.JPG",
+      "05-01-2013 1-35-42.JPG",
+      "05-01-2013 1-55-45.JPG",
+      "05-01-2013 1-55-46.JPG",
+      "05-01-2013 1-55-48.JPG"
+    ],
+    "area_of_interest": [
+      686,
+      1252,
+      869,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 1-58-57.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 1-58-57.JPG",
+    "burst_images": [
+      "05-01-2013 1-58-57.JPG",
+      "05-01-2013 1-58-58.JPG",
+      "05-01-2013 1-58-59.JPG"
+    ],
+    "area_of_interest": [
+      836,
+      1482,
+      790,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 1-58-58.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 1-58-58.JPG",
+    "burst_images": [
+      "05-01-2013 1-58-57.JPG",
+      "05-01-2013 1-58-58.JPG",
+      "05-01-2013 1-58-59.JPG"
+    ],
+    "area_of_interest": [
+      386,
+      1714,
+      107,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 1-58-59.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 1-58-59.JPG",
+    "burst_images": [
+      "05-01-2013 1-58-57.JPG",
+      "05-01-2013 1-58-58.JPG",
+      "05-01-2013 1-58-59.JPG"
+    ],
+    "area_of_interest": [
+      724,
+      1595,
+      565,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 19-44-02.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 19-44-02.JPG",
+    "burst_images": [
+      "05-01-2013 19-44-02.JPG",
+      "05-01-2013 19-44-04.JPG",
+      "05-01-2013 19-44-05.JPG",
+      "05-01-2013 19-53-24.JPG",
+      "05-01-2013 19-53-26.JPG",
+      "05-01-2013 19-53-28.JPG",
+      "05-01-2013 19-53-32.JPG",
+      "05-01-2013 19-53-34.JPG",
+      "05-01-2013 19-53-35.JPG"
+    ],
+    "area_of_interest": [
+      306,
+      1742,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 19-44-04.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 19-44-04.JPG",
+    "burst_images": [
+      "05-01-2013 19-44-02.JPG",
+      "05-01-2013 19-44-04.JPG",
+      "05-01-2013 19-44-05.JPG",
+      "05-01-2013 19-53-24.JPG",
+      "05-01-2013 19-53-26.JPG",
+      "05-01-2013 19-53-28.JPG",
+      "05-01-2013 19-53-32.JPG",
+      "05-01-2013 19-53-34.JPG",
+      "05-01-2013 19-53-35.JPG"
+    ],
+    "area_of_interest": [
+      306,
+      1742,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 19-44-05.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 19-44-05.JPG",
+    "burst_images": [
+      "05-01-2013 19-44-02.JPG",
+      "05-01-2013 19-44-04.JPG",
+      "05-01-2013 19-44-05.JPG",
+      "05-01-2013 19-53-24.JPG",
+      "05-01-2013 19-53-26.JPG",
+      "05-01-2013 19-53-28.JPG",
+      "05-01-2013 19-53-32.JPG",
+      "05-01-2013 19-53-34.JPG",
+      "05-01-2013 19-53-35.JPG"
+    ],
+    "area_of_interest": [
+      306,
+      1742,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 19-53-24.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 19-53-24.JPG",
+    "burst_images": [
+      "05-01-2013 19-44-02.JPG",
+      "05-01-2013 19-44-04.JPG",
+      "05-01-2013 19-44-05.JPG",
+      "05-01-2013 19-53-24.JPG",
+      "05-01-2013 19-53-26.JPG",
+      "05-01-2013 19-53-28.JPG",
+      "05-01-2013 19-53-32.JPG",
+      "05-01-2013 19-53-34.JPG",
+      "05-01-2013 19-53-35.JPG"
+    ],
+    "area_of_interest": [
+      1266,
+      1476,
+      652,
+      862
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 19-53-26.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 19-53-26.JPG",
+    "burst_images": [
+      "05-01-2013 19-44-02.JPG",
+      "05-01-2013 19-44-04.JPG",
+      "05-01-2013 19-44-05.JPG",
+      "05-01-2013 19-53-24.JPG",
+      "05-01-2013 19-53-26.JPG",
+      "05-01-2013 19-53-28.JPG",
+      "05-01-2013 19-53-32.JPG",
+      "05-01-2013 19-53-34.JPG",
+      "05-01-2013 19-53-35.JPG"
+    ],
+    "area_of_interest": [
+      1289,
+      1455,
+      696,
+      862
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 19-53-28.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 19-53-28.JPG",
+    "burst_images": [
+      "05-01-2013 19-44-02.JPG",
+      "05-01-2013 19-44-04.JPG",
+      "05-01-2013 19-44-05.JPG",
+      "05-01-2013 19-53-24.JPG",
+      "05-01-2013 19-53-26.JPG",
+      "05-01-2013 19-53-28.JPG",
+      "05-01-2013 19-53-32.JPG",
+      "05-01-2013 19-53-34.JPG",
+      "05-01-2013 19-53-35.JPG"
+    ],
+    "area_of_interest": [
+      1289,
+      1455,
+      697,
+      863
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 19-53-32.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 19-53-32.JPG",
+    "burst_images": [
+      "05-01-2013 19-44-02.JPG",
+      "05-01-2013 19-44-04.JPG",
+      "05-01-2013 19-44-05.JPG",
+      "05-01-2013 19-53-24.JPG",
+      "05-01-2013 19-53-26.JPG",
+      "05-01-2013 19-53-28.JPG",
+      "05-01-2013 19-53-32.JPG",
+      "05-01-2013 19-53-34.JPG",
+      "05-01-2013 19-53-35.JPG"
+    ],
+    "area_of_interest": [
+      713,
+      955,
+      782,
+      1024
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 19-53-34.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 19-53-34.JPG",
+    "burst_images": [
+      "05-01-2013 19-44-02.JPG",
+      "05-01-2013 19-44-04.JPG",
+      "05-01-2013 19-44-05.JPG",
+      "05-01-2013 19-53-24.JPG",
+      "05-01-2013 19-53-26.JPG",
+      "05-01-2013 19-53-28.JPG",
+      "05-01-2013 19-53-32.JPG",
+      "05-01-2013 19-53-34.JPG",
+      "05-01-2013 19-53-35.JPG"
+    ],
+    "area_of_interest": [
+      557,
+      1497,
+      197,
+      1137
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 19-53-35.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 19-53-35.JPG",
+    "burst_images": [
+      "05-01-2013 19-44-02.JPG",
+      "05-01-2013 19-44-04.JPG",
+      "05-01-2013 19-44-05.JPG",
+      "05-01-2013 19-53-24.JPG",
+      "05-01-2013 19-53-26.JPG",
+      "05-01-2013 19-53-28.JPG",
+      "05-01-2013 19-53-32.JPG",
+      "05-01-2013 19-53-34.JPG",
+      "05-01-2013 19-53-35.JPG"
+    ],
+    "area_of_interest": [
+      245,
+      1680,
+      0,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 2-01-40.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 2-01-40.JPG",
+    "burst_images": [
+      "05-01-2013 2-01-40.JPG",
+      "05-01-2013 2-01-41.JPG",
+      "05-01-2013 2-01-43.JPG",
+      "05-01-2013 2-14-09.JPG",
+      "05-01-2013 2-14-11.JPG",
+      "05-01-2013 2-14-12.JPG",
+      "05-01-2013 2-31-30.JPG",
+      "05-01-2013 2-31-31.JPG",
+      "05-01-2013 2-31-33.JPG",
+      "05-01-2013 2-44-31.JPG",
+      "05-01-2013 2-44-32.JPG",
+      "05-01-2013 2-44-33.JPG"
+    ],
+    "area_of_interest": [
+      939,
+      1847,
+      527,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 2-01-41.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 2-01-41.JPG",
+    "burst_images": [
+      "05-01-2013 2-01-40.JPG",
+      "05-01-2013 2-01-41.JPG",
+      "05-01-2013 2-01-43.JPG",
+      "05-01-2013 2-14-09.JPG",
+      "05-01-2013 2-14-11.JPG",
+      "05-01-2013 2-14-12.JPG",
+      "05-01-2013 2-31-30.JPG",
+      "05-01-2013 2-31-31.JPG",
+      "05-01-2013 2-31-33.JPG",
+      "05-01-2013 2-44-31.JPG",
+      "05-01-2013 2-44-32.JPG",
+      "05-01-2013 2-44-33.JPG"
+    ],
+    "area_of_interest": [
+      1101,
+      1299,
+      907,
+      1105
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 2-01-43.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 2-01-43.JPG",
+    "burst_images": [
+      "05-01-2013 2-01-40.JPG",
+      "05-01-2013 2-01-41.JPG",
+      "05-01-2013 2-01-43.JPG",
+      "05-01-2013 2-14-09.JPG",
+      "05-01-2013 2-14-11.JPG",
+      "05-01-2013 2-14-12.JPG",
+      "05-01-2013 2-31-30.JPG",
+      "05-01-2013 2-31-31.JPG",
+      "05-01-2013 2-31-33.JPG",
+      "05-01-2013 2-44-31.JPG",
+      "05-01-2013 2-44-32.JPG",
+      "05-01-2013 2-44-33.JPG"
+    ],
+    "area_of_interest": [
+      1102,
+      1296,
+      914,
+      1108
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 2-14-09.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 2-14-09.JPG",
+    "burst_images": [
+      "05-01-2013 2-01-40.JPG",
+      "05-01-2013 2-01-41.JPG",
+      "05-01-2013 2-01-43.JPG",
+      "05-01-2013 2-14-09.JPG",
+      "05-01-2013 2-14-11.JPG",
+      "05-01-2013 2-14-12.JPG",
+      "05-01-2013 2-31-30.JPG",
+      "05-01-2013 2-31-31.JPG",
+      "05-01-2013 2-31-33.JPG",
+      "05-01-2013 2-44-31.JPG",
+      "05-01-2013 2-44-32.JPG",
+      "05-01-2013 2-44-33.JPG"
+    ],
+    "area_of_interest": [
+      847,
+      1211,
+      1072,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 2-14-11.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 2-14-11.JPG",
+    "burst_images": [
+      "05-01-2013 2-01-40.JPG",
+      "05-01-2013 2-01-41.JPG",
+      "05-01-2013 2-01-43.JPG",
+      "05-01-2013 2-14-09.JPG",
+      "05-01-2013 2-14-11.JPG",
+      "05-01-2013 2-14-12.JPG",
+      "05-01-2013 2-31-30.JPG",
+      "05-01-2013 2-31-31.JPG",
+      "05-01-2013 2-31-33.JPG",
+      "05-01-2013 2-44-31.JPG",
+      "05-01-2013 2-44-32.JPG",
+      "05-01-2013 2-44-33.JPG"
+    ],
+    "area_of_interest": [
+      119,
+      1555,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 2-14-12.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 2-14-12.JPG",
+    "burst_images": [
+      "05-01-2013 2-01-40.JPG",
+      "05-01-2013 2-01-41.JPG",
+      "05-01-2013 2-01-43.JPG",
+      "05-01-2013 2-14-09.JPG",
+      "05-01-2013 2-14-11.JPG",
+      "05-01-2013 2-14-12.JPG",
+      "05-01-2013 2-31-30.JPG",
+      "05-01-2013 2-31-31.JPG",
+      "05-01-2013 2-31-33.JPG",
+      "05-01-2013 2-44-31.JPG",
+      "05-01-2013 2-44-32.JPG",
+      "05-01-2013 2-44-33.JPG"
+    ],
+    "area_of_interest": [
+      31,
+      1441,
+      25,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 2-31-30.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 2-31-30.JPG",
+    "burst_images": [
+      "05-01-2013 2-01-40.JPG",
+      "05-01-2013 2-01-41.JPG",
+      "05-01-2013 2-01-43.JPG",
+      "05-01-2013 2-14-09.JPG",
+      "05-01-2013 2-14-11.JPG",
+      "05-01-2013 2-14-12.JPG",
+      "05-01-2013 2-31-30.JPG",
+      "05-01-2013 2-31-31.JPG",
+      "05-01-2013 2-31-33.JPG",
+      "05-01-2013 2-44-31.JPG",
+      "05-01-2013 2-44-32.JPG",
+      "05-01-2013 2-44-33.JPG"
+    ],
+    "area_of_interest": [
+      858,
+      1326,
+      574,
+      1042
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 2-31-31.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 2-31-31.JPG",
+    "burst_images": [
+      "05-01-2013 2-01-40.JPG",
+      "05-01-2013 2-01-41.JPG",
+      "05-01-2013 2-01-43.JPG",
+      "05-01-2013 2-14-09.JPG",
+      "05-01-2013 2-14-11.JPG",
+      "05-01-2013 2-14-12.JPG",
+      "05-01-2013 2-31-30.JPG",
+      "05-01-2013 2-31-31.JPG",
+      "05-01-2013 2-31-33.JPG",
+      "05-01-2013 2-44-31.JPG",
+      "05-01-2013 2-44-32.JPG",
+      "05-01-2013 2-44-33.JPG"
+    ],
+    "area_of_interest": [
+      727,
+      1196,
+      835,
+      1304
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 2-31-33.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 2-31-33.JPG",
+    "burst_images": [
+      "05-01-2013 2-01-40.JPG",
+      "05-01-2013 2-01-41.JPG",
+      "05-01-2013 2-01-43.JPG",
+      "05-01-2013 2-14-09.JPG",
+      "05-01-2013 2-14-11.JPG",
+      "05-01-2013 2-14-12.JPG",
+      "05-01-2013 2-31-30.JPG",
+      "05-01-2013 2-31-31.JPG",
+      "05-01-2013 2-31-33.JPG",
+      "05-01-2013 2-44-31.JPG",
+      "05-01-2013 2-44-32.JPG",
+      "05-01-2013 2-44-33.JPG"
+    ],
+    "area_of_interest": [
+      683,
+      1246,
+      824,
+      1387
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 2-44-31.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 2-44-31.JPG",
+    "burst_images": [
+      "05-01-2013 2-01-40.JPG",
+      "05-01-2013 2-01-41.JPG",
+      "05-01-2013 2-01-43.JPG",
+      "05-01-2013 2-14-09.JPG",
+      "05-01-2013 2-14-11.JPG",
+      "05-01-2013 2-14-12.JPG",
+      "05-01-2013 2-31-30.JPG",
+      "05-01-2013 2-31-31.JPG",
+      "05-01-2013 2-31-33.JPG",
+      "05-01-2013 2-44-31.JPG",
+      "05-01-2013 2-44-32.JPG",
+      "05-01-2013 2-44-33.JPG"
+    ],
+    "area_of_interest": [
+      1122,
+      1496,
+      569,
+      943
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 2-44-32.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 2-44-32.JPG",
+    "burst_images": [
+      "05-01-2013 2-01-40.JPG",
+      "05-01-2013 2-01-41.JPG",
+      "05-01-2013 2-01-43.JPG",
+      "05-01-2013 2-14-09.JPG",
+      "05-01-2013 2-14-11.JPG",
+      "05-01-2013 2-14-12.JPG",
+      "05-01-2013 2-31-30.JPG",
+      "05-01-2013 2-31-31.JPG",
+      "05-01-2013 2-31-33.JPG",
+      "05-01-2013 2-44-31.JPG",
+      "05-01-2013 2-44-32.JPG",
+      "05-01-2013 2-44-33.JPG"
+    ],
+    "area_of_interest": [
+      936,
+      1869,
+      502,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 2-44-33.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 2-44-33.JPG",
+    "burst_images": [
+      "05-01-2013 2-01-40.JPG",
+      "05-01-2013 2-01-41.JPG",
+      "05-01-2013 2-01-43.JPG",
+      "05-01-2013 2-14-09.JPG",
+      "05-01-2013 2-14-11.JPG",
+      "05-01-2013 2-14-12.JPG",
+      "05-01-2013 2-31-30.JPG",
+      "05-01-2013 2-31-31.JPG",
+      "05-01-2013 2-31-33.JPG",
+      "05-01-2013 2-44-31.JPG",
+      "05-01-2013 2-44-32.JPG",
+      "05-01-2013 2-44-33.JPG"
+    ],
+    "area_of_interest": [
+      306,
+      1742,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 3-07-04.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 3-07-04.JPG",
+    "burst_images": [
+      "05-01-2013 3-07-04.JPG",
+      "05-01-2013 3-07-05.JPG",
+      "05-01-2013 3-07-06.JPG",
+      "05-01-2013 3-31-43.JPG",
+      "05-01-2013 3-31-45.JPG",
+      "05-01-2013 3-31-46.JPG",
+      "05-01-2013 3-36-36.JPG",
+      "05-01-2013 3-36-37.JPG",
+      "05-01-2013 3-36-39.JPG",
+      "05-01-2013 3-42-58.JPG",
+      "05-01-2013 3-42-59.JPG",
+      "05-01-2013 3-43-01.JPG",
+      "05-01-2013 3-45-58.JPG",
+      "05-01-2013 3-46-00.JPG",
+      "05-01-2013 3-46-01.JPG",
+      "05-01-2013 4-02-51.JPG",
+      "05-01-2013 4-02-53.JPG",
+      "05-01-2013 4-02-54.JPG"
+    ],
+    "area_of_interest": [
+      442,
+      1366,
+      512,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 3-07-05.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 3-07-05.JPG",
+    "burst_images": [
+      "05-01-2013 3-07-04.JPG",
+      "05-01-2013 3-07-05.JPG",
+      "05-01-2013 3-07-06.JPG",
+      "05-01-2013 3-31-43.JPG",
+      "05-01-2013 3-31-45.JPG",
+      "05-01-2013 3-31-46.JPG",
+      "05-01-2013 3-36-36.JPG",
+      "05-01-2013 3-36-37.JPG",
+      "05-01-2013 3-36-39.JPG",
+      "05-01-2013 3-42-58.JPG",
+      "05-01-2013 3-42-59.JPG",
+      "05-01-2013 3-43-01.JPG",
+      "05-01-2013 3-45-58.JPG",
+      "05-01-2013 3-46-00.JPG",
+      "05-01-2013 3-46-01.JPG",
+      "05-01-2013 4-02-51.JPG",
+      "05-01-2013 4-02-53.JPG",
+      "05-01-2013 4-02-54.JPG"
+    ],
+    "area_of_interest": [
+      503,
+      940,
+      998,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 3-07-06.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 3-07-06.JPG",
+    "burst_images": [
+      "05-01-2013 3-07-04.JPG",
+      "05-01-2013 3-07-05.JPG",
+      "05-01-2013 3-07-06.JPG",
+      "05-01-2013 3-31-43.JPG",
+      "05-01-2013 3-31-45.JPG",
+      "05-01-2013 3-31-46.JPG",
+      "05-01-2013 3-36-36.JPG",
+      "05-01-2013 3-36-37.JPG",
+      "05-01-2013 3-36-39.JPG",
+      "05-01-2013 3-42-58.JPG",
+      "05-01-2013 3-42-59.JPG",
+      "05-01-2013 3-43-01.JPG",
+      "05-01-2013 3-45-58.JPG",
+      "05-01-2013 3-46-00.JPG",
+      "05-01-2013 3-46-01.JPG",
+      "05-01-2013 4-02-51.JPG",
+      "05-01-2013 4-02-53.JPG",
+      "05-01-2013 4-02-54.JPG"
+    ],
+    "area_of_interest": [
+      423,
+      804,
+      1054,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 3-31-43.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 3-31-43.JPG",
+    "burst_images": [
+      "05-01-2013 3-07-04.JPG",
+      "05-01-2013 3-07-05.JPG",
+      "05-01-2013 3-07-06.JPG",
+      "05-01-2013 3-31-43.JPG",
+      "05-01-2013 3-31-45.JPG",
+      "05-01-2013 3-31-46.JPG",
+      "05-01-2013 3-36-36.JPG",
+      "05-01-2013 3-36-37.JPG",
+      "05-01-2013 3-36-39.JPG",
+      "05-01-2013 3-42-58.JPG",
+      "05-01-2013 3-42-59.JPG",
+      "05-01-2013 3-43-01.JPG",
+      "05-01-2013 3-45-58.JPG",
+      "05-01-2013 3-46-00.JPG",
+      "05-01-2013 3-46-01.JPG",
+      "05-01-2013 4-02-51.JPG",
+      "05-01-2013 4-02-53.JPG",
+      "05-01-2013 4-02-54.JPG"
+    ],
+    "area_of_interest": [
+      1274,
+      1424,
+      741,
+      891
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 3-31-45.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 3-31-45.JPG",
+    "burst_images": [
+      "05-01-2013 3-07-04.JPG",
+      "05-01-2013 3-07-05.JPG",
+      "05-01-2013 3-07-06.JPG",
+      "05-01-2013 3-31-43.JPG",
+      "05-01-2013 3-31-45.JPG",
+      "05-01-2013 3-31-46.JPG",
+      "05-01-2013 3-36-36.JPG",
+      "05-01-2013 3-36-37.JPG",
+      "05-01-2013 3-36-39.JPG",
+      "05-01-2013 3-42-58.JPG",
+      "05-01-2013 3-42-59.JPG",
+      "05-01-2013 3-43-01.JPG",
+      "05-01-2013 3-45-58.JPG",
+      "05-01-2013 3-46-00.JPG",
+      "05-01-2013 3-46-01.JPG",
+      "05-01-2013 4-02-51.JPG",
+      "05-01-2013 4-02-53.JPG",
+      "05-01-2013 4-02-54.JPG"
+    ],
+    "area_of_interest": [
+      608,
+      1829,
+      214,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 3-31-46.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 3-31-46.JPG",
+    "burst_images": [
+      "05-01-2013 3-07-04.JPG",
+      "05-01-2013 3-07-05.JPG",
+      "05-01-2013 3-07-06.JPG",
+      "05-01-2013 3-31-43.JPG",
+      "05-01-2013 3-31-45.JPG",
+      "05-01-2013 3-31-46.JPG",
+      "05-01-2013 3-36-36.JPG",
+      "05-01-2013 3-36-37.JPG",
+      "05-01-2013 3-36-39.JPG",
+      "05-01-2013 3-42-58.JPG",
+      "05-01-2013 3-42-59.JPG",
+      "05-01-2013 3-43-01.JPG",
+      "05-01-2013 3-45-58.JPG",
+      "05-01-2013 3-46-00.JPG",
+      "05-01-2013 3-46-01.JPG",
+      "05-01-2013 4-02-51.JPG",
+      "05-01-2013 4-02-53.JPG",
+      "05-01-2013 4-02-54.JPG"
+    ],
+    "area_of_interest": [
+      576,
+      1800,
+      211,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 3-36-36.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 3-36-36.JPG",
+    "burst_images": [
+      "05-01-2013 3-07-04.JPG",
+      "05-01-2013 3-07-05.JPG",
+      "05-01-2013 3-07-06.JPG",
+      "05-01-2013 3-31-43.JPG",
+      "05-01-2013 3-31-45.JPG",
+      "05-01-2013 3-31-46.JPG",
+      "05-01-2013 3-36-36.JPG",
+      "05-01-2013 3-36-37.JPG",
+      "05-01-2013 3-36-39.JPG",
+      "05-01-2013 3-42-58.JPG",
+      "05-01-2013 3-42-59.JPG",
+      "05-01-2013 3-43-01.JPG",
+      "05-01-2013 3-45-58.JPG",
+      "05-01-2013 3-46-00.JPG",
+      "05-01-2013 3-46-01.JPG",
+      "05-01-2013 4-02-51.JPG",
+      "05-01-2013 4-02-53.JPG",
+      "05-01-2013 4-02-54.JPG"
+    ],
+    "area_of_interest": [
+      1538,
+      1836,
+      507,
+      805
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 3-36-37.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 3-36-37.JPG",
+    "burst_images": [
+      "05-01-2013 3-07-04.JPG",
+      "05-01-2013 3-07-05.JPG",
+      "05-01-2013 3-07-06.JPG",
+      "05-01-2013 3-31-43.JPG",
+      "05-01-2013 3-31-45.JPG",
+      "05-01-2013 3-31-46.JPG",
+      "05-01-2013 3-36-36.JPG",
+      "05-01-2013 3-36-37.JPG",
+      "05-01-2013 3-36-39.JPG",
+      "05-01-2013 3-42-58.JPG",
+      "05-01-2013 3-42-59.JPG",
+      "05-01-2013 3-43-01.JPG",
+      "05-01-2013 3-45-58.JPG",
+      "05-01-2013 3-46-00.JPG",
+      "05-01-2013 3-46-01.JPG",
+      "05-01-2013 4-02-51.JPG",
+      "05-01-2013 4-02-53.JPG",
+      "05-01-2013 4-02-54.JPG"
+    ],
+    "area_of_interest": [
+      454,
+      1890,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 3-36-39.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 3-36-39.JPG",
+    "burst_images": [
+      "05-01-2013 3-07-04.JPG",
+      "05-01-2013 3-07-05.JPG",
+      "05-01-2013 3-07-06.JPG",
+      "05-01-2013 3-31-43.JPG",
+      "05-01-2013 3-31-45.JPG",
+      "05-01-2013 3-31-46.JPG",
+      "05-01-2013 3-36-36.JPG",
+      "05-01-2013 3-36-37.JPG",
+      "05-01-2013 3-36-39.JPG",
+      "05-01-2013 3-42-58.JPG",
+      "05-01-2013 3-42-59.JPG",
+      "05-01-2013 3-43-01.JPG",
+      "05-01-2013 3-45-58.JPG",
+      "05-01-2013 3-46-00.JPG",
+      "05-01-2013 3-46-01.JPG",
+      "05-01-2013 4-02-51.JPG",
+      "05-01-2013 4-02-53.JPG",
+      "05-01-2013 4-02-54.JPG"
+    ],
+    "area_of_interest": [
+      458,
+      1894,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 3-42-58.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 3-42-58.JPG",
+    "burst_images": [
+      "05-01-2013 3-07-04.JPG",
+      "05-01-2013 3-07-05.JPG",
+      "05-01-2013 3-07-06.JPG",
+      "05-01-2013 3-31-43.JPG",
+      "05-01-2013 3-31-45.JPG",
+      "05-01-2013 3-31-46.JPG",
+      "05-01-2013 3-36-36.JPG",
+      "05-01-2013 3-36-37.JPG",
+      "05-01-2013 3-36-39.JPG",
+      "05-01-2013 3-42-58.JPG",
+      "05-01-2013 3-42-59.JPG",
+      "05-01-2013 3-43-01.JPG",
+      "05-01-2013 3-45-58.JPG",
+      "05-01-2013 3-46-00.JPG",
+      "05-01-2013 3-46-01.JPG",
+      "05-01-2013 4-02-51.JPG",
+      "05-01-2013 4-02-53.JPG",
+      "05-01-2013 4-02-54.JPG"
+    ],
+    "area_of_interest": [
+      145,
+      1540,
+      40,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 3-42-59.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 3-42-59.JPG",
+    "burst_images": [
+      "05-01-2013 3-07-04.JPG",
+      "05-01-2013 3-07-05.JPG",
+      "05-01-2013 3-07-06.JPG",
+      "05-01-2013 3-31-43.JPG",
+      "05-01-2013 3-31-45.JPG",
+      "05-01-2013 3-31-46.JPG",
+      "05-01-2013 3-36-36.JPG",
+      "05-01-2013 3-36-37.JPG",
+      "05-01-2013 3-36-39.JPG",
+      "05-01-2013 3-42-58.JPG",
+      "05-01-2013 3-42-59.JPG",
+      "05-01-2013 3-43-01.JPG",
+      "05-01-2013 3-45-58.JPG",
+      "05-01-2013 3-46-00.JPG",
+      "05-01-2013 3-46-01.JPG",
+      "05-01-2013 4-02-51.JPG",
+      "05-01-2013 4-02-53.JPG",
+      "05-01-2013 4-02-54.JPG"
+    ],
+    "area_of_interest": [
+      197,
+      1632,
+      0,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 3-43-01.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 3-43-01.JPG",
+    "burst_images": [
+      "05-01-2013 3-07-04.JPG",
+      "05-01-2013 3-07-05.JPG",
+      "05-01-2013 3-07-06.JPG",
+      "05-01-2013 3-31-43.JPG",
+      "05-01-2013 3-31-45.JPG",
+      "05-01-2013 3-31-46.JPG",
+      "05-01-2013 3-36-36.JPG",
+      "05-01-2013 3-36-37.JPG",
+      "05-01-2013 3-36-39.JPG",
+      "05-01-2013 3-42-58.JPG",
+      "05-01-2013 3-42-59.JPG",
+      "05-01-2013 3-43-01.JPG",
+      "05-01-2013 3-45-58.JPG",
+      "05-01-2013 3-46-00.JPG",
+      "05-01-2013 3-46-01.JPG",
+      "05-01-2013 4-02-51.JPG",
+      "05-01-2013 4-02-53.JPG",
+      "05-01-2013 4-02-54.JPG"
+    ],
+    "area_of_interest": [
+      230,
+      1235,
+      430,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 3-45-58.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 3-45-58.JPG",
+    "burst_images": [
+      "05-01-2013 3-07-04.JPG",
+      "05-01-2013 3-07-05.JPG",
+      "05-01-2013 3-07-06.JPG",
+      "05-01-2013 3-31-43.JPG",
+      "05-01-2013 3-31-45.JPG",
+      "05-01-2013 3-31-46.JPG",
+      "05-01-2013 3-36-36.JPG",
+      "05-01-2013 3-36-37.JPG",
+      "05-01-2013 3-36-39.JPG",
+      "05-01-2013 3-42-58.JPG",
+      "05-01-2013 3-42-59.JPG",
+      "05-01-2013 3-43-01.JPG",
+      "05-01-2013 3-45-58.JPG",
+      "05-01-2013 3-46-00.JPG",
+      "05-01-2013 3-46-01.JPG",
+      "05-01-2013 4-02-51.JPG",
+      "05-01-2013 4-02-53.JPG",
+      "05-01-2013 4-02-54.JPG"
+    ],
+    "area_of_interest": [
+      506,
+      1162,
+      549,
+      1205
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 3-46-00.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 3-46-00.JPG",
+    "burst_images": [
+      "05-01-2013 3-07-04.JPG",
+      "05-01-2013 3-07-05.JPG",
+      "05-01-2013 3-07-06.JPG",
+      "05-01-2013 3-31-43.JPG",
+      "05-01-2013 3-31-45.JPG",
+      "05-01-2013 3-31-46.JPG",
+      "05-01-2013 3-36-36.JPG",
+      "05-01-2013 3-36-37.JPG",
+      "05-01-2013 3-36-39.JPG",
+      "05-01-2013 3-42-58.JPG",
+      "05-01-2013 3-42-59.JPG",
+      "05-01-2013 3-43-01.JPG",
+      "05-01-2013 3-45-58.JPG",
+      "05-01-2013 3-46-00.JPG",
+      "05-01-2013 3-46-01.JPG",
+      "05-01-2013 4-02-51.JPG",
+      "05-01-2013 4-02-53.JPG",
+      "05-01-2013 4-02-54.JPG"
+    ],
+    "area_of_interest": [
+      613,
+      1031,
+      743,
+      1161
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 3-46-01.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 3-46-01.JPG",
+    "burst_images": [
+      "05-01-2013 3-07-04.JPG",
+      "05-01-2013 3-07-05.JPG",
+      "05-01-2013 3-07-06.JPG",
+      "05-01-2013 3-31-43.JPG",
+      "05-01-2013 3-31-45.JPG",
+      "05-01-2013 3-31-46.JPG",
+      "05-01-2013 3-36-36.JPG",
+      "05-01-2013 3-36-37.JPG",
+      "05-01-2013 3-36-39.JPG",
+      "05-01-2013 3-42-58.JPG",
+      "05-01-2013 3-42-59.JPG",
+      "05-01-2013 3-43-01.JPG",
+      "05-01-2013 3-45-58.JPG",
+      "05-01-2013 3-46-00.JPG",
+      "05-01-2013 3-46-01.JPG",
+      "05-01-2013 4-02-51.JPG",
+      "05-01-2013 4-02-53.JPG",
+      "05-01-2013 4-02-54.JPG"
+    ],
+    "area_of_interest": [
+      543,
+      1423,
+      556,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 4-02-51.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 4-02-51.JPG",
+    "burst_images": [
+      "05-01-2013 3-07-04.JPG",
+      "05-01-2013 3-07-05.JPG",
+      "05-01-2013 3-07-06.JPG",
+      "05-01-2013 3-31-43.JPG",
+      "05-01-2013 3-31-45.JPG",
+      "05-01-2013 3-31-46.JPG",
+      "05-01-2013 3-36-36.JPG",
+      "05-01-2013 3-36-37.JPG",
+      "05-01-2013 3-36-39.JPG",
+      "05-01-2013 3-42-58.JPG",
+      "05-01-2013 3-42-59.JPG",
+      "05-01-2013 3-43-01.JPG",
+      "05-01-2013 3-45-58.JPG",
+      "05-01-2013 3-46-00.JPG",
+      "05-01-2013 3-46-01.JPG",
+      "05-01-2013 4-02-51.JPG",
+      "05-01-2013 4-02-53.JPG",
+      "05-01-2013 4-02-54.JPG"
+    ],
+    "area_of_interest": [
+      442,
+      1878,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 4-02-53.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 4-02-53.JPG",
+    "burst_images": [
+      "05-01-2013 3-07-04.JPG",
+      "05-01-2013 3-07-05.JPG",
+      "05-01-2013 3-07-06.JPG",
+      "05-01-2013 3-31-43.JPG",
+      "05-01-2013 3-31-45.JPG",
+      "05-01-2013 3-31-46.JPG",
+      "05-01-2013 3-36-36.JPG",
+      "05-01-2013 3-36-37.JPG",
+      "05-01-2013 3-36-39.JPG",
+      "05-01-2013 3-42-58.JPG",
+      "05-01-2013 3-42-59.JPG",
+      "05-01-2013 3-43-01.JPG",
+      "05-01-2013 3-45-58.JPG",
+      "05-01-2013 3-46-00.JPG",
+      "05-01-2013 3-46-01.JPG",
+      "05-01-2013 4-02-51.JPG",
+      "05-01-2013 4-02-53.JPG",
+      "05-01-2013 4-02-54.JPG"
+    ],
+    "area_of_interest": [
+      306,
+      1742,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 4-02-54.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 4-02-54.JPG",
+    "burst_images": [
+      "05-01-2013 3-07-04.JPG",
+      "05-01-2013 3-07-05.JPG",
+      "05-01-2013 3-07-06.JPG",
+      "05-01-2013 3-31-43.JPG",
+      "05-01-2013 3-31-45.JPG",
+      "05-01-2013 3-31-46.JPG",
+      "05-01-2013 3-36-36.JPG",
+      "05-01-2013 3-36-37.JPG",
+      "05-01-2013 3-36-39.JPG",
+      "05-01-2013 3-42-58.JPG",
+      "05-01-2013 3-42-59.JPG",
+      "05-01-2013 3-43-01.JPG",
+      "05-01-2013 3-45-58.JPG",
+      "05-01-2013 3-46-00.JPG",
+      "05-01-2013 3-46-01.JPG",
+      "05-01-2013 4-02-51.JPG",
+      "05-01-2013 4-02-53.JPG",
+      "05-01-2013 4-02-54.JPG"
+    ],
+    "area_of_interest": [
+      1331,
+      1481,
+      1286,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 4-27-53.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 4-27-53.JPG",
+    "burst_images": [
+      "05-01-2013 4-27-53.JPG",
+      "05-01-2013 4-27-55.JPG",
+      "05-01-2013 4-27-56.JPG",
+      "05-01-2013 4-36-15.JPG",
+      "05-01-2013 4-36-17.JPG",
+      "05-01-2013 4-36-18.JPG",
+      "05-01-2013 5-26-07.JPG",
+      "05-01-2013 5-26-09.JPG",
+      "05-01-2013 5-26-10.JPG"
+    ],
+    "area_of_interest": [
+      1504,
+      1850,
+      758,
+      1104
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 4-27-55.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 4-27-55.JPG",
+    "burst_images": [
+      "05-01-2013 4-27-53.JPG",
+      "05-01-2013 4-27-55.JPG",
+      "05-01-2013 4-27-56.JPG",
+      "05-01-2013 4-36-15.JPG",
+      "05-01-2013 4-36-17.JPG",
+      "05-01-2013 4-36-18.JPG",
+      "05-01-2013 5-26-07.JPG",
+      "05-01-2013 5-26-09.JPG",
+      "05-01-2013 5-26-10.JPG"
+    ],
+    "area_of_interest": [
+      1493,
+      1835,
+      787,
+      1129
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 4-27-56.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 4-27-56.JPG",
+    "burst_images": [
+      "05-01-2013 4-27-53.JPG",
+      "05-01-2013 4-27-55.JPG",
+      "05-01-2013 4-27-56.JPG",
+      "05-01-2013 4-36-15.JPG",
+      "05-01-2013 4-36-17.JPG",
+      "05-01-2013 4-36-18.JPG",
+      "05-01-2013 5-26-07.JPG",
+      "05-01-2013 5-26-09.JPG",
+      "05-01-2013 5-26-10.JPG"
+    ],
+    "area_of_interest": [
+      1538,
+      1804,
+      839,
+      1105
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 4-36-15.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 4-36-15.JPG",
+    "burst_images": [
+      "05-01-2013 4-27-53.JPG",
+      "05-01-2013 4-27-55.JPG",
+      "05-01-2013 4-27-56.JPG",
+      "05-01-2013 4-36-15.JPG",
+      "05-01-2013 4-36-17.JPG",
+      "05-01-2013 4-36-18.JPG",
+      "05-01-2013 5-26-07.JPG",
+      "05-01-2013 5-26-09.JPG",
+      "05-01-2013 5-26-10.JPG"
+    ],
+    "area_of_interest": [
+      1239,
+      1915,
+      559,
+      1235
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 4-36-17.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 4-36-17.JPG",
+    "burst_images": [
+      "05-01-2013 4-27-53.JPG",
+      "05-01-2013 4-27-55.JPG",
+      "05-01-2013 4-27-56.JPG",
+      "05-01-2013 4-36-15.JPG",
+      "05-01-2013 4-36-17.JPG",
+      "05-01-2013 4-36-18.JPG",
+      "05-01-2013 5-26-07.JPG",
+      "05-01-2013 5-26-09.JPG",
+      "05-01-2013 5-26-10.JPG"
+    ],
+    "area_of_interest": [
+      953,
+      2047,
+      342,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 4-36-18.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 4-36-18.JPG",
+    "burst_images": [
+      "05-01-2013 4-27-53.JPG",
+      "05-01-2013 4-27-55.JPG",
+      "05-01-2013 4-27-56.JPG",
+      "05-01-2013 4-36-15.JPG",
+      "05-01-2013 4-36-17.JPG",
+      "05-01-2013 4-36-18.JPG",
+      "05-01-2013 5-26-07.JPG",
+      "05-01-2013 5-26-09.JPG",
+      "05-01-2013 5-26-10.JPG"
+    ],
+    "area_of_interest": [
+      540,
+      1976,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 5-26-07.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 5-26-07.JPG",
+    "burst_images": [
+      "05-01-2013 4-27-53.JPG",
+      "05-01-2013 4-27-55.JPG",
+      "05-01-2013 4-27-56.JPG",
+      "05-01-2013 4-36-15.JPG",
+      "05-01-2013 4-36-17.JPG",
+      "05-01-2013 4-36-18.JPG",
+      "05-01-2013 5-26-07.JPG",
+      "05-01-2013 5-26-09.JPG",
+      "05-01-2013 5-26-10.JPG"
+    ],
+    "area_of_interest": [
+      510,
+      970,
+      938,
+      1398
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 5-26-09.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 5-26-09.JPG",
+    "burst_images": [
+      "05-01-2013 4-27-53.JPG",
+      "05-01-2013 4-27-55.JPG",
+      "05-01-2013 4-27-56.JPG",
+      "05-01-2013 4-36-15.JPG",
+      "05-01-2013 4-36-17.JPG",
+      "05-01-2013 4-36-18.JPG",
+      "05-01-2013 5-26-07.JPG",
+      "05-01-2013 5-26-09.JPG",
+      "05-01-2013 5-26-10.JPG"
+    ],
+    "area_of_interest": [
+      422,
+      1592,
+      265,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 5-26-10.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 5-26-10.JPG",
+    "burst_images": [
+      "05-01-2013 4-27-53.JPG",
+      "05-01-2013 4-27-55.JPG",
+      "05-01-2013 4-27-56.JPG",
+      "05-01-2013 4-36-15.JPG",
+      "05-01-2013 4-36-17.JPG",
+      "05-01-2013 4-36-18.JPG",
+      "05-01-2013 5-26-07.JPG",
+      "05-01-2013 5-26-09.JPG",
+      "05-01-2013 5-26-10.JPG"
+    ],
+    "area_of_interest": [
+      512,
+      1948,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 6-58-01.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 6-58-01.JPG",
+    "burst_images": [
+      "05-01-2013 6-58-01.JPG",
+      "05-01-2013 6-58-02.JPG",
+      "05-01-2013 6-58-04.JPG"
+    ],
+    "area_of_interest": [
+      663,
+      1822,
+      277,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 6-58-02.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 6-58-02.JPG",
+    "burst_images": [
+      "05-01-2013 6-58-01.JPG",
+      "05-01-2013 6-58-02.JPG",
+      "05-01-2013 6-58-04.JPG"
+    ],
+    "area_of_interest": [
+      0,
+      456,
+      979,
+      1435
+    ],
+    "classifier_label": "unsure"
+  },
+  "05-01-2013 6-58-04.JPG": {
+    "path": "C:\\Users\\aadit\\Desktop\\dataset\\C4\\05-01-2013 6-58-04.JPG",
+    "burst_images": [
+      "05-01-2013 6-58-01.JPG",
+      "05-01-2013 6-58-02.JPG",
+      "05-01-2013 6-58-04.JPG"
+    ],
+    "area_of_interest": [
+      0,
+      1351,
+      0,
+      1351
+    ],
+    "classifier_label": "unsure"
+  }
+}
