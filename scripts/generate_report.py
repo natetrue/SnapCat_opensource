@@ -16,19 +16,11 @@ import argparse
 import numpy as np
 import matplotlib.pyplot as plt
 import json_database
-
-def get_bursts( json_data ):
-  bursts = []
-  for image in json_data:
-    burst = json_data[image]["burst_images"]
-    if not burst in bursts:
-      bursts.append(burst)
-
-  return bursts
+import tools
 
 def generate_report( snapcat_json, outdir ):
 
-  bursts = get_bursts( snapcat_json.json_data )
+  bursts = tools.get_bursts( snapcat_json )
 
   cats_detected = dict()
 
@@ -36,13 +28,7 @@ def generate_report( snapcat_json, outdir ):
     
     cat_detected = False
     for image in burst:
-      if "classifier_label" in snapcat_json.json_data[image] and snapcat_json.json_data[image]["classifier_label"] == "cat" :
-        cat_detected = True 
-        break
-      if "user_label" in snapcat_json.json_data[image] and snapcat_json.json_data[image]["user_label"] == "cat" :
-        cat_detected = True 
-        break
-      if "user_burst_label" in snapcat_json.json_data[image] and snapcat_json.json_data[image]["user_burst_label"] == "cat" :
+      if tools.cat_label_exists( snapcat_json, image ):
         cat_detected = True 
         break
 
