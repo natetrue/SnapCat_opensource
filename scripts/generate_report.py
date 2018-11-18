@@ -36,8 +36,14 @@ def generate_report( snapcat_json, outdir ):
     
     cat_detected = False
     for image in burst:
-      if snapcat_json.json_data[image]["classifier_label"] == "cat":
-        cat_detected = True
+      if "classifier_label" in snapcat_json.json_data[image] and snapcat_json.json_data[image]["classifier_label"] == "cat" :
+        cat_detected = True 
+        break
+      if "user_label" in snapcat_json.json_data[image] and snapcat_json.json_data[image]["user_label"] == "cat" :
+        cat_detected = True 
+        break
+      if "user_burst_label" in snapcat_json.json_data[image] and snapcat_json.json_data[image]["user_burst_label"] == "cat" :
+        cat_detected = True 
         break
 
     image = burst[0]
