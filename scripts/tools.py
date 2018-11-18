@@ -226,36 +226,42 @@ def save_areas_of_interest( snapcat_json, output_directory ):
   for image in snapcat_json.json_data:
 
     image_path = snapcat_json.json_data[image]["path"]
-    area_of_interest = snapcat_json.json_data[image]["area_of_interest"]
+    #area_of_interest = snapcat_json.json_data[image]["area_of_interest"]
 
-    img = cv2.imread(image_path)
+    try:
+      user_label = snapcat_json.json_data[image]["user_label"]
+    except:
+      continue
 
-    x1 = area_of_interest[0]
-    x2 = area_of_interest[1]
-    y1 = area_of_interest[2]
-    y2 = area_of_interest[3]
+    if user_label == "cat":
+      img = cv2.imread(image_path)
 
-    img = img[y1:y2 , x1:x2, :]
-    
-    
-    """
-    # for debugging
-    cv2.imshow('image',img)
-    cv2.waitKey(0)
-    return
-    """
+      # x1 = area_of_interest[0]
+      # x2 = area_of_interest[1]
+      # y1 = area_of_interest[2]
+      # y2 = area_of_interest[3]
 
-    resized_image = cv2.resize(img, (224, 224))
-    
-    
-    if not os.path.isdir(output_directory):
-      os.makedirs(output_directory)
+      # img = img[y1:y2 , x1:x2, :]
+      
+      
+      # """
+      # # for debugging
+      # cv2.imshow('image',img)
+      # cv2.waitKey(0)
+      # return
+      # """
 
-    outfile = os.path.join(output_directory, image )
+      # resized_image = cv2.resize(img, (224, 224))
+      
+      
+      if not os.path.isdir(output_directory):
+        os.makedirs(output_directory)
 
-    resized_image = img_as_ubyte(resized_image)
-    cv2.imwrite(outfile, resized_image)
-    cv2.destroyAllWindows()
+      outfile = os.path.join(output_directory, image )
+
+      img = img_as_ubyte(img)
+      cv2.imwrite(outfile, img)
+      cv2.destroyAllWindows()
 
 
 if __name__ == "__main__":

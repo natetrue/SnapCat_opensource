@@ -94,6 +94,7 @@ def label_images( snapcat_json ):
         
         # if confidence level is below certain value, put in "unsure" folder
         print("%s: %f" % (labels[i], results[i]))
+        print(image)
         if results[i] < settings.sort_image['confidence_threshold']:
           print("unsure")
           snapcat_json.update( image , "classifier_label", "unsure" )

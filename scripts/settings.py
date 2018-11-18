@@ -9,7 +9,7 @@
 # settings for retrain script
 retrain = dict(
     image_dir = './training/processed_images/',
-    output_graph = './output_graphs/output_graph.pb',
+    output_graph = './output_graphs/output_graph_aadu.pb',
     intermediate_output_graphs_dir = './output_graphs/intermediate_outputs/',
     intermediate_store_frequency = 100,
     output_labels = './scripts/labels.txt',
@@ -35,7 +35,7 @@ retrain = dict(
 
 # settings for the graph
 graph = dict(
-    graph = './output_graphs/output_graph.pb',
+    graph = './output_graphs/output_graph_aadu.pb',
     labels = './scripts/labels.txt',
     input_height = 224,
     input_width = 224,
@@ -53,7 +53,7 @@ label_image = dict(
 
 # settings for sort_image script
 sort_image = dict(
-    confidence_threshold = .65
+    confidence_threshold = .58
 )
 
 #settings for segmentation script
