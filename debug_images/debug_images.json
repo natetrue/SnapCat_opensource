@@ -1,0 +1,312 @@
+{
+  "d19947s39i1.jpg": {
+    "path": ".\\debug_images\\example_camera_1\\d19947s39i1.jpg",
+    "burst_images": [
+      "d19947s39i1.jpg",
+      "d19947s39i2.jpg",
+      "d19947s39i3.jpg",
+      "d19947s39i4.jpg",
+      "d19947s39i5.jpg"
+    ],
+    "area_of_interest": [
+      726,
+      962,
+      444,
+      680
+    ],
+    "classifier_label": "unsure",
+    "user_burst_label": "cat"
+  },
+  "d19947s39i2.jpg": {
+    "path": ".\\debug_images\\example_camera_1\\d19947s39i2.jpg",
+    "burst_images": [
+      "d19947s39i1.jpg",
+      "d19947s39i2.jpg",
+      "d19947s39i3.jpg",
+      "d19947s39i4.jpg",
+      "d19947s39i5.jpg"
+    ],
+    "area_of_interest": [
+      763,
+      1053,
+      427,
+      717
+    ],
+    "classifier_label": "unsure",
+    "user_burst_label": "cat"
+  },
+  "d19947s39i3.jpg": {
+    "path": ".\\debug_images\\example_camera_1\\d19947s39i3.jpg",
+    "burst_images": [
+      "d19947s39i1.jpg",
+      "d19947s39i2.jpg",
+      "d19947s39i3.jpg",
+      "d19947s39i4.jpg",
+      "d19947s39i5.jpg"
+    ],
+    "area_of_interest": [
+      903,
+      1173,
+      462,
+      732
+    ],
+    "classifier_label": "unsure",
+    "user_burst_label": "cat"
+  },
+  "d19947s39i4.jpg": {
+    "path": ".\\debug_images\\example_camera_1\\d19947s39i4.jpg",
+    "burst_images": [
+      "d19947s39i1.jpg",
+      "d19947s39i2.jpg",
+      "d19947s39i3.jpg",
+      "d19947s39i4.jpg",
+      "d19947s39i5.jpg"
+    ],
+    "area_of_interest": [
+      1004,
+      1496,
+      361,
+      853
+    ],
+    "classifier_label": "unsure",
+    "user_burst_label": "cat"
+  },
+  "d19947s39i5.jpg": {
+    "path": ".\\debug_images\\example_camera_1\\d19947s39i5.jpg",
+    "burst_images": [
+      "d19947s39i1.jpg",
+      "d19947s39i2.jpg",
+      "d19947s39i3.jpg",
+      "d19947s39i4.jpg",
+      "d19947s39i5.jpg"
+    ],
+    "area_of_interest": [
+      1145,
+      1681,
+      299,
+      835
+    ],
+    "classifier_label": "unsure",
+    "user_burst_label": "cat"
+  },
+  "d19975s54i1.jpg": {
+    "path": ".\\debug_images\\example_camera_1\\d19975s54i1.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      0,
+      420,
+      746,
+      1166
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s54i10.jpg": {
+    "path": ".\\debug_images\\example_camera_1\\d19975s54i10.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      1367,
+      1804,
+      752,
+      1189
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s54i2.jpg": {
+    "path": ".\\debug_images\\example_camera_1\\d19975s54i2.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      141,
+      564,
+      715,
+      1138
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s54i3.jpg": {
+    "path": ".\\debug_images\\example_camera_1\\d19975s54i3.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      233,
+      621,
+      721,
+      1109
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s54i4.jpg": {
+    "path": ".\\debug_images\\example_camera_1\\d19975s54i4.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      293,
+      636,
+      743,
+      1086
+    ],
+    "classifier_label": "cat"
+  },
+  "d19975s54i5.jpg": {
+    "path": ".\\debug_images\\example_camera_1\\d19975s54i5.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      370,
+      825,
+      690,
+      1145
+    ],
+    "classifier_label": "cat"
+  },
+  "d19975s54i6.jpg": {
+    "path": ".\\debug_images\\example_camera_1\\d19975s54i6.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      506,
+      1000,
+      671,
+      1165
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s54i7.jpg": {
+    "path": ".\\debug_images\\example_camera_1\\d19975s54i7.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      703,
+      1214,
+      664,
+      1175
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s54i8.jpg": {
+    "path": ".\\debug_images\\example_camera_1\\d19975s54i8.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      1035,
+      1459,
+      697,
+      1121
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s54i9.jpg": {
+    "path": ".\\debug_images\\example_camera_1\\d19975s54i9.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      1168,
+      1570,
+      737,
+      1139
+    ],
+    "classifier_label": "unsure"
+  }
+}

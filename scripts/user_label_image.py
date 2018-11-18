@@ -33,6 +33,7 @@ WHITE = ( 255, 255, 255 )
 INVALID_STRING = "not_cat"
 VALID_STRING = "cat"
 UNSURE_STRING = "unsure"
+NONE_STRING = "none"
 POLLING_DURATION_MS = 100
 MAX_POLLING_TIMEOUT_MS = (60 * 2 * 1000) #2 mins
 
@@ -294,6 +295,11 @@ def list_all_jpgs( directory ):
   return jpeg_files
 
 
+def update_image_label ( snapcat_json, image_name, label ):
+  snapcat_json.update( image_name, "user_label", label )
+  snapcat_json.save()
+
+
 def user_label_images_single( snapcat_json, image_list ):  
   # TODO: there's a lot of duplicated code here, maybe function pointers?
   ######################### sort individual files #########################
@@ -308,25 +314,22 @@ def user_label_images_single( snapcat_json, image_list ):
     key = disp_image_get_input( image )
     
     if key == LEFT_KEY:
-      snapcat_json.update( image_name, "user_label", INVALID_STRING)
-      snapcat_json.save()
+      update_image_label( snapcat_json, image_name, INVALID_STRING )
       index = index + 1
 
     elif key == RIGHT_KEY:
-      snapcat_json.update( image_name, "user_label", VALID_STRING)
-      snapcat_json.save()
+      update_image_label( snapcat_json, image_name, VALID_STRING )
       index = index + 1
 
     elif key == DOWN_KEY:
-      snapcat_json.update( image_name, "user_label", UNSURE_STRING)
-      snapcat_json.save()
+      update_image_label( snapcat_json, image_name, UNSURE_STRING )
       index = index + 1
 
     elif key == BACKSPACE_KEY:
       # ensure we don't go negative with the index
       if ( index > 0 ):
         index = index - 1      
-
+      update_image_label( snapcat_json, image_name, NONE_STRING )
     elif key == ESCAPE_KEY:
       cv2.destroyAllWindows()
       done = True
@@ -337,81 +340,98 @@ def user_label_images_single( snapcat_json, image_list ):
   cv2.destroyAllWindows()
     
 
-def user_label_images_burst( burst_dir, outdir_blob ):  
-  """
+#todo - duplicated in generate_report.py, move to tools
+def get_bursts( json_data ):
+  bursts = []
+  for image in json_data:
+    burst = json_data[image]["burst_images"]
+    if not burst in bursts:
+      bursts.append(burst)
+
+  return bursts
+
+
+def update_user_burst_label( snapcat_json, burst, label ):
+  for image_name in burst:
+    snapcat_json.update( image_name, "user_burst_label", label )
+     
+  snapcat_json.save()
+
+
+def user_label_images_burst( snapcat_json ):
   ######################### sort image bursts #########################
-  
-    directory_labels = []
-    directory_blob_labels = []
-    directories_to_label = []
-    index = 0
-    done = False
 
-    for pburst_dir, subdirs, files in os.walk(burst_dir):
+  bursts = get_bursts( snapcat_json.json_data )
 
-      jpegs_in_dir = list_all_jpgs( pburst_dir )
+  done = False
+  index = 0
 
-      if len(jpegs_in_dir) < 1:
-        continue
+  # Skip bursts that definitely contain a cat
+  # only review bursts that have an unsure label
+  unsure_bursts = []
+  for burst in bursts:
 
-      directories_to_label.append(pburst_dir)
+    cat_detected = False
+    unsure_label = False
+    for image_name in burst:
+      if snapcat_json.json_data[image_name]["classifier_label"] == "cat":
+        cat_detected = True
+        break
 
-    if len(directories_to_label) == 0:
-      return
+      if snapcat_json.json_data[image_name]["classifier_label"] == "unsure":
+        unsure_label = True
 
-    while not done: 
-      pburst_dir = directories_to_label[index]
+    if cat_detected:
+      continue
+    elif unsure_label:
+      unsure_bursts.append( burst )
 
-      jpegs_in_dir = list_all_jpgs( pburst_dir )
 
-      if len(jpegs_in_dir) < 1:
-        continue
+  # iterate over all of the bursts and get a label
+  while not done:
+    image_list = []
 
-      # pblob_dir = blob_dir + pburst_dir.split(blob_dir,1)[1]
-
-      key = display_directory_get_input( jpegs_in_dir )
+    for image_name in unsure_bursts[index]:
+      image_list.append( snapcat_json.json_data[image_name]["path"] )
       
-      if key == LEFT_KEY:
-        directory_labels.append((pburst_dir, INVALID_STRING))
-        # directory_blob_labels.append((pblob_dir, INVALID_STRING))
-        index = index + 1
+    print( image_list )
 
-      elif key == RIGHT_KEY:
-        directory_labels.append((pburst_dir, VALID_STRING))
-        # directory_blob_labels.append((pblob_dir, VALID_STRING))
-        index = index + 1
+    key = display_directory_get_input( image_list )
+    
+    if key == LEFT_KEY:
+      update_user_burst_label( snapcat_json, unsure_bursts[index], INVALID_STRING)
+      index = index + 1
 
-      elif key == DOWN_KEY:
-        directory_labels.append((pburst_dir, UNSURE_STRING))
-        # directory_blob_labels.append((pblob_dir, UNSURE_STRING))
-        index = index + 1
+    elif key == RIGHT_KEY:
+      update_user_burst_label( snapcat_json, unsure_bursts[index], VALID_STRING)
+      index = index + 1
 
-      elif key == BACKSPACE_KEY:
-        # ensure we don't go negative with the index
-        if ( index > 0 ):
-          index = index - 1
+    elif key == DOWN_KEY:
+      update_user_burst_label( snapcat_json, unsure_bursts[index], UNSURE_STRING)
+      index = index + 1
 
-          directory_labels.pop()
-          # directory_blob_labels.pop()
+    elif key == BACKSPACE_KEY:
+      # ensure we don't go negative with the index
+      if ( index > 0 ):
+        index = index - 1      
 
-      elif key == ESCAPE_KEY:
-        cv2.destroyAllWindows()
-        done = True
-      
-      if index >= len(directories_to_label):
-        done = True
+      update_user_burst_label( snapcat_json, unsure_bursts[index], NONE_STRING )
 
-    cv2.destroyAllWindows()  
-    # move_directories( burst_dir, directory_labels, outdir_burst )
-    # move_directories( blob_dir, directory_blob_labels, outdir_blob)
+    elif key == ESCAPE_KEY:
+      cv2.destroyAllWindows()
+      done = True
+    
+    if index >= len(unsure_bursts):
+      done = True
 
-    # todo add timeout that displays usage picture if no input for 2 mins. Display for a max of 30 sec and then continue
-    """
+  cv2.destroyAllWindows()
   
+
 def main():
   parser = argparse.ArgumentParser()
-  parser.add_argument("--image_dir", help="will list all the images within this directory and have user label them")
+  parser.add_argument("--image_dir", help="will list all the images within this directory and have user label them", default="")
   parser.add_argument("--json_dir", help="path to the json database for images" )
+  parser.add_argument("--gif", help="display all images from burst or not", default="false" )
 
   args = parser.parse_args()
   
@@ -419,7 +439,11 @@ def main():
   snapcat_json = json_database.JSONDatabase( args.json_dir )
   image_list = list_all_jpgs ( args.image_dir )
 
-  user_label_images_single( snapcat_json, image_list )
+  print( "gif", args.gif.lower() )
+  if args.gif.lower() == "true":
+    user_label_images_burst( snapcat_json )
+  else:
+    user_label_images_single( snapcat_json, image_list )
 
 if __name__ == "__main__":
   main()
