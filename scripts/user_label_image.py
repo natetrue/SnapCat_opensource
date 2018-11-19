@@ -18,6 +18,7 @@ import numpy as np
 import shutil
 from win32api import GetSystemMetrics
 import json_database
+import tools
 
 LEFT_KEY = 2424832
 RIGHT_KEY = 2555904
@@ -338,17 +339,6 @@ def user_label_images_single( snapcat_json, image_list ):
       done = True
 
   cv2.destroyAllWindows()
-    
-
-#todo - duplicated in generate_report.py, move to tools
-def get_bursts( json_data ):
-  bursts = []
-  for image in json_data:
-    burst = json_data[image]["burst_images"]
-    if not burst in bursts:
-      bursts.append(burst)
-
-  return bursts
 
 
 def update_user_burst_label( snapcat_json, burst, label ):
@@ -361,7 +351,7 @@ def update_user_burst_label( snapcat_json, burst, label ):
 def user_label_images_burst( snapcat_json ):
   ######################### sort image bursts #########################
 
-  bursts = get_bursts( snapcat_json.json_data )
+  bursts = tools.get_bursts( snapcat_json )
 
   done = False
   index = 0

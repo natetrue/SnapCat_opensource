@@ -13,7 +13,7 @@ import argparse
 import json_database
 import cv2
 from skimage import img_as_ubyte
-
+from shutil import copyfile
 
 
 def optimal_square(x1,x2,y1,y2,i):
@@ -257,6 +257,105 @@ def save_areas_of_interest( snapcat_json, output_directory ):
     cv2.imwrite(outfile, resized_image)
     cv2.destroyAllWindows()
 
+def get_bursts( snapcat_json ):
+
+  bursts = []
+  for image in snapcat_json.json_data:
+    burst = snapcat_json.json_data[image]["burst_images"]
+    if not burst in bursts:
+      bursts.append(burst)
+
+  return bursts
+
+
+def move_burst_images( images, directory, burst_number ):
+  for image_path in images:
+
+    image_directory = os.path.dirname( image_path )
+    image_name = os.path.basename( image_path )
+
+    new_image_path = os.path.join( directory, image_directory, burst_number, image_name )
+    new_image_dir = os.path.dirname( new_image_path )
+
+    if not os.path.isdir( new_image_dir ):
+      os.makedirs( new_image_dir )
+
+    copyfile(image_path, new_image_path)
+
+
+def cat_label_exists( snapcat_json, image ):
+  if "classifier_label" in snapcat_json.json_data[image] and snapcat_json.json_data[image]["classifier_label"] == "cat" :
+    return True
+  
+  if "user_label" in snapcat_json.json_data[image] and snapcat_json.json_data[image]["user_label"] == "cat" :
+    return True
+
+  if "user_burst_label" in snapcat_json.json_data[image] and snapcat_json.json_data[image]["user_burst_label"] == "cat" :
+    return True
+
+  return False
+
+def unsure_label_exists( snapcat_json, image ):
+  if "classifier_label" in snapcat_json.json_data[image] and snapcat_json.json_data[image]["classifier_label"] != "unsure" :
+    return False
+
+  # not unsure if user has labeled one way or the other
+  if "user_label" in snapcat_json.json_data[image] and snapcat_json.json_data[image]["user_label"] == "cat" :
+    return False
+
+  if "user_label" in snapcat_json.json_data[image] and snapcat_json.json_data[image]["user_label"] == "not_cat" :
+    return False
+
+  if "user_burst_label" in snapcat_json.json_data[image] and snapcat_json.json_data[image]["user_burst_label"] == "cat" :
+    return False
+
+  if "user_burst_label" in snapcat_json.json_data[image] and snapcat_json.json_data[image]["user_burst_label"] == "not_cat" :
+    return False
+    
+  # user label does not exist or is also unsure
+  return True
+
+# Save a copy of original images in an organized directory
+def organize_images( snapcat_json, output_directory ):
+  
+  cat_dir = os.path.join(output_directory, "cat")
+  not_cat_dir = os.path.join(output_directory, "not_cat")
+  unsure_dir = os.path.join(output_directory, "unsure")
+
+  bursts = get_bursts( snapcat_json )
+  burst_number = 0
+  for burst in bursts:
+
+    image_list = []
+
+    for image_name in burst:
+      image_list.append( snapcat_json.json_data[image_name]["path"] )
+
+    cat_detected = False
+    unsure_label = False
+    for image_name in burst:
+      if cat_label_exists( snapcat_json, image_name ):
+        cat_detected = True
+        break
+
+      if unsure_label_exists( snapcat_json, image_name):
+        unsure_label = True
+
+    out_dir = ""
+
+    if cat_detected:
+      out_dir = cat_dir
+    elif unsure_label:
+      out_dir = unsure_dir
+    else:
+      out_dir = not_cat_dir
+
+    move_burst_images( image_list, out_dir, str( burst_number ) )
+
+    burst_number += 1
+  
+
+    
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser()
@@ -267,4 +366,4 @@ if __name__ == "__main__":
 
   snapcat_json = json_database.JSONDatabase( args.json_dir )
 
-  save_areas_of_interest( snapcat_json, args.out_dir )
+  organize_images( snapcat_json, args.out_dir )

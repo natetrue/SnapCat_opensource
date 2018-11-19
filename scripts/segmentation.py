@@ -21,20 +21,11 @@ from PIL import Image
 
 import json_database
 
-def get_bursts( json_data ):
-	bursts = []
-	for image in json_data:
-		burst = json_data[image]["burst_images"]
-		if not burst in bursts:
-			bursts.append(burst)
-
-	return bursts
-
 
 def segment_images( snapcat_json ):
 	
 	pbar = ProgressBar()
-	bursts = get_bursts( snapcat_json.json_data )
+	bursts = tools.get_bursts( snapcat_json )
 
 	for burst in bursts:
 
