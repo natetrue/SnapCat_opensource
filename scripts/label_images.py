@@ -94,18 +94,16 @@ def label_images( snapcat_json ):
         
         # if confidence level is below certain value, put in "unsure" folder
         print("%s: %f" % (labels[i], results[i]))
-        if results[i] < settings.sort_image['confidence_threshold']:
+        if results[i] >= settings.sort_image['cat_confidence_threshold'] and labels[i] == 'cats':
+          print("cat")
+          snapcat_json.update( image , "classifier_label", "cat" )
+        elif results[i] >= settings.sort_image['not_cat_confidence_threshold'] and labels[i] == 'not cats':
+          print("not cat")
+          snapcat_json.update( image , "classifier_label", "not_cat" )
+        else:
           print("unsure")
           snapcat_json.update( image , "classifier_label", "unsure" )
-        # else, place it in the proper sorted folder
-        else:
-          if labels[i] == 'cats':
-            print("cat")
-            snapcat_json.update( image , "classifier_label", "cat" )
-          else:
-            print("not cat")
-            snapcat_json.update( image , "classifier_label", "not_cat" )
-
+          
         break
 
     snapcat_json.save()
