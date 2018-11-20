@@ -1,0 +1,935 @@
+{
+  "06-11-2013 12-56-31.JPG": {
+    "path": ".\\debug_images\\bursts\\filipiana_50\\06-11-2013 12-56-31.JPG",
+    "burst_images": [
+      "06-11-2013 12-56-31.JPG",
+      "06-11-2013 12-56-33.JPG",
+      "06-11-2013 12-56-34.JPG"
+    ],
+    "area_of_interest": [
+      738,
+      2048,
+      125,
+      1435
+    ],
+    "classifier_label": "not_cat"
+  },
+  "06-11-2013 12-56-33.JPG": {
+    "path": ".\\debug_images\\bursts\\filipiana_50\\06-11-2013 12-56-33.JPG",
+    "burst_images": [
+      "06-11-2013 12-56-31.JPG",
+      "06-11-2013 12-56-33.JPG",
+      "06-11-2013 12-56-34.JPG"
+    ],
+    "area_of_interest": [
+      1321,
+      1711,
+      858,
+      1248
+    ],
+    "classifier_label": "not_cat"
+  },
+  "06-11-2013 12-56-34.JPG": {
+    "path": ".\\debug_images\\bursts\\filipiana_50\\06-11-2013 12-56-34.JPG",
+    "burst_images": [
+      "06-11-2013 12-56-31.JPG",
+      "06-11-2013 12-56-33.JPG",
+      "06-11-2013 12-56-34.JPG"
+    ],
+    "area_of_interest": [
+      1806,
+      2048,
+      216,
+      458
+    ],
+    "classifier_label": "not_cat"
+  },
+  "d19947s39i1.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_0\\d19947s39i1.jpg",
+    "burst_images": [
+      "d19947s39i1.jpg",
+      "d19947s39i2.jpg",
+      "d19947s39i3.jpg",
+      "d19947s39i4.jpg",
+      "d19947s39i5.jpg"
+    ],
+    "area_of_interest": [
+      726,
+      962,
+      444,
+      680
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19947s39i2.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_0\\d19947s39i2.jpg",
+    "burst_images": [
+      "d19947s39i1.jpg",
+      "d19947s39i2.jpg",
+      "d19947s39i3.jpg",
+      "d19947s39i4.jpg",
+      "d19947s39i5.jpg"
+    ],
+    "area_of_interest": [
+      763,
+      1053,
+      427,
+      717
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19947s39i3.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_0\\d19947s39i3.jpg",
+    "burst_images": [
+      "d19947s39i1.jpg",
+      "d19947s39i2.jpg",
+      "d19947s39i3.jpg",
+      "d19947s39i4.jpg",
+      "d19947s39i5.jpg"
+    ],
+    "area_of_interest": [
+      903,
+      1173,
+      462,
+      732
+    ],
+    "classifier_label": "cat"
+  },
+  "d19947s39i4.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_0\\d19947s39i4.jpg",
+    "burst_images": [
+      "d19947s39i1.jpg",
+      "d19947s39i2.jpg",
+      "d19947s39i3.jpg",
+      "d19947s39i4.jpg",
+      "d19947s39i5.jpg"
+    ],
+    "area_of_interest": [
+      1004,
+      1496,
+      361,
+      853
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19947s39i5.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_0\\d19947s39i5.jpg",
+    "burst_images": [
+      "d19947s39i1.jpg",
+      "d19947s39i2.jpg",
+      "d19947s39i3.jpg",
+      "d19947s39i4.jpg",
+      "d19947s39i5.jpg"
+    ],
+    "area_of_interest": [
+      1145,
+      1681,
+      299,
+      835
+    ],
+    "classifier_label": "not_cat"
+  },
+  "d22940s9i1.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_217\\d22940s9i1.jpg",
+    "burst_images": [
+      "d22940s9i1.jpg",
+      "d22940s9i2.jpg",
+      "d22940s9i3.jpg",
+      "d22940s9i4.jpg",
+      "d22940s9i5.jpg"
+    ],
+    "area_of_interest": [
+      0,
+      389,
+      590,
+      979
+    ],
+    "classifier_label": "unsure"
+  },
+  "d22940s9i2.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_217\\d22940s9i2.jpg",
+    "burst_images": [
+      "d22940s9i1.jpg",
+      "d22940s9i2.jpg",
+      "d22940s9i3.jpg",
+      "d22940s9i4.jpg",
+      "d22940s9i5.jpg"
+    ],
+    "area_of_interest": [
+      250,
+      757,
+      473,
+      980
+    ],
+    "classifier_label": "unsure"
+  },
+  "d22940s9i3.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_217\\d22940s9i3.jpg",
+    "burst_images": [
+      "d22940s9i1.jpg",
+      "d22940s9i2.jpg",
+      "d22940s9i3.jpg",
+      "d22940s9i4.jpg",
+      "d22940s9i5.jpg"
+    ],
+    "area_of_interest": [
+      580,
+      981,
+      579,
+      980
+    ],
+    "classifier_label": "cat"
+  },
+  "d22940s9i4.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_217\\d22940s9i4.jpg",
+    "burst_images": [
+      "d22940s9i1.jpg",
+      "d22940s9i2.jpg",
+      "d22940s9i3.jpg",
+      "d22940s9i4.jpg",
+      "d22940s9i5.jpg"
+    ],
+    "area_of_interest": [
+      861,
+      1157,
+      626,
+      922
+    ],
+    "classifier_label": "unsure"
+  },
+  "d22940s9i5.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_217\\d22940s9i5.jpg",
+    "burst_images": [
+      "d22940s9i1.jpg",
+      "d22940s9i2.jpg",
+      "d22940s9i3.jpg",
+      "d22940s9i4.jpg",
+      "d22940s9i5.jpg"
+    ],
+    "area_of_interest": [
+      1024,
+      1223,
+      682,
+      881
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s54i1.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_7\\d19975s54i1.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      0,
+      420,
+      746,
+      1166
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s54i10.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_7\\d19975s54i10.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      1367,
+      1804,
+      752,
+      1189
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s54i2.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_7\\d19975s54i2.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      141,
+      564,
+      715,
+      1138
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s54i3.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_7\\d19975s54i3.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      233,
+      621,
+      721,
+      1109
+    ],
+    "classifier_label": "cat"
+  },
+  "d19975s54i4.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_7\\d19975s54i4.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      293,
+      636,
+      743,
+      1086
+    ],
+    "classifier_label": "cat"
+  },
+  "d19975s54i5.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_7\\d19975s54i5.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      370,
+      825,
+      690,
+      1145
+    ],
+    "classifier_label": "cat"
+  },
+  "d19975s54i6.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_7\\d19975s54i6.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      506,
+      1000,
+      671,
+      1165
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s54i7.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_7\\d19975s54i7.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      703,
+      1214,
+      664,
+      1175
+    ],
+    "classifier_label": "cat"
+  },
+  "d19975s54i8.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_7\\d19975s54i8.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      1035,
+      1459,
+      697,
+      1121
+    ],
+    "classifier_label": "unsure"
+  },
+  "d19975s54i9.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_7\\d19975s54i9.jpg",
+    "burst_images": [
+      "d19975s54i1.jpg",
+      "d19975s54i10.jpg",
+      "d19975s54i2.jpg",
+      "d19975s54i3.jpg",
+      "d19975s54i4.jpg",
+      "d19975s54i5.jpg",
+      "d19975s54i6.jpg",
+      "d19975s54i7.jpg",
+      "d19975s54i8.jpg",
+      "d19975s54i9.jpg"
+    ],
+    "area_of_interest": [
+      1168,
+      1570,
+      737,
+      1139
+    ],
+    "classifier_label": "unsure"
+  },
+  "01-01-2013 21-34-34.JPG": {
+    "path": ".\\debug_images\\bursts\\vaqueria_1\\01-01-2013 21-34-34.JPG",
+    "burst_images": [
+      "01-01-2013 21-34-34.JPG",
+      "01-01-2013 21-34-35.JPG",
+      "01-01-2013 21-34-37.JPG",
+      "01-01-2013 22-07-38.JPG",
+      "01-01-2013 22-07-40.JPG",
+      "01-01-2013 22-07-41.JPG",
+      "01-01-2013 22-07-49.JPG",
+      "01-01-2013 22-07-50.JPG",
+      "01-01-2013 22-07-52.JPG",
+      "01-01-2013 22-12-54.JPG",
+      "01-01-2013 22-12-55.JPG",
+      "01-01-2013 22-12-57.JPG"
+    ],
+    "area_of_interest": [
+      490,
+      1926,
+      0,
+      1436
+    ],
+    "classifier_label": "unsure",
+    "user_burst_label": "cat"
+  },
+  "01-01-2013 21-34-35.JPG": {
+    "path": ".\\debug_images\\bursts\\vaqueria_1\\01-01-2013 21-34-35.JPG",
+    "burst_images": [
+      "01-01-2013 21-34-34.JPG",
+      "01-01-2013 21-34-35.JPG",
+      "01-01-2013 21-34-37.JPG",
+      "01-01-2013 22-07-38.JPG",
+      "01-01-2013 22-07-40.JPG",
+      "01-01-2013 22-07-41.JPG",
+      "01-01-2013 22-07-49.JPG",
+      "01-01-2013 22-07-50.JPG",
+      "01-01-2013 22-07-52.JPG",
+      "01-01-2013 22-12-54.JPG",
+      "01-01-2013 22-12-55.JPG",
+      "01-01-2013 22-12-57.JPG"
+    ],
+    "area_of_interest": [
+      443,
+      1879,
+      0,
+      1436
+    ],
+    "classifier_label": "not_cat",
+    "user_burst_label": "cat"
+  },
+  "01-01-2013 21-34-37.JPG": {
+    "path": ".\\debug_images\\bursts\\vaqueria_1\\01-01-2013 21-34-37.JPG",
+    "burst_images": [
+      "01-01-2013 21-34-34.JPG",
+      "01-01-2013 21-34-35.JPG",
+      "01-01-2013 21-34-37.JPG",
+      "01-01-2013 22-07-38.JPG",
+      "01-01-2013 22-07-40.JPG",
+      "01-01-2013 22-07-41.JPG",
+      "01-01-2013 22-07-49.JPG",
+      "01-01-2013 22-07-50.JPG",
+      "01-01-2013 22-07-52.JPG",
+      "01-01-2013 22-12-54.JPG",
+      "01-01-2013 22-12-55.JPG",
+      "01-01-2013 22-12-57.JPG"
+    ],
+    "area_of_interest": [
+      208,
+      1590,
+      45,
+      1427
+    ],
+    "classifier_label": "not_cat",
+    "user_burst_label": "cat"
+  },
+  "01-01-2013 22-07-38.JPG": {
+    "path": ".\\debug_images\\bursts\\vaqueria_1\\01-01-2013 22-07-38.JPG",
+    "burst_images": [
+      "01-01-2013 21-34-34.JPG",
+      "01-01-2013 21-34-35.JPG",
+      "01-01-2013 21-34-37.JPG",
+      "01-01-2013 22-07-38.JPG",
+      "01-01-2013 22-07-40.JPG",
+      "01-01-2013 22-07-41.JPG",
+      "01-01-2013 22-07-49.JPG",
+      "01-01-2013 22-07-50.JPG",
+      "01-01-2013 22-07-52.JPG",
+      "01-01-2013 22-12-54.JPG",
+      "01-01-2013 22-12-55.JPG",
+      "01-01-2013 22-12-57.JPG"
+    ],
+    "area_of_interest": [
+      348,
+      1491,
+      292,
+      1435
+    ],
+    "classifier_label": "not_cat",
+    "user_burst_label": "cat"
+  },
+  "01-01-2013 22-07-40.JPG": {
+    "path": ".\\debug_images\\bursts\\vaqueria_1\\01-01-2013 22-07-40.JPG",
+    "burst_images": [
+      "01-01-2013 21-34-34.JPG",
+      "01-01-2013 21-34-35.JPG",
+      "01-01-2013 21-34-37.JPG",
+      "01-01-2013 22-07-38.JPG",
+      "01-01-2013 22-07-40.JPG",
+      "01-01-2013 22-07-41.JPG",
+      "01-01-2013 22-07-49.JPG",
+      "01-01-2013 22-07-50.JPG",
+      "01-01-2013 22-07-52.JPG",
+      "01-01-2013 22-12-54.JPG",
+      "01-01-2013 22-12-55.JPG",
+      "01-01-2013 22-12-57.JPG"
+    ],
+    "area_of_interest": [
+      403,
+      1437,
+      401,
+      1435
+    ],
+    "classifier_label": "not_cat",
+    "user_burst_label": "cat"
+  },
+  "01-01-2013 22-07-41.JPG": {
+    "path": ".\\debug_images\\bursts\\vaqueria_1\\01-01-2013 22-07-41.JPG",
+    "burst_images": [
+      "01-01-2013 21-34-34.JPG",
+      "01-01-2013 21-34-35.JPG",
+      "01-01-2013 21-34-37.JPG",
+      "01-01-2013 22-07-38.JPG",
+      "01-01-2013 22-07-40.JPG",
+      "01-01-2013 22-07-41.JPG",
+      "01-01-2013 22-07-49.JPG",
+      "01-01-2013 22-07-50.JPG",
+      "01-01-2013 22-07-52.JPG",
+      "01-01-2013 22-12-54.JPG",
+      "01-01-2013 22-12-55.JPG",
+      "01-01-2013 22-12-57.JPG"
+    ],
+    "area_of_interest": [
+      294,
+      1729,
+      0,
+      1435
+    ],
+    "classifier_label": "not_cat",
+    "user_burst_label": "cat"
+  },
+  "01-01-2013 22-07-49.JPG": {
+    "path": ".\\debug_images\\bursts\\vaqueria_1\\01-01-2013 22-07-49.JPG",
+    "burst_images": [
+      "01-01-2013 21-34-34.JPG",
+      "01-01-2013 21-34-35.JPG",
+      "01-01-2013 21-34-37.JPG",
+      "01-01-2013 22-07-38.JPG",
+      "01-01-2013 22-07-40.JPG",
+      "01-01-2013 22-07-41.JPG",
+      "01-01-2013 22-07-49.JPG",
+      "01-01-2013 22-07-50.JPG",
+      "01-01-2013 22-07-52.JPG",
+      "01-01-2013 22-12-54.JPG",
+      "01-01-2013 22-12-55.JPG",
+      "01-01-2013 22-12-57.JPG"
+    ],
+    "area_of_interest": [
+      763,
+      996,
+      469,
+      702
+    ],
+    "classifier_label": "unsure",
+    "user_burst_label": "cat"
+  },
+  "01-01-2013 22-07-50.JPG": {
+    "path": ".\\debug_images\\bursts\\vaqueria_1\\01-01-2013 22-07-50.JPG",
+    "burst_images": [
+      "01-01-2013 21-34-34.JPG",
+      "01-01-2013 21-34-35.JPG",
+      "01-01-2013 21-34-37.JPG",
+      "01-01-2013 22-07-38.JPG",
+      "01-01-2013 22-07-40.JPG",
+      "01-01-2013 22-07-41.JPG",
+      "01-01-2013 22-07-49.JPG",
+      "01-01-2013 22-07-50.JPG",
+      "01-01-2013 22-07-52.JPG",
+      "01-01-2013 22-12-54.JPG",
+      "01-01-2013 22-12-55.JPG",
+      "01-01-2013 22-12-57.JPG"
+    ],
+    "area_of_interest": [
+      403,
+      1189,
+      410,
+      1196
+    ],
+    "classifier_label": "not_cat",
+    "user_burst_label": "cat"
+  },
+  "01-01-2013 22-07-52.JPG": {
+    "path": ".\\debug_images\\bursts\\vaqueria_1\\01-01-2013 22-07-52.JPG",
+    "burst_images": [
+      "01-01-2013 21-34-34.JPG",
+      "01-01-2013 21-34-35.JPG",
+      "01-01-2013 21-34-37.JPG",
+      "01-01-2013 22-07-38.JPG",
+      "01-01-2013 22-07-40.JPG",
+      "01-01-2013 22-07-41.JPG",
+      "01-01-2013 22-07-49.JPG",
+      "01-01-2013 22-07-50.JPG",
+      "01-01-2013 22-07-52.JPG",
+      "01-01-2013 22-12-54.JPG",
+      "01-01-2013 22-12-55.JPG",
+      "01-01-2013 22-12-57.JPG"
+    ],
+    "area_of_interest": [
+      763,
+      994,
+      470,
+      701
+    ],
+    "classifier_label": "unsure",
+    "user_burst_label": "cat"
+  },
+  "01-01-2013 22-12-54.JPG": {
+    "path": ".\\debug_images\\bursts\\vaqueria_1\\01-01-2013 22-12-54.JPG",
+    "burst_images": [
+      "01-01-2013 21-34-34.JPG",
+      "01-01-2013 21-34-35.JPG",
+      "01-01-2013 21-34-37.JPG",
+      "01-01-2013 22-07-38.JPG",
+      "01-01-2013 22-07-40.JPG",
+      "01-01-2013 22-07-41.JPG",
+      "01-01-2013 22-07-49.JPG",
+      "01-01-2013 22-07-50.JPG",
+      "01-01-2013 22-07-52.JPG",
+      "01-01-2013 22-12-54.JPG",
+      "01-01-2013 22-12-55.JPG",
+      "01-01-2013 22-12-57.JPG"
+    ],
+    "area_of_interest": [
+      718,
+      1563,
+      591,
+      1436
+    ],
+    "classifier_label": "unsure",
+    "user_burst_label": "cat"
+  },
+  "01-01-2013 22-12-55.JPG": {
+    "path": ".\\debug_images\\bursts\\vaqueria_1\\01-01-2013 22-12-55.JPG",
+    "burst_images": [
+      "01-01-2013 21-34-34.JPG",
+      "01-01-2013 21-34-35.JPG",
+      "01-01-2013 21-34-37.JPG",
+      "01-01-2013 22-07-38.JPG",
+      "01-01-2013 22-07-40.JPG",
+      "01-01-2013 22-07-41.JPG",
+      "01-01-2013 22-07-49.JPG",
+      "01-01-2013 22-07-50.JPG",
+      "01-01-2013 22-07-52.JPG",
+      "01-01-2013 22-12-54.JPG",
+      "01-01-2013 22-12-55.JPG",
+      "01-01-2013 22-12-57.JPG"
+    ],
+    "area_of_interest": [
+      1384,
+      2047,
+      773,
+      1436
+    ],
+    "classifier_label": "unsure",
+    "user_burst_label": "cat"
+  },
+  "01-01-2013 22-12-57.JPG": {
+    "path": ".\\debug_images\\bursts\\vaqueria_1\\01-01-2013 22-12-57.JPG",
+    "burst_images": [
+      "01-01-2013 21-34-34.JPG",
+      "01-01-2013 21-34-35.JPG",
+      "01-01-2013 21-34-37.JPG",
+      "01-01-2013 22-07-38.JPG",
+      "01-01-2013 22-07-40.JPG",
+      "01-01-2013 22-07-41.JPG",
+      "01-01-2013 22-07-49.JPG",
+      "01-01-2013 22-07-50.JPG",
+      "01-01-2013 22-07-52.JPG",
+      "01-01-2013 22-12-54.JPG",
+      "01-01-2013 22-12-55.JPG",
+      "01-01-2013 22-12-57.JPG"
+    ],
+    "area_of_interest": [
+      494,
+      1930,
+      0,
+      1436
+    ],
+    "classifier_label": "not_cat",
+    "user_burst_label": "cat"
+  },
+  "01-01-2013 5-12-13.JPG": {
+    "path": ".\\debug_images\\bursts\\vaqueria_4\\01-01-2013 5-12-13.JPG",
+    "burst_images": [
+      "01-01-2013 5-12-13.JPG",
+      "01-01-2013 5-12-14.JPG",
+      "01-01-2013 5-12-16.JPG"
+    ],
+    "area_of_interest": [
+      324,
+      1092,
+      410,
+      1178
+    ],
+    "classifier_label": "not_cat"
+  },
+  "01-01-2013 5-12-14.JPG": {
+    "path": ".\\debug_images\\bursts\\vaqueria_4\\01-01-2013 5-12-14.JPG",
+    "burst_images": [
+      "01-01-2013 5-12-13.JPG",
+      "01-01-2013 5-12-14.JPG",
+      "01-01-2013 5-12-16.JPG"
+    ],
+    "area_of_interest": [
+      539,
+      1975,
+      0,
+      1436
+    ],
+    "classifier_label": "not_cat"
+  },
+  "01-01-2013 5-12-16.JPG": {
+    "path": ".\\debug_images\\bursts\\vaqueria_4\\01-01-2013 5-12-16.JPG",
+    "burst_images": [
+      "01-01-2013 5-12-13.JPG",
+      "01-01-2013 5-12-14.JPG",
+      "01-01-2013 5-12-16.JPG"
+    ],
+    "area_of_interest": [
+      217,
+      1652,
+      0,
+      1435
+    ],
+    "classifier_label": "not_cat"
+  },
+  "01-06-2013 16-10-58.JPG": {
+    "path": ".\\debug_images\\bursts\\piedra_18\\01-06-2013 16-10-58.JPG",
+    "burst_images": [
+      "01-06-2013 16-10-58.JPG",
+      "01-06-2013 16-11-00.JPG",
+      "01-06-2013 16-11-01.JPG"
+    ],
+    "area_of_interest": [
+      323,
+      774,
+      767,
+      1218
+    ],
+    "classifier_label": "cat"
+  },
+  "01-06-2013 16-11-00.JPG": {
+    "path": ".\\debug_images\\bursts\\piedra_18\\01-06-2013 16-11-00.JPG",
+    "burst_images": [
+      "01-06-2013 16-10-58.JPG",
+      "01-06-2013 16-11-00.JPG",
+      "01-06-2013 16-11-01.JPG"
+    ],
+    "area_of_interest": [
+      808,
+      1562,
+      682,
+      1436
+    ],
+    "classifier_label": "unsure"
+  },
+  "01-06-2013 16-11-01.JPG": {
+    "path": ".\\debug_images\\bursts\\piedra_18\\01-06-2013 16-11-01.JPG",
+    "burst_images": [
+      "01-06-2013 16-10-58.JPG",
+      "01-06-2013 16-11-00.JPG",
+      "01-06-2013 16-11-01.JPG"
+    ],
+    "area_of_interest": [
+      174,
+      1610,
+      0,
+      1436
+    ],
+    "classifier_label": "not_cat"
+  },
+  "03-05-2013 9-17-49.JPG": {
+    "path": ".\\debug_images\\bursts\\piedra_43\\03-05-2013 9-17-49.JPG",
+    "burst_images": [
+      "03-05-2013 9-17-49.JPG",
+      "03-05-2013 9-17-51.JPG",
+      "03-05-2013 9-17-52.JPG",
+      "03-05-2013 9-17-56.JPG",
+      "03-05-2013 9-17-57.JPG",
+      "03-05-2013 9-17-58.JPG"
+    ],
+    "area_of_interest": [
+      620,
+      1955,
+      101,
+      1436
+    ],
+    "classifier_label": "not_cat"
+  },
+  "03-05-2013 9-17-51.JPG": {
+    "path": ".\\debug_images\\bursts\\piedra_43\\03-05-2013 9-17-51.JPG",
+    "burst_images": [
+      "03-05-2013 9-17-49.JPG",
+      "03-05-2013 9-17-51.JPG",
+      "03-05-2013 9-17-52.JPG",
+      "03-05-2013 9-17-56.JPG",
+      "03-05-2013 9-17-57.JPG",
+      "03-05-2013 9-17-58.JPG"
+    ],
+    "area_of_interest": [
+      156,
+      1592,
+      0,
+      1436
+    ],
+    "classifier_label": "not_cat"
+  },
+  "03-05-2013 9-17-52.JPG": {
+    "path": ".\\debug_images\\bursts\\piedra_43\\03-05-2013 9-17-52.JPG",
+    "burst_images": [
+      "03-05-2013 9-17-49.JPG",
+      "03-05-2013 9-17-51.JPG",
+      "03-05-2013 9-17-52.JPG",
+      "03-05-2013 9-17-56.JPG",
+      "03-05-2013 9-17-57.JPG",
+      "03-05-2013 9-17-58.JPG"
+    ],
+    "area_of_interest": [
+      0,
+      1074,
+      362,
+      1436
+    ],
+    "classifier_label": "not_cat"
+  },
+  "03-05-2013 9-17-56.JPG": {
+    "path": ".\\debug_images\\bursts\\piedra_43\\03-05-2013 9-17-56.JPG",
+    "burst_images": [
+      "03-05-2013 9-17-49.JPG",
+      "03-05-2013 9-17-51.JPG",
+      "03-05-2013 9-17-52.JPG",
+      "03-05-2013 9-17-56.JPG",
+      "03-05-2013 9-17-57.JPG",
+      "03-05-2013 9-17-58.JPG"
+    ],
+    "area_of_interest": [
+      741,
+      1938,
+      239,
+      1436
+    ],
+    "classifier_label": "not_cat"
+  },
+  "03-05-2013 9-17-57.JPG": {
+    "path": ".\\debug_images\\bursts\\piedra_43\\03-05-2013 9-17-57.JPG",
+    "burst_images": [
+      "03-05-2013 9-17-49.JPG",
+      "03-05-2013 9-17-51.JPG",
+      "03-05-2013 9-17-52.JPG",
+      "03-05-2013 9-17-56.JPG",
+      "03-05-2013 9-17-57.JPG",
+      "03-05-2013 9-17-58.JPG"
+    ],
+    "area_of_interest": [
+      605,
+      2041,
+      0,
+      1436
+    ],
+    "classifier_label": "not_cat"
+  },
+  "03-05-2013 9-17-58.JPG": {
+    "path": ".\\debug_images\\bursts\\piedra_43\\03-05-2013 9-17-58.JPG",
+    "burst_images": [
+      "03-05-2013 9-17-49.JPG",
+      "03-05-2013 9-17-51.JPG",
+      "03-05-2013 9-17-52.JPG",
+      "03-05-2013 9-17-56.JPG",
+      "03-05-2013 9-17-57.JPG",
+      "03-05-2013 9-17-58.JPG"
+    ],
+    "area_of_interest": [
+      690,
+      2047,
+      79,
+      1436
+    ],
+    "classifier_label": "not_cat"
+  }
+}

@@ -50,10 +50,12 @@ def generate_report( snapcat_json, outdir ):
 
   # create plot
   y_pos = np.arange( len(cats_detected) )
+  plt.figure(figsize=(20,10))
   plt.bar(y_pos, num_cats, align='center', alpha=0.5)
   plt.xticks(y_pos, cats_detected)
   plt.ylabel('Number of Cats')
   plt.title('Number of Cats Per Camera')
+
  
   # save and show plot
   if not os.path.isdir(outdir):

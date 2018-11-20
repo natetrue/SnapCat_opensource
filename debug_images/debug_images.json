@@ -50,7 +50,7 @@
       462,
       732
     ],
-    "classifier_label": "unsure",
+    "classifier_label": "cat",
     "user_burst_label": "cat"
   },
   "d19947s39i4.jpg": {
@@ -86,7 +86,7 @@
       299,
       835
     ],
-    "classifier_label": "unsure",
+    "classifier_label": "not_cat",
     "user_burst_label": "cat"
   },
   "d19975s54i1.jpg": {
@@ -175,7 +175,7 @@
       721,
       1109
     ],
-    "classifier_label": "unsure"
+    "classifier_label": "cat"
   },
   "d19975s54i4.jpg": {
     "path": ".\\debug_images\\example_camera_1\\d19975s54i4.jpg",
@@ -263,7 +263,7 @@
       664,
       1175
     ],
-    "classifier_label": "unsure"
+    "classifier_label": "cat"
   },
   "d19975s54i8.jpg": {
     "path": ".\\debug_images\\example_camera_1\\d19975s54i8.jpg",
@@ -306,6 +306,181 @@
       1570,
       737,
       1139
+    ],
+    "classifier_label": "unsure"
+  },
+  "d23239s9i1.jpg": {
+    "path": ".\\debug_images\\bursts\\1\\d23239s9i1.jpg",
+    "burst_images": [
+      "d23239s9i1.jpg",
+      "d23239s9i2.jpg",
+      "d23239s9i3.jpg",
+      "d23239s9i4.jpg",
+      "d23239s9i5.jpg"
+    ],
+    "area_of_interest": [
+      0,
+      902,
+      497,
+      1399
+    ],
+    "classifier_label": "unsure",
+    "user_burst_label": "not_cat"
+  },
+  "d23239s9i2.jpg": {
+    "path": ".\\debug_images\\bursts\\1\\d23239s9i2.jpg",
+    "burst_images": [
+      "d23239s9i1.jpg",
+      "d23239s9i2.jpg",
+      "d23239s9i3.jpg",
+      "d23239s9i4.jpg",
+      "d23239s9i5.jpg"
+    ],
+    "area_of_interest": [
+      0,
+      822,
+      577,
+      1399
+    ],
+    "classifier_label": "unsure",
+    "user_burst_label": "not_cat"
+  },
+  "d23239s9i3.jpg": {
+    "path": ".\\debug_images\\bursts\\1\\d23239s9i3.jpg",
+    "burst_images": [
+      "d23239s9i1.jpg",
+      "d23239s9i2.jpg",
+      "d23239s9i3.jpg",
+      "d23239s9i4.jpg",
+      "d23239s9i5.jpg"
+    ],
+    "area_of_interest": [
+      303,
+      1703,
+      0,
+      1400
+    ],
+    "classifier_label": "not_cat",
+    "user_burst_label": "not_cat"
+  },
+  "d23239s9i4.jpg": {
+    "path": ".\\debug_images\\bursts\\1\\d23239s9i4.jpg",
+    "burst_images": [
+      "d23239s9i1.jpg",
+      "d23239s9i2.jpg",
+      "d23239s9i3.jpg",
+      "d23239s9i4.jpg",
+      "d23239s9i5.jpg"
+    ],
+    "area_of_interest": [
+      0,
+      839,
+      561,
+      1400
+    ],
+    "classifier_label": "unsure",
+    "user_burst_label": "not_cat"
+  },
+  "d23239s9i5.jpg": {
+    "path": ".\\debug_images\\bursts\\1\\d23239s9i5.jpg",
+    "burst_images": [
+      "d23239s9i1.jpg",
+      "d23239s9i2.jpg",
+      "d23239s9i3.jpg",
+      "d23239s9i4.jpg",
+      "d23239s9i5.jpg"
+    ],
+    "area_of_interest": [
+      0,
+      975,
+      425,
+      1400
+    ],
+    "classifier_label": "unsure",
+    "user_burst_label": "not_cat"
+  },
+  "d22940s9i1.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_217\\d22940s9i1.jpg",
+    "burst_images": [
+      "d22940s9i1.jpg",
+      "d22940s9i2.jpg",
+      "d22940s9i3.jpg",
+      "d22940s9i4.jpg",
+      "d22940s9i5.jpg"
+    ],
+    "area_of_interest": [
+      0,
+      389,
+      590,
+      979
+    ],
+    "classifier_label": "unsure"
+  },
+  "d22940s9i2.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_217\\d22940s9i2.jpg",
+    "burst_images": [
+      "d22940s9i1.jpg",
+      "d22940s9i2.jpg",
+      "d22940s9i3.jpg",
+      "d22940s9i4.jpg",
+      "d22940s9i5.jpg"
+    ],
+    "area_of_interest": [
+      250,
+      757,
+      473,
+      980
+    ],
+    "classifier_label": "unsure"
+  },
+  "d22940s9i3.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_217\\d22940s9i3.jpg",
+    "burst_images": [
+      "d22940s9i1.jpg",
+      "d22940s9i2.jpg",
+      "d22940s9i3.jpg",
+      "d22940s9i4.jpg",
+      "d22940s9i5.jpg"
+    ],
+    "area_of_interest": [
+      580,
+      981,
+      579,
+      980
+    ],
+    "classifier_label": "cat"
+  },
+  "d22940s9i4.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_217\\d22940s9i4.jpg",
+    "burst_images": [
+      "d22940s9i1.jpg",
+      "d22940s9i2.jpg",
+      "d22940s9i3.jpg",
+      "d22940s9i4.jpg",
+      "d22940s9i5.jpg"
+    ],
+    "area_of_interest": [
+      861,
+      1157,
+      626,
+      922
+    ],
+    "classifier_label": "unsure"
+  },
+  "d22940s9i5.jpg": {
+    "path": ".\\debug_images\\bursts\\emammal_217\\d22940s9i5.jpg",
+    "burst_images": [
+      "d22940s9i1.jpg",
+      "d22940s9i2.jpg",
+      "d22940s9i3.jpg",
+      "d22940s9i4.jpg",
+      "d22940s9i5.jpg"
+    ],
+    "area_of_interest": [
+      1024,
+      1223,
+      682,
+      881
     ],
     "classifier_label": "unsure"
   }
