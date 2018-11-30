@@ -113,7 +113,7 @@ def create_bursts( snapcat_json, image_directory ):
 		latest_timestamp = 0
 		burst_count = 0
 
-		for filename in pbar(files):
+		for filename in pbar(sorted(files)):
 
 			# only work with JPG 
 			if not filename.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
